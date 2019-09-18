@@ -1,0 +1,378 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 1/- obj/class samples
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method testMath369()V : // 0 samples
+    return:
+
+
+package :
+class SinFunction : // 1/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method derivative()Lorg/apache/commons/math/analysis/UnivariateRealFunction; : // 0 samples
+    return: 
+  method value(D)D : // 0 samples
+    return: 
+    parameter #0 :  // x
+
+
+package org.apache.commons.math:
+class ConvergenceException : // 0/0 obj/class samples
+  field serialVersionUID :  // long
+  field serialVersionUID :  // long
+  field pattern :  // java.lang.String
+  field arguments :  // java.lang.Object[]
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // pattern
+    parameter #1 :  // arguments
+  method <init>(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+  method <init>(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+
+
+package org.apache.commons.math:
+class ConvergingAlgorithmImpl : // 1/- obj/class samples
+  field absoluteAccuracy :  // double
+  field relativeAccuracy :  // double
+  field maximalIterationCount :  // int
+  field defaultAbsoluteAccuracy :  // double
+  field defaultRelativeAccuracy :  // double
+  field defaultMaximalIterationCount :  // int
+  field iterationCount :  // int
+  method <init>(ID)V : // 1 samples
+    return:
+    parameter #0 :  // defaultMaximalIterationCount
+    parameter #1 :  // defaultAbsoluteAccuracy
+  method getAbsoluteAccuracy()D : // 0 samples
+    return: 
+  method getIterationCount()I : // 0 samples
+    return: 
+  method getMaximalIterationCount()I : // 0 samples
+    return: 
+  method getRelativeAccuracy()D : // 0 samples
+    return: 
+  method resetAbsoluteAccuracy()V : // 0 samples
+    return:
+  method resetMaximalIterationCount()V : // 0 samples
+    return:
+  method resetRelativeAccuracy()V : // 0 samples
+    return:
+  method setAbsoluteAccuracy(D)V : // 0 samples
+    return:
+    parameter #0 :  // accuracy
+  method setMaximalIterationCount(I)V : // 0 samples
+    return:
+    parameter #0 :  // count
+  method setRelativeAccuracy(D)V : // 0 samples
+    return:
+    parameter #0 :  // accuracy
+
+
+package org.apache.commons.math:
+class FunctionEvaluationException : // 0/0 obj/class samples
+  field serialVersionUID :  // long
+  field FAILED_EVALUATION_MESSAGE :  // java.lang.String
+  field serialVersionUID :  // long
+  field argument :  // double[]
+  field pattern :  // java.lang.String
+  field arguments :  // java.lang.Object[]
+  method <init>(D)V : // 0 samples
+    return:
+    parameter #0 :  // argument
+  method <init>(DLjava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // argument
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+  method <init>([D)V : // 0 samples
+    return:
+    parameter #0 :  // argument
+  method <init>([DLjava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // argument
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+  method <init>(Ljava/lang/Throwable;D)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+    parameter #1 :  // argument
+  method <init>(Ljava/lang/Throwable;DLjava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+    parameter #1 :  // argument
+    parameter #2 :  // pattern
+    parameter #3 :  // arguments
+  method <init>(Ljava/lang/Throwable;[D)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+    parameter #1 :  // argument
+  method <init>(Ljava/lang/Throwable;[DLjava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+    parameter #1 :  // argument
+    parameter #2 :  // pattern
+    parameter #3 :  // arguments
+  method getArgument()[D : // 0 samples
+    return: 
+
+
+package org.apache.commons.math:
+class MathException : // 0/0 obj/class samples
+  field serialVersionUID :  // long
+  field pattern :  // java.lang.String
+  field arguments :  // java.lang.Object[]
+  method translate(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // s
+    parameter #1 :  // locale
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // pattern
+    parameter #1 :  // arguments
+  method <init>(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // rootCause
+  method <init>(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // rootCause
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+  method getArguments()[Ljava/lang/Object; : // 0 samples
+    return: 
+  method getLocalizedMessage()Ljava/lang/String; : // 0 samples
+    return: 
+  method getMessage()Ljava/lang/String; : // 0 samples
+    return: 
+  method getMessage(Ljava/util/Locale;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // locale
+  method getPattern()Ljava/lang/String; : // 0 samples
+    return: 
+  method printStackTrace()V : // 0 samples
+    return:
+  method printStackTrace(Ljava/io/PrintStream;)V : // 0 samples
+    return:
+    parameter #0 :  // out
+
+
+package org.apache.commons.math:
+class MaxIterationsExceededException : // 0/0 obj/class samples
+  field serialVersionUID :  // long
+  field serialVersionUID :  // long
+  field serialVersionUID :  // long
+  field maxIterations :  // int
+  field pattern :  // java.lang.String
+  field arguments :  // java.lang.Object[]
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // maxIterations
+  method <init>(ILjava/lang/String;[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // maxIterations
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+  method getMaxIterations()I : // 0 samples
+    return: 
+
+
+package org.apache.commons.math.analysis.solvers:
+class BisectionSolver : // 1/- obj/class samples
+  field functionValueAccuracy :  // double
+  field defaultFunctionValueAccuracy :  // double
+  field resultComputed :  // boolean
+  field result :  // double
+  field functionValue :  // double
+  field f : @Nullable // org.apache.commons.math.analysis.UnivariateRealFunction
+  field absoluteAccuracy :  // double
+  field relativeAccuracy :  // double
+  field maximalIterationCount :  // int
+  field defaultAbsoluteAccuracy :  // double
+  field defaultRelativeAccuracy :  // double
+  field defaultMaximalIterationCount :  // int
+  field iterationCount :  // int
+  method <init>()V : // 1 samples
+    return:
+  method <init>(Lorg/apache/commons/math/analysis/UnivariateRealFunction;)V : // 0 samples
+    return:
+    parameter #0 :  // f
+  method solve(DD)D : // 0 samples
+    return: 
+    parameter #0 :  // min
+    parameter #1 :  // max
+  method solve(DDD)D : // 0 samples
+    return: 
+    parameter #0 :  // min
+    parameter #1 :  // max
+    parameter #2 :  // initial
+  method solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D : // 0 samples
+    return: 
+    parameter #0 :  // f
+    parameter #1 :  // min
+    parameter #2 :  // max
+  method solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D : // 0 samples
+    return: 
+    parameter #0 :  // f
+    parameter #1 :  // min
+    parameter #2 :  // max
+    parameter #3 :  // initial
+
+
+package org.apache.commons.math.analysis.solvers:
+class UnivariateRealSolverImpl : // 5/- obj/class samples
+  field functionValueAccuracy :  // double
+  field defaultFunctionValueAccuracy :  // double
+  field resultComputed :  // boolean
+  field result :  // double
+  field functionValue :  // double
+  field f : @Nullable // org.apache.commons.math.analysis.UnivariateRealFunction
+  field absoluteAccuracy :  // double
+  field relativeAccuracy :  // double
+  field maximalIterationCount :  // int
+  field defaultAbsoluteAccuracy :  // double
+  field defaultRelativeAccuracy :  // double
+  field defaultMaximalIterationCount :  // int
+  field iterationCount :  // int
+  method <init>(ID)V : // 1 samples
+    return:
+    parameter #0 :  // defaultMaximalIterationCount
+    parameter #1 :  // defaultAbsoluteAccuracy
+  method <init>(Lorg/apache/commons/math/analysis/UnivariateRealFunction;ID)V : // 0 samples
+    return:
+    parameter #0 :  // f
+    parameter #1 :  // defaultMaximalIterationCount
+    parameter #2 :  // defaultAbsoluteAccuracy
+  method checkResultComputed()V : // 0 samples
+    return:
+  method clearResult()V : // 1 samples
+    return:
+  method getFunctionValue()D : // 0 samples
+    return: 
+  method getFunctionValueAccuracy()D : // 0 samples
+    return: 
+  method getResult()D : // 0 samples
+    return: 
+  method isBracketing(DDLorg/apache/commons/math/analysis/UnivariateRealFunction;)Z : // 0 samples
+    return: 
+    parameter #0 :  // lower
+    parameter #1 :  // upper
+    parameter #2 :  // function
+  method isSequence(DDD)Z : // 0 samples
+    return: 
+    parameter #0 :  // start
+    parameter #1 :  // mid
+    parameter #2 :  // end
+  method resetFunctionValueAccuracy()V : // 0 samples
+    return:
+  method setFunctionValueAccuracy(D)V : // 0 samples
+    return:
+    parameter #0 :  // accuracy
+  method setResult(DDI)V : // 0 samples
+    return:
+    parameter #0 :  // x
+    parameter #1 :  // fx
+    parameter #2 :  // iterationCount
+  method setResult(DI)V : // 0 samples
+    return:
+    parameter #0 :  // newResult
+    parameter #1 :  // iterationCount
+  method verifyBracketing(DDLorg/apache/commons/math/analysis/UnivariateRealFunction;)V : // 0 samples
+    return:
+    parameter #0 :  // lower
+    parameter #1 :  // upper
+    parameter #2 :  // function
+  method verifyInterval(DD)V : // 1 samples
+    return:
+    parameter #0 :  // lower
+    parameter #1 :  // upper
+  method verifySequence(DDD)V : // 0 samples
+    return:
+    parameter #0 :  // lower
+    parameter #1 :  // initial
+    parameter #2 :  // upper
+
+
+package org.apache.commons.math.analysis.solvers:
+class UnivariateRealSolverUtils : // 0/2 obj/class samples
+  field NULL_FUNCTION_MESSAGE :  // java.lang.String
+  method bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)[D : // 0 samples
+    return: 
+    parameter #0 :  // function
+    parameter #1 :  // initial
+    parameter #2 :  // lowerBound
+    parameter #3 :  // upperBound
+  method bracket(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDDI)[D : // 0 samples
+    return: 
+    parameter #0 :  // function
+    parameter #1 :  // initial
+    parameter #2 :  // lowerBound
+    parameter #3 :  // upperBound
+    parameter #4 :  // maximumIterations
+  method midpoint(DD)D : // 1 samples
+    return: 
+    parameter #0 :  // a
+    parameter #1 :  // b
+  method setup(Lorg/apache/commons/math/analysis/UnivariateRealFunction;)V : // 0 samples
+    return:
+    parameter #0 :  // f
+  method solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DD)D : // 0 samples
+    return: 
+    parameter #0 :  // f
+    parameter #1 :  // x0
+    parameter #2 :  // x1
+  method solve(Lorg/apache/commons/math/analysis/UnivariateRealFunction;DDD)D : // 0 samples
+    return: 
+    parameter #0 :  // f
+    parameter #1 :  // x0
+    parameter #2 :  // x1
+    parameter #3 :  // absoluteAccuracy
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+

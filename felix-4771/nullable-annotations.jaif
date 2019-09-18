@@ -1,0 +1,80 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 1/- obj/class samples
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method testAttributeWithoutContentOK()V : // 0 samples
+    return:
+
+
+package org.apache.felix.metatype:
+class Attribute : // 1/- obj/class samples
+  field adRef : @Nullable // java.lang.String
+  field content : @Nullable // java.lang.String[]
+  field optionalAttributes : @Nullable // java.util.Map
+  method <init>()V : // 1 samples
+    return:
+  method addContent(Ljava/lang/String;Z)V : // 0 samples
+    return:
+    parameter #0 :  // content
+    parameter #1 :  // split
+  method addContent([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // added
+  method getAdRef()Ljava/lang/String; : // 0 samples
+    return: 
+  method getContent()[Ljava/lang/String; : // 0 samples
+    return: 
+  method setAdRef(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // adRef
+
+
+package org.apache.felix.metatype:
+class OptionalAttributes : // 1/- obj/class samples
+  field optionalAttributes : @Nullable // java.util.Map
+  method <init>()V : // 1 samples
+    return:
+  method addOptionalAttribute(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // value
+  method getOptionalAttributes()Ljava/util/Map; : // 0 samples
+    return: 
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+

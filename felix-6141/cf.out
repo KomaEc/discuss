@@ -1,0 +1,161 @@
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[107,9] [initialization.fields.uninitialized] the constructor does not initialize fields: sourceClass, targetClass, typeArguments, targetType
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[128,22] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[177,52] [assignment.type.incompatible] incompatible types in assignment.
+[ERROR]   found   : @Initialized @Nullable Class<? extends @Initialized @Nullable Object>
+[ERROR]   required: @Initialized @NonNull Class<? extends @Initialized @Nullable Object>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[234,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[236,52] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[242,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[244,62] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[244,68] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[250,76] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[252,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[265,32] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Class<? extends @Initialized @NonNull Object>
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[267,39] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Class<? extends @Initialized @NonNull Object>
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[293,62] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[295,53] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[299,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: T[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[314,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Collection<?[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[333,24] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Collection<?[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[357,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: T[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[362,55] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[433,47] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : T extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[433,52] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[552,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Map<?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void], ?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[560,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Map<?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void], ?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[589,86] [assignment.type.incompatible] incompatible types in assignment.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[591,72] [assignment.type.incompatible] incompatible types in assignment.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[621,86] [assignment.type.incompatible] incompatible types in assignment.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[623,72] [assignment.type.incompatible] incompatible types in assignment.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[642,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Map<?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void], ?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[647,21] [dereference.of.nullable] dereference of possibly-null reference interfaces
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[651,24] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Map<?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void], ?[ extends @Initialized @NonNull Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[694,56] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Type
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[724,47] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[724,69] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[726,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[782,48] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[790,67] [dereference.of.nullable] dereference of possibly-null reference it.next()
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[824,58] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[827,21] [dereference.of.nullable] dereference of possibly-null reference boxed
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[842,77] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[845,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[848,39] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[859,39] [dereference.of.nullable] dereference of possibly-null reference getInterfaces(cls)
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[898,79] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable null
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[906,57] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable null
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[911,85] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable null
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[965,53] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable null
+[ERROR]   required: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[976,24] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: T[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[981,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Collection<?[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[998,32] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Collection<?[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1008,54] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Class<? extends @Initialized @Nullable Object>
+[ERROR]   required: @Initialized @NonNull Class<? extends @Initialized @Nullable Object>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1052,53] [iterating.over.nullable] iterating over possibly-null reference getInterfaces(srcCls)
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1069,48] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1073,57] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized ? extends @Initialized @Nullable Object
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1078,24] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Object
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1107,24] [return.type.incompatible] incompatible types in return.
+[ERROR]   type of expression: @Initialized @Nullable null
+[ERROR]   method return type: @Initialized @NonNull Class<?[ extends @Initialized @Nullable Object super @Initialized @NonNull Void]>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1116,55] [dereference.of.nullable] dereference of possibly-null reference interfaces
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1141,53] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Set<@Initialized @NonNull Class<? extends @Initialized @Nullable Object>>
+[ERROR]   required: @Initialized @NonNull Collection<? extends @Initialized @NonNull Class<? extends @Initialized @Nullable Object>>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/ConvertingImpl.java:[1144,45] [argument.type.incompatible] incompatible types in argument.
+[ERROR]   found   : @Initialized @Nullable Set<@Initialized @NonNull Class<? extends @Initialized @Nullable Object>>
+[ERROR]   required: @Initialized @NonNull Collection<? extends @Initialized @NonNull Class<? extends @Initialized @Nullable Object>>
+[ERROR] /home/coma/GSoC/npebugs/felix-6141/src/main/java/org/osgi/util/converter/AbstractSpecifying.java:[22,10] [initialization.fields.uninitialized] the constructor does not initialize fields: defaultValue, sourceAsClass, targetAsClass

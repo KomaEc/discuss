@@ -1,0 +1,278 @@
+ 0. src/main/java/org/apache/felix/scr/impl/helper/Annotations.java:88: error: NULL_DEREFERENCE
+      object `proplist` last assigned on line 82 could be null and is dereferenced at line 88.
+
+ 1. src/main/java/org/apache/felix/scr/impl/helper/Annotations.java:99: error: NULL_DEREFERENCE
+      object `proplist` last assigned on line 82 could be null and is dereferenced at line 99.
+
+ 2. src/main/java/org/apache/felix/scr/impl/parser/KXml2SAXParser.java:80: error: NULL_DEREFERENCE
+      object `currentElement` last assigned on line 63 could be null and is dereferenced by call to `ensureMatchingCurrentElement(...)` at line 80.
+
+ 3. src/main/java/org/apache/felix/scr/impl/BundleComponentActivator.java:274: error: RESOURCE_LEAK
+      resource of type `java.io.InputStreamReader` acquired by call to `InputStreamReader(...)` at line 270 is not released after line 274.
+
+ 4. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1410: error: NULL_DEREFERENCE
+      object returned by `DependencyManager.m_componentManager.getBundle()` could be null and is dereferenced at line 1410.
+
+ 5. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:2097: error: NULL_DEREFERENCE
+      object returned by `DependencyManager.m_componentManager.getBundleContext()` could be null and is dereferenced by call to `MultiplePrototypeRefPair(...)` at line 2097.
+
+ 6. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:2095: error: NULL_DEREFERENCE
+      object returned by `DependencyManager.m_componentManager.getBundleContext()` could be null and is dereferenced by call to `SinglePrototypeRefPair(...)` at line 2095.
+
+ 7. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:671: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.addedService(ServiceReference,Object,int,int)` indirectly reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+ 8. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:717: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleDynamicCustomizer.addedService(ServiceReference,RefPair,int,int)` writes to field `this.refPair` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+ 9. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:697: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.addedService(ServiceReference,RefPair,int,int)` reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+10. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:917: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleStaticCustomizer.addedService(ServiceReference,RefPair,int,int)` reads without synchronization from `this.refPair`. Potentially races with write in method `DependencyManager$SingleStaticCustomizer.close()`.
+     Reporting because this access may occur on a background thread.
+
+11. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:901: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleStaticCustomizer.addedService(ServiceReference,RefPair,int,int)` writes to field `this.trackingCount` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+12. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:837: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ConfigurableComponentHolder.clearComponents()` mutates container `this.m_components` via call to `clear` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+13. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:855: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleDynamicCustomizer.close()` indirectly writes to field `this.refPair` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+14. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1499: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager.close(ComponentContextImpl,EdgeInfo)` indirectly reads without synchronization from `boundRef.failed`. Potentially races with write in method `DependencyManager.close(...)`.
+     Reporting because this access may occur on a background thread.
+
+15. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1501: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager.close(ComponentContextImpl,EdgeInfo)` indirectly writes to field `boundRef.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+16. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:1324: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `java.lang.Object[] ServiceTracker$AbstractTracked.copyKeys(java.lang.Object[])` reads without synchronization from container `this.tracked` via call to `keySet`. Potentially races with write in method `ServiceTracker$AbstractTracked.untrack(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+17. src/main/java/org/apache/felix/scr/impl/manager/AbstractComponentManager.java:750: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void AbstractComponentManager.deactivateInternal(int,boolean,boolean)` indirectly reads without synchronization from `this.m_componentId`. Potentially races with write in method `AbstractComponentManager.disableInternal()`.
+     Reporting because this access may occur on a background thread.
+
+18. src/main/java/org/apache/felix/scr/impl/manager/ServiceFactoryComponentManager.java:70: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ServiceFactoryComponentManager.deleteComponent(int)` indirectly writes to field `boundRef.failed` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+19. src/main/java/org/apache/felix/scr/impl/manager/ServiceFactoryComponentManager.java:73: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ServiceFactoryComponentManager.deleteComponent(int)` mutates container `this.serviceContexts` via call to `clear` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+20. src/main/java/org/apache/felix/scr/impl/helper/ComponentMethods.java:81: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `ActivateMethod ComponentMethods.getActivateMethod()` reads without synchronization from `this.m_activateMethod`. Potentially races with write in method `ComponentMethods.initComponentMethods(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+21. src/main/java/org/apache/felix/scr/impl/helper/ComponentMethods.java:96: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `ReferenceMethods ComponentMethods.getBindMethods(String)` reads without synchronization from container `this.bindMethodMap` via call to `get`. Potentially races with write in method `ComponentMethods.initComponentMethods(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+22. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:592: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `long ConfigurableComponentHolder.getChangeCount(TargetedPID,TargetedPID)` reads without synchronization from `this.m_changeCount.[_]`. Potentially races with write in method `ConfigurableComponentHolder.configurationDeleted(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+23. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:588: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `long ConfigurableComponentHolder.getChangeCount(TargetedPID,TargetedPID)` reads without synchronization from container `this.m_factoryChangeCount` via call to `get`. Potentially races with write in method `ConfigurableComponentHolder.configurationDeleted(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+24. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:817: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `List ConfigurableComponentHolder.getComponentManagers()` reads without synchronization from container `this.m_components` via call to `values`. Potentially races with write in method `ConfigurableComponentHolder.disableComponents(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+25. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:871: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `TargetedPID ConfigurableComponentHolder.getConfigurationTargetedPID(TargetedPID,TargetedPID)` reads without synchronization from `this.m_targetedPids.[_]`. Potentially races with write in method `ConfigurableComponentHolder.configurationDeleted(...)`.
+     Reporting because this access may occur on a background thread.
+
+26. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:1312: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Object ServiceTracker$AbstractTracked.getCustomizedObject(Object)` reads without synchronization from container `this.tracked` via call to `get`. Potentially races with write in method `ServiceTracker$AbstractTracked.untrack(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+27. src/main/java/org/apache/felix/scr/impl/helper/ComponentMethods.java:86: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `DeactivateMethod ComponentMethods.getDeactivateMethod()` reads without synchronization from `this.m_deactivateMethod`. Potentially races with write in method `ComponentMethods.initComponentMethods(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+28. src/main/java/org/apache/felix/scr/impl/config/ConfigurableComponentHolder.java:831: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `List ConfigurableComponentHolder.getDirectComponentManagers()` reads without synchronization from container `this.m_components` via call to `values`. Potentially races with write in method `ConfigurableComponentHolder.disableComponents(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+29. src/main/java/org/osgi/util/promise/PromiseImpl.java:167: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Throwable PromiseImpl.getFailure()` reads without synchronization from `this.fail`. Potentially races with write in method `PromiseImpl.resolve(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+30. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:225: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `int ScrConfiguration.getLogLevel()` reads without synchronization from `this.logLevel`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+31. src/main/java/org/apache/felix/scr/impl/helper/ComponentMethods.java:91: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `ModifiedMethod ComponentMethods.getModifiedMethod()` reads without synchronization from `this.m_modifiedMethod`. Potentially races with write in method `ComponentMethods.initComponentMethods(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+32. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:875: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Collection DependencyManager$SingleDynamicCustomizer.getRefs(AtomicInteger)` reads with synchronization from `this.trackingCount`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.modifiedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+33. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:876: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Collection DependencyManager$SingleDynamicCustomizer.getRefs(AtomicInteger)` reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+34. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1047: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Collection DependencyManager$SingleStaticCustomizer.getRefs(AtomicInteger)` reads with synchronization from `this.trackingCount`. Potentially races with unsynchronized write in method `DependencyManager$SingleStaticCustomizer.addedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+35. src/main/java/org/apache/felix/scr/impl/manager/ServiceFactoryComponentManager.java:101: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `Object ServiceFactoryComponentManager.getService(Bundle,ServiceRegistration)` indirectly writes to field `boundRef.failed` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+36. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:924: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `java.lang.Object[] ServiceTracker.getServices(java.lang.Object[])` writes to field `array.[_]` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+37. src/main/java/org/osgi/util/promise/PromiseImpl.java:157: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Object PromiseImpl.getValue()` reads without synchronization from `this.value`. Potentially races with write in method `PromiseImpl.resolve(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+38. src/main/java/org/osgi/util/promise/PromiseImpl.java:156: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `Object PromiseImpl.getValue()` reads without synchronization from `this.fail`. Potentially races with write in method `PromiseImpl.resolve(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+39. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:257: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ScrConfiguration.globalExtender()` reads without synchronization from `this.globalExtender`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+40. src/main/java/org/apache/felix/scr/impl/manager/ServiceFactoryComponentManager.java:219: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ServiceFactoryComponentManager.hasInstance()` reads without synchronization from container `this.serviceContexts` via call to `isEmpty`. Potentially races with write in method `ServiceFactoryComponentManager.ungetService(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+41. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:242: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ScrConfiguration.infoAsService()` reads without synchronization from `this.infoAsService`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+42. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1595: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `boolean DependencyManager.invokeBindMethod(ComponentContextImpl,RefPair,int,EdgeInfo)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+43. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1724: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager.invokeUnbindMethod(ComponentContextImpl,RefPair,int,EdgeInfo)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+44. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1656: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `boolean DependencyManager.invokeUpdatedMethod(ComponentContextImpl,RefPair,int,EdgeInfo)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+45. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:1300: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ServiceTracker$AbstractTracked.isEmpty()` reads without synchronization from container `this.tracked` via call to `isEmpty`. Potentially races with write in method `ServiceTracker$AbstractTracked.untrack(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+46. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:231: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ScrConfiguration.isFactoryEnabled()` reads without synchronization from `this.factoryEnabled`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+47. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:237: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean ScrConfiguration.keepInstances()` reads without synchronization from `this.keepInstances`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+48. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:247: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `long ScrConfiguration.lockTimeout()` reads without synchronization from `this.lockTimeout`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+49. src/main/java/org/apache/felix/scr/impl/Activator.java:470: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void Activator.log(int,Bundle,String,Throwable)` indirectly reads without synchronization from `impl.Activator.m_configuration`. Potentially races with write in method `Activator.stop(...)`.
+     Reporting because this access may occur on a background thread.
+
+50. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:671: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.modifiedService(ServiceReference,Object,int)` indirectly reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+51. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:741: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.modifiedService(ServiceReference,RefPair,int)` reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+52. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:747: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleDynamicCustomizer.modifiedService(ServiceReference,RefPair,int)` writes to field `this.trackingCount` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+53. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:945: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleStaticCustomizer.modifiedService(ServiceReference,RefPair,int)` writes to field `this.trackingCount` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+54. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1457: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `boolean DependencyManager.open(ComponentContextImpl,EdgeInfo)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+55. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1455: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean DependencyManager.open(ComponentContextImpl,EdgeInfo)` indirectly reads without synchronization from `refPair.failed`. Potentially races with write in method `DependencyManager.open(...)`.
+     Reporting because this access may occur on a background thread.
+
+56. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:844: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean DependencyManager$SingleDynamicCustomizer.prebind(ComponentContextImpl)` indirectly reads without synchronization from `refPair.failed`. Potentially races with write in method `DependencyManager$SingleDynamicCustomizer.prebind(...)`.
+     Reporting because this access may occur on a background thread.
+
+57. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:843: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `boolean DependencyManager$SingleDynamicCustomizer.prebind(ComponentContextImpl)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+58. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1010: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `boolean DependencyManager$SingleStaticCustomizer.prebind(ComponentContextImpl)` indirectly writes to field `refPair.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+59. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:1011: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `boolean DependencyManager$SingleStaticCustomizer.prebind(ComponentContextImpl)` indirectly reads without synchronization from `refPair.failed`. Potentially races with write in method `DependencyManager$SingleStaticCustomizer.prebind(...)`.
+     Reporting because this access may occur on a background thread.
+
+60. src/main/java/org/apache/felix/scr/impl/manager/ComponentFactoryImpl.java:402: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ComponentFactoryImpl.reconfigure(Map,boolean)` indirectly writes to field `cm.m_configurationProperties` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+61. src/main/java/org/apache/felix/scr/impl/ComponentRegistry.java:313: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void ComponentRegistry.registerComponentHolder(ComponentRegistryKey,ComponentHolder)` reads without synchronization from `this.configurationSupport`. Potentially races with write in method `ComponentRegistry.serviceChanged(...)`.
+     Reporting because this access may occur on a background thread.
+
+62. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:671: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.removedService(ServiceReference,Object,int)` indirectly reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+63. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:796: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleDynamicCustomizer.removedService(ServiceReference,RefPair,int)` writes to field `this.trackingCount` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+64. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:762: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void DependencyManager$SingleDynamicCustomizer.removedService(ServiceReference,RefPair,int)` reads with synchronization from `this.refPair`. Potentially races with unsynchronized write in method `DependencyManager$SingleDynamicCustomizer.addedService(...)`.
+     Reporting because this access may occur on a background thread.
+
+65. src/main/java/org/apache/felix/scr/impl/manager/DependencyManager.java:966: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void DependencyManager$SingleStaticCustomizer.removedService(ServiceReference,RefPair,int)` writes to field `this.trackingCount` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+66. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:1061: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ServiceTracker$AbstractTracked.setInitial(java.lang.Object[])` mutates container `this.initial` via call to `add` outside of synchronization.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+67. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:154: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `void ScrConfiguration.setScrCommand(ScrCommand)` indirectly reads without synchronization from `this.infoAsService`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+68. src/main/java/org/apache/felix/scr/impl/manager/ServiceTracker.java:1288: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `int ServiceTracker$AbstractTracked.size()` reads without synchronization from container `this.tracked` via call to `size`. Potentially races with write in method `ServiceTracker$AbstractTracked.untrack(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+69. src/main/java/org/apache/felix/scr/impl/config/ScrConfiguration.java:252: warning: THREAD_SAFETY_VIOLATION
+      Read/Write race. Non-private method `long ScrConfiguration.stopTimeout()` reads without synchronization from `this.stopTimeout`. Potentially races with write in method `ScrConfiguration.configure(...)`.
+     Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+70. src/main/java/org/apache/felix/scr/impl/manager/ServiceFactoryComponentManager.java:151: warning: THREAD_SAFETY_VIOLATION
+      Unprotected write. Non-private method `void ServiceFactoryComponentManager.ungetService(Bundle,ServiceRegistration,Object)` indirectly writes to field `boundRef.failed` outside of synchronization.
+     Reporting because this access may occur on a background thread.
+
+Choose report to display (default=0): 

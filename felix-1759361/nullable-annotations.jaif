@@ -1,0 +1,158 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 1/- obj/class samples
+  field converter :  // org.osgi.service.converter.Converter
+  method convertToString([C)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // a
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method ignoreBool(Z)V : // 0 samples
+    return:
+    parameter #0 :  // b
+  method testSecondLevelAdapter()V : // 0 samples
+    return:
+
+
+package org.apache.felix.converter.impl:
+class AdapterImpl$TypePair : // 4/- obj/class samples
+  field from :  // java.lang.reflect.Type
+  field to :  // java.lang.reflect.Type
+  method TypePair(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)V : // 2 samples
+    return:
+    parameter #0 :  // from
+    parameter #1 :  // to
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method hashCode()I : // 1 samples
+    return: 
+
+
+package org.apache.felix.converter.impl:
+class AdapterImpl : // 1/- obj/class samples
+  field delegate :  // org.apache.felix.converter.impl.InternalConverter
+  field classRules :  // java.util.Map
+  method assignableTypes(Ljava/lang/reflect/Type;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // mostSpecialized
+  method <init>(Lorg/apache/felix/converter/impl/InternalConverter;)V : // 1 samples
+    return:
+    parameter #0 :  // converter
+  method convert(Ljava/lang/Object;)Lorg/apache/felix/converter/impl/InternalConverting; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method getAdapter()Lorg/osgi/service/converter/Adapter; : // 0 samples
+    return: 
+  method rule(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/service/converter/SimpleConvertFunction;Lorg/osgi/service/converter/SimpleConvertFunction;)Lorg/osgi/service/converter/Adapter; : // 0 samples
+    return: 
+    parameter #0 :  // fromCls
+    parameter #1 :  // toCls
+    parameter #2 :  // toFun
+    parameter #3 :  // fromFun
+  method rule(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Lorg/osgi/service/converter/SimpleConvertFunction;Lorg/osgi/service/converter/SimpleConvertFunction;)Lorg/osgi/service/converter/Adapter; : // 0 samples
+    return: 
+    parameter #0 :  // fromType
+    parameter #1 :  // toType
+    parameter #2 :  // toFun
+    parameter #3 :  // fromFun
+  method rule(Lorg/osgi/service/converter/Rule;)Lorg/osgi/service/converter/Adapter; : // 0 samples
+    return: 
+    parameter #0 :  // rule
+  method rule(Lorg/osgi/service/converter/TypeReference;Lorg/osgi/service/converter/TypeReference;Lorg/osgi/service/converter/SimpleConvertFunction;Lorg/osgi/service/converter/SimpleConvertFunction;)Lorg/osgi/service/converter/Adapter; : // 0 samples
+    return: 
+    parameter #0 :  // fromRef
+    parameter #1 :  // toRef
+    parameter #2 :  // toFun
+    parameter #3 :  // fromFun
+
+
+package org.apache.felix.converter.impl:
+class ConverterImpl : // 3/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method convert(Ljava/lang/Object;)Lorg/apache/felix/converter/impl/InternalConverting; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method getAdapter()Lorg/osgi/service/converter/Adapter; : // 1 samples
+    return: 
+
+
+package org.osgi.service.converter:
+class Rule : // 0/- obj/class samples
+  field fromClass :  // java.lang.Class
+  field toClass :  // java.lang.Class
+  field fromFun :  // org.osgi.service.converter.ConvertFunction
+  field toFun :  // org.osgi.service.converter.ConvertFunction
+  method <init>(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/service/converter/ConvertFunction;)V : // 0 samples
+    return:
+    parameter #0 :  // fromCls
+    parameter #1 :  // toCls
+    parameter #2 :  // to
+  method <init>(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/service/converter/ConvertFunction;Lorg/osgi/service/converter/ConvertFunction;)V : // 0 samples
+    return:
+    parameter #0 :  // fromCls
+    parameter #1 :  // toCls
+    parameter #2 :  // to
+    parameter #3 :  // from
+  method getFromClass()Ljava/lang/Class; : // 0 samples
+    return: 
+  method getFromFunction()Lorg/osgi/service/converter/ConvertFunction; : // 0 samples
+    return: 
+  method getToClass()Ljava/lang/Class; : // 0 samples
+    return: 
+  method getToFunction()Lorg/osgi/service/converter/ConvertFunction; : // 0 samples
+    return: 
+
+
+package org.osgi.service.converter:
+class SimpleConvertFunction : // 0/- obj/class samples
+  method convert(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // type
+
+
+package org.osgi.service.converter:
+class TypeReference : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method getType()Ljava/lang/reflect/Type; : // 0 samples
+    return: 
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+

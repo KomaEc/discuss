@@ -1,0 +1,644 @@
+  0. src/main/java/org/apache/pdfbox/util/operator/BeginMarkedContentSequence.java:52: error: NULL_DEREFERENCE
+       object `tag` last assigned on line 42 could be null and is dereferenced by call to `beginMarkedContentSequence(...)` at line 52.
+
+  1. src/main/java/org/apache/pdfbox/util/operator/BeginMarkedContentSequenceWithProperties.java:57: error: NULL_DEREFERENCE
+       object `tag` last assigned on line 42 could be null and is dereferenced by call to `beginMarkedContentSequence(...)` at line 57.
+
+  2. src/main/java/org/apache/pdfbox/Version.java:53: error: NULL_DEREFERENCE
+       object `props` last assigned on line 52 could be null and is dereferenced at line 53.
+
+  3. src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType4.java:52: error: NULL_DEREFERENCE
+       object returned by `getPDStream()` could be null and is dereferenced at line 52.
+
+  4. src/main/java/org/apache/pdfbox/pdfparser/PDFXrefStreamParser.java:61: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 61 is not released after line 61.
+
+  5. src/main/java/org/apache/pdfbox/pdmodel/font/Type3StreamParser.java:59: error: NULL_DEREFERENCE
+       object `null` is dereferenced by call to `processStream(...)` at line 59.
+
+  6. src/main/java/org/apache/pdfbox/pdmodel/ConformingPDDocument.java:61: error: RESOURCE_LEAK
+       resource of type `java.io.RandomAccessFile` acquired by call to `ConformingPDFParser(...)` at line 59 is not released after line 61.
+
+  7. src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java:64: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 64 is not released after line 64.
+
+  8. src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType3.java:106: error: NULL_DEREFERENCE
+       object `function` last assigned on line 65 could be null and is dereferenced at line 106.
+
+  9. src/main/java/org/apache/pdfbox/filter/CCITTFaxDecodeFilter.java:109: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.ccitt.CCITTFaxG31DDecodeInputStream` acquired by call to `new()` at line 107 is not released after line 109.
+
+ 10. src/main/java/org/apache/pdfbox/pdfparser/PDFXRefStream.java:65: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `new()` at line 65 is not released after line 65.
+
+ 11. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/SignatureOptions.java:67: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `VisualSignatureParser(...)` at line 65 is not released after line 67.
+     **Note**: potential exception at line 67
+
+ 12. src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDSignatureField.java:67: error: NULL_DEREFERENCE
+       object returned by `getWidget()` could be null and is dereferenced at line 67.
+
+ 13. src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java:105: error: NULL_DEREFERENCE
+       object `bits` last assigned on line 85 could be null and is dereferenced at line 105.
+
+ 14. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserAttributeObject.java:68: error: NULL_DEREFERENCE
+       object `p` last assigned on line 67 could be null and is dereferenced at line 68.
+
+ 15. src/main/java/org/apache/pdfbox/util/PDFTextStripper.java:121: error: NULL_DEREFERENCE
+       object returned by `getProperty("java.version")` could be null and is dereferenced at line 121.
+
+ 16. src/main/java/org/apache/pdfbox/filter/ASCII85Filter.java:78: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.ASCII85OutputStream` acquired to `os` by call to `new()` at line 69 is not released after line 78.
+     **Note**: potential exception at line 72
+
+ 17. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1AfmPfbFont.java:75: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 71 is not released after line 75.
+     **Note**: potential exception at line 73
+
+ 18. src/main/java/org/apache/pdfbox/pdfparser/PDFXrefStreamParser.java:106: error: NULL_DEREFERENCE
+       object `xrefFormat` last assigned on line 75 could be null and is dereferenced at line 106.
+
+ 19. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceNAttributes.java:90: error: NULL_DEREFERENCE
+       object `value` last assigned on line 89 could be null and is dereferenced by call to `createColorSpace(...)` at line 90.
+
+ 20. src/main/java/org/apache/pdfbox/WriteDecodedDoc.java:124: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `loadNonSeq(...)` at line 87 is not released after line 124.
+     **Note**: potential exception at line 118
+
+ 21. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java:86: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `PDStream(...)` at line 86 is not released after line 86.
+
+ 22. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java:86: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `PDStream(...)` at line 86 is not released after line 86.
+
+ 23. src/main/java/org/apache/pdfbox/util/LayerUtility.java:120: error: NULL_DEREFERENCE
+       object `contents` last assigned on line 99 could be null and is dereferenced at line 120.
+
+ 24. src/main/java/org/apache/pdfbox/util/LayerUtility.java:87: error: NULL_DEREFERENCE
+       object `saveGraphicsStateStream.file` last assigned on line 86 could be null and is dereferenced by call to `createUnfilteredStream()` at line 87.
+
+ 25. src/main/java/org/apache/pdfbox/util/LayerUtility.java:105: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createCOSStream(...)` at line 86 is not released after line 105.
+
+ 26. src/main/java/org/apache/pdfbox/util/LayerUtility.java:115: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createCOSStream(...)` at line 86 is not released after line 115.
+
+ 27. src/main/java/org/apache/pdfbox/util/LayerUtility.java:116: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createCOSStream(...)` at line 91 is not released after line 116.
+
+ 28. src/main/java/org/apache/pdfbox/util/LayerUtility.java:120: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createCOSStream(...)` at line 91 is not released after line 120.
+
+ 29. src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java:106: error: NULL_DEREFERENCE
+       object `PDType0Font.awtFont` last assigned on line 105 could be null and is dereferenced at line 106.
+
+ 30. src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDChoiceField.java:94: error: NULL_DEREFERENCE
+       object `options` last assigned on line 90 could be null and is dereferenced at line 94.
+
+ 31. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDOutputIntent.java:92: error: NULL_DEREFERENCE
+       object returned by `stream.getStream()` could be null and is dereferenced at line 92.
+
+ 32. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserAttributeObject.java:101: error: NULL_DEREFERENCE
+       object `p` last assigned on line 100 could be null and is dereferenced at line 101.
+
+ 33. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1AfmPfbFont.java:110: error: NULL_DEREFERENCE
+       object returned by `fontStream.getStream()` could be null and is dereferenced at line 110.
+
+ 34. src/main/java/org/apache/pdfbox/encryption/DocumentEncryption.java:114: error: NULL_DEREFERENCE
+       object `encParameters` last assigned on line 113 could be null and is dereferenced at line 114.
+
+ 35. src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java:102: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `createInputStream()` at line 102 is not released after line 102.
+
+ 36. src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java:128: error: NULL_DEREFERENCE
+       object returned by `getPDStream()` could be null and is dereferenced at line 128.
+
+ 37. src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2Font.java:117: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 115 is not released after line 117.
+
+ 38. src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2Font.java:127: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 115 is not released after line 127.
+     **Note**: potential exception at line 116
+
+ 39. src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java:138: error: NULL_DEREFERENCE
+       object `awtFont` last assigned on line 110 could be null and is dereferenced at line 138.
+
+ 40. src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java:144: error: NULL_DEREFERENCE
+       object `awtFont` last assigned on line 110 could be null and is dereferenced at line 144.
+
+ 41. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserAttributeObject.java:118: error: NULL_DEREFERENCE
+       object `p` last assigned on line 117 could be null and is dereferenced at line 118.
+
+ 42. src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java:117: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 117 is not released after line 117.
+
+ 43. src/main/java/org/apache/pdfbox/pdmodel/common/PDStream.java:123: error: NULL_DEREFERENCE
+       object `PDStream.stream.file` last assigned on line 120 could be null and is dereferenced by call to `createFilteredStream()` at line 123.
+
+ 44. src/main/java/org/apache/pdfbox/pdmodel/common/PDStream.java:127: error: NULL_DEREFERENCE
+       object `PDStream.stream.file` last assigned on line 120 could be null and is dereferenced by call to `createUnfilteredStream()` at line 127.
+
+ 45. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureNode.java:135: error: NULL_DEREFERENCE
+       object `k` last assigned on line 119 could be null and is dereferenced by call to `createObject(...)` at line 135.
+
+ 46. src/main/java/org/apache/pdfbox/filter/FlateFilter.java:134: error: RESOURCE_LEAK
+       resource of type `java.util.zip.Inflater` acquired to `inflater` by call to `Inflater()` at line 123 is not released after line 134.
+
+ 47. src/main/java/org/apache/pdfbox/filter/FlateFilter.java:143: error: RESOURCE_LEAK
+       resource of type `java.util.zip.Inflater` acquired to `inflater` by call to `Inflater()` at line 123 is not released after line 143.
+     **Note**: potential exception at line 131
+
+ 48. src/main/java/org/apache/pdfbox/filter/LZWFilter.java:138: error: NULL_DEREFERENCE
+       object `codeTable` last assigned on line 120 could be null and is dereferenced at line 138.
+
+ 49. src/main/java/org/apache/pdfbox/filter/LZWFilter.java:128: error: RESOURCE_LEAK
+       resource of type `javax.imageio.stream.MemoryCacheImageInputStream` acquired to `in` by call to `new()` at line 122 is not released after line 128.
+
+ 50. src/main/java/org/apache/pdfbox/pdmodel/graphics/PDShading.java:126: error: NULL_DEREFERENCE
+       object returned by `PDShading.DictShading.getDictionaryObject(org.apache.pdfbox.cos.COSName.COLORSPACE)` could be null and is dereferenced by call to `createColorSpace(...)` at line 126.
+
+ 51. src/main/java/org/apache/pdfbox/pdmodel/common/PDTextStream.java:140: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 135 is not released after line 140.
+
+ 52. src/main/java/org/apache/pdfbox/pdmodel/common/PDTextStream.java:142: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 135 is not released after line 142.
+     **Note**: potential exception at line 136
+
+ 53. src/main/java/org/apache/pdfbox/pdmodel/graphics/xobject/PDCcitt.java:203: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 201 is not released after line 203.
+
+ 54. src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java:129: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 129 is not released after line 129.
+
+ 55. src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java:129: error: RESOURCE_LEAK
+       resource of type `java.io.SequenceInputStream` acquired by call to `getUnfilteredStream()` at line 129 is not released after line 129.
+
+ 56. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java:136: error: NULL_DEREFERENCE
+       object returned by `signatureField.getWidget()` could be null and is dereferenced at line 136.
+
+ 57. src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageDestination.java:141: error: NULL_DEREFERENCE
+       object `parent` last assigned on line 142 could be null and is dereferenced at line 141.
+
+ 58. src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDCheckbox.java:140: error: NULL_DEREFERENCE
+       object `ap` last assigned on line 139 could be null and is dereferenced at line 140.
+
+ 59. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSignDesigner.java:142: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 141 is not released after line 142.
+     **Note**: potential exception at line 142
+
+ 60. src/main/java/org/apache/pdfbox/Overlay.java:165: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PDFParser(...)` at line 163 is not released after line 165.
+     **Note**: potential exception at line 165
+
+ 61. src/main/java/org/apache/pdfbox/pdmodel/graphics/PDShading.java:160: error: NULL_DEREFERENCE
+       object returned by `PDShading.DictShading.getDictionaryObject(org.apache.pdfbox.cos.COSName.FUNCTION)` could be null and is dereferenced by call to `create(...)` at line 160.
+
+ 62. src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationLine.java:160: error: NULL_DEREFERENCE
+       object `l` last assigned on line 159 could be null and is dereferenced at line 160.
+
+ 63. src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageDestination.java:174: error: NULL_DEREFERENCE
+       object `parent` last assigned on line 176 could be null and is dereferenced at line 174.
+
+ 64. src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java:162: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 162 is not released after line 162.
+
+ 65. src/main/java/org/apache/pdfbox/encryption/DocumentEncryption.java:186: error: NULL_DEREFERENCE
+       object `encParameters` last assigned on line 184 could be null and is dereferenced at line 186.
+
+ 66. src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java:191: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 191 is not released after line 191.
+
+ 67. src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java:208: error: NULL_DEREFERENCE
+       object returned by `SecurityHandler.document.getEncryptionDictionary()` could be null and is dereferenced at line 208.
+
+ 68. src/main/java/org/apache/pdfbox/filter/LZWFilter.java:258: error: RESOURCE_LEAK
+       resource of type `javax.imageio.stream.MemoryCacheImageOutputStream` acquired by call to `new()` at line 190 is not released after line 258.
+
+ 69. src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java:188: error: RESOURCE_LEAK
+       resource of type `java.io.RandomAccessFile` acquired by call to `NonSequentialPDFParser(...)` at line 186 is not released after line 188.
+
+ 70. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:211: error: NULL_DEREFERENCE
+       object returned by `getPageMap()` could be null and is dereferenced at line 211.
+
+ 71. src/main/java/org/apache/pdfbox/ExtractImages.java:208: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getPartiallyFilteredStream(...)` at line 201 is not released after line 208.
+
+ 72. src/main/java/org/apache/pdfbox/ExtractImages.java:213: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getPartiallyFilteredStream(...)` at line 201 is not released after line 213.
+     **Note**: potential exception at line 204
+
+ 73. src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java:204: error: RESOURCE_LEAK
+       resource of type `java.io.RandomAccessFile` acquired by call to `NonSequentialPDFParser(...)` at line 202 is not released after line 204.
+
+ 74. src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java:202: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `NonSequentialPDFParser(...)` at line 202 is not released after line 202.
+     **Note**: potential exception at line 202
+
+ 75. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java:264: error: NULL_DEREFERENCE
+       object `PDType1Font.awtFont` last assigned on line 263 could be null and is dereferenced at line 264.
+
+ 76. src/main/java/org/apache/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentProperties.java:214: error: NULL_DEREFERENCE
+       object `ocgs` last assigned on line 213 could be null and is dereferenced at line 214.
+
+ 77. src/main/java/org/apache/pdfbox/pdmodel/graphics/xobject/PDXObjectImage.java:215: error: NULL_DEREFERENCE
+       object `maskImageRef` last assigned on line 214 could be null and is dereferenced at line 215.
+
+ 78. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java:222: error: NULL_DEREFERENCE
+       object returned by `signatureField.getWidget()` could be null and is dereferenced at line 222.
+
+ 79. src/main/java/org/apache/pdfbox/util/PDFMergerUtility.java:257: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `PDDocument()` at line 227 is not released after line 257.
+
+ 80. src/main/java/org/apache/pdfbox/PDFSplit.java:236: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.pdfwriter.COSWriter` acquired to `writer` by call to `new()` at line 222 is not released after line 236.
+     **Note**: potential exception at line 229
+
+ 81. src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java:218: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 218 is not released after line 218.
+
+ 82. src/main/java/org/apache/pdfbox/Overlay.java:228: error: NULL_DEREFERENCE
+       object `Overlay.saveGraphicsStateStream.file` last assigned on line 227 could be null and is dereferenced by call to `createUnfilteredStream()` at line 228.
+
+ 83. src/main/java/org/apache/pdfbox/pdfwriter/COSStandardOutputStream.java:222: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 222 is not released after line 222.
+
+ 84. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:230: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PDFParser(...)` at line 227 is not released after line 230.
+
+ 85. src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingResources.java:234: error: NULL_DEREFERENCE
+       object `colorSpaceDictionary` last assigned on line 233 could be null and is dereferenced by call to `createColorSpace(...)` at line 234.
+
+ 86. src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java:232: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 232 is not released after line 232.
+
+ 87. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:251: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PushBackInputStream(...)` at line 251 is not released after line 251.
+     **Note**: potential exception at line 251
+
+ 88. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:257: error: NULL_DEREFERENCE
+       object returned by `xobjectsDictionary.getDictionaryObject(objName)` could be null and is dereferenced by call to `createXObject(...)` at line 257.
+
+ 89. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDColorSpaceFactory.java:258: error: NULL_DEREFERENCE
+       object `iccData` last assigned on line 254 could be null and is dereferenced at line 258.
+
+ 90. src/main/java/org/apache/pdfbox/Overlay.java:274: error: NULL_DEREFERENCE
+       object `contents` last assigned on line 250 could be null and is dereferenced at line 274.
+
+ 91. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDIndexed.java:268: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 259 is not released after line 268.
+
+ 92. src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDIndexed.java:279: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 259 is not released after line 279.
+     **Note**: potential exception at line 263
+
+ 93. src/main/java/org/apache/pdfbox/PDFDebugger.java:288: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 280 is not released after line 288.
+
+ 94. src/main/java/org/apache/pdfbox/PDFDebugger.java:290: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 280 is not released after line 290.
+     **Note**: potential exception at line 284
+
+ 95. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java:264: error: NULL_DEREFERENCE
+       object returned by `getFontMetric(this)` could be null and is dereferenced at line 264.
+
+ 96. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java:277: error: NULL_DEREFERENCE
+       object returned by `getFontMetric(this)` could be null and is dereferenced at line 277.
+
+ 97. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:280: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PDFParser(...)` at line 277 is not released after line 280.
+
+ 98. src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java:298: error: NULL_DEREFERENCE
+       object `fieldName` last assigned on line 297 could be null and is dereferenced at line 298.
+
+ 99. src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java:291: error: NULL_DEREFERENCE
+       object `fields` last assigned on line 288 could be null and is dereferenced at line 291.
+
+100. src/main/java/org/apache/pdfbox/Overlay.java:291: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 285 is not released after line 291.
+
+101. src/main/java/org/apache/pdfbox/util/PDFTextStripper.java:288: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.pdmodel.PDDocument` acquired by call to `PDDocument(...)` at line 288 is not released after line 288.
+
+102. src/main/java/org/apache/pdfbox/util/Overlay.java:309: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 302 is not released after line 309.
+
+103. src/main/java/org/apache/pdfbox/util/Overlay.java:313: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 302 is not released after line 313.
+     **Note**: potential exception at line 305
+
+104. src/main/java/org/apache/pdfbox/util/Overlay.java:313: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired to `concatStream` by call to `COSStream(...)` at line 298 is not released after line 313.
+     **Note**: potential exception at line 305
+
+105. src/main/java/org/apache/pdfbox/util/Overlay.java:298: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `new()` at line 298 is not released after line 298.
+
+106. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSignature.java:306: error: NULL_DEREFERENCE
+       object `byteRange` last assigned on line 305 could be null and is dereferenced at line 306.
+
+107. src/main/java/org/apache/pdfbox/pdfparser/ConformingPDFParser.java:338: error: NULL_DEREFERENCE
+       object `lastSection` last assigned on line 307 could be null and is dereferenced by call to `get(...)` at line 338.
+
+108. src/main/java/org/apache/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentProperties.java:364: error: NULL_DEREFERENCE
+       object `ocg` last assigned on line 357 could be null and is dereferenced at line 364.
+
+109. src/main/java/org/apache/pdfbox/pdmodel/graphics/xobject/PDJpeg.java:324: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getPartiallyFilteredStream(...)` at line 317 is not released after line 324.
+
+110. src/main/java/org/apache/pdfbox/pdmodel/graphics/xobject/PDJpeg.java:325: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getPartiallyFilteredStream(...)` at line 317 is not released after line 325.
+     **Note**: potential exception at line 320
+
+111. src/main/java/org/apache/pdfbox/encryption/DocumentEncryption.java:333: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getFilteredStream()` at line 332 is not released after line 333.
+
+112. src/main/java/org/apache/pdfbox/util/Overlay.java:365: error: NULL_DEREFERENCE
+       object `contents` last assigned on line 347 could be null and is dereferenced at line 365.
+
+113. src/main/java/org/apache/pdfbox/util/Overlay.java:386: error: NULL_DEREFERENCE
+       object `contents` last assigned on line 347 could be null and is dereferenced at line 386.
+
+114. src/main/java/org/apache/pdfbox/util/Overlay.java:353: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createStream(...)` at line 353 is not released after line 353.
+
+115. src/main/java/org/apache/pdfbox/util/Overlay.java:368: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createStream(...)` at line 368 is not released after line 368.
+
+116. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:378: error: NULL_DEREFERENCE
+       object `trailer` last assigned on line 370 could be null and is dereferenced at line 378.
+
+117. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:360: error: NULL_DEREFERENCE
+       object returned by `NonSequentialPDFParser.bfSearchCOSObjectKeyOffsets.get(objectKey)` could be null and is dereferenced at line 360.
+
+118. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:387: error: NULL_DEREFERENCE
+       object returned by `PDFParser.xrefTrailerResolver.getTrailer()` could be null and is dereferenced at line 387.
+
+119. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:361: error: NULL_DEREFERENCE
+       object `cs` last assigned on line 357 could be null and is dereferenced by call to `createColorSpace(...)` at line 361.
+
+120. src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java:390: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 388 is not released after line 390.
+
+121. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java:357: error: NULL_DEREFERENCE
+       object returned by `signatureField.getWidget()` could be null and is dereferenced at line 357.
+
+122. src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingResources.java:375: error: NULL_DEREFERENCE
+       object `functionCOSArray` last assigned on line 374 could be null and is dereferenced at line 375.
+
+123. src/main/java/org/apache/pdfbox/Overlay.java:394: error: NULL_DEREFERENCE
+       object `contents` last assigned on line 372 could be null and is dereferenced at line 394.
+
+124. src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java:396: error: RESOURCE_LEAK
+       resource of type `org.bouncycastle.asn1.ASN1InputStream` acquired by call to `new()` at line 395 is not released after line 396.
+
+125. src/main/java/org/apache/pdfbox/util/Overlay.java:438: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `createOverlayStream(...)` at line 438 is not released after line 438.
+
+126. src/main/java/org/apache/pdfbox/encryption/DocumentEncryption.java:405: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessFileOutputStream` acquired by call to `decrypt(...)` at line 405 is not released after line 405.
+
+127. src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java:614: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired to `stream` by call to `COSStream(...)` at line 409 is not released after line 614.
+     **Note**: potential exception at line 424
+
+128. src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java:421: error: RESOURCE_LEAK
+       resource of type `org.bouncycastle.asn1.ASN1InputStream` acquired by call to `new()` at line 419 is not released after line 421.
+
+129. src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java:505: error: NULL_DEREFERENCE
+       object `decodeValues` last assigned on line 504 could be null and is dereferenced at line 505.
+
+130. src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java:458: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `getUnfilteredStream()` at line 456 is not released after line 458.
+
+131. src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java:528: error: NULL_DEREFERENCE
+       object `PDTrueTypeFont.awtFont` last assigned on line 527 could be null and is dereferenced at line 528.
+
+132. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java:497: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `createInputStream()` at line 481 is not released after line 497.
+     **Note**: potential exception at line 487
+
+133. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:492: error: NULL_DEREFERENCE
+       object `dictionary` last assigned on line 491 could be null and is dereferenced by call to `create(...)` at line 492.
+
+134. src/main/java/org/apache/pdfbox/util/Overlay.java:494: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired to `stream` by call to `COSStream(...)` at line 489 is not released after line 494.
+     **Note**: potential exception at line 491
+
+135. src/main/java/org/apache/pdfbox/util/Overlay.java:489: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `new()` at line 489 is not released after line 489.
+
+136. src/main/java/org/apache/pdfbox/util/Overlay.java:494: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessFileOutputStream` acquired by call to `createUnfilteredStream()` at line 490 is not released after line 494.
+     **Note**: potential exception at line 491
+
+137. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:544: error: NULL_DEREFERENCE
+       object `dictionary` last assigned on line 543 could be null and is dereferenced by call to `create(...)` at line 544.
+
+138. src/main/java/org/apache/pdfbox/util/PDFMergerUtility.java:592: error: NULL_DEREFERENCE
+       object returned by `cloner.cloneForNewDocument(srcField.getDictionary())` could be null and is dereferenced by call to `createField(...)` at line 592.
+
+139. src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateStructure.java:585: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.pdfwriter.COSWriter` acquired by call to `new()` at line 584 is not released after line 585.
+
+140. src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java:607: error: NULL_DEREFERENCE
+       object `code` last assigned on line 592 could be null and is dereferenced at line 607.
+
+141. src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java:635: error: NULL_DEREFERENCE
+       object `trailer` last assigned on line 634 could be null and is dereferenced at line 635.
+
+142. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureElement.java:610: error: NULL_DEREFERENCE
+       object `roleMap` last assigned on line 609 could be null and is dereferenced at line 610.
+
+143. src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureElement.java:612: error: NULL_DEREFERENCE
+       object returned by `getRoleMap(this)` could be null and is dereferenced at line 612.
+
+144. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:618: error: NULL_DEREFERENCE
+       object `fontsDictionary` last assigned on line 617 could be null and is dereferenced at line 618.
+
+145. src/main/java/org/apache/pdfbox/pdmodel/PDPage.java:639: error: NULL_DEREFERENCE
+       object returned by `PDPage.page.getDictionaryObject(org.apache.pdfbox.cos.COSName.CONTENTS)` could be null and is dereferenced by call to `createFromCOS(...)` at line 639.
+
+146. src/main/java/org/apache/pdfbox/pdmodel/PDResources.java:650: error: NULL_DEREFERENCE
+       object `xobjectsDictionary` last assigned on line 649 could be null and is dereferenced at line 650.
+
+147. src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java:697: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired by call to `PDFXRefStream()` at line 678 is not released after line 697.
+
+148. src/main/java/org/apache/pdfbox/cos/COSDocument.java:684: error: NULL_DEREFERENCE
+       object returned by `parser.getObjects()` could be null and is dereferenced at line 684.
+
+149. src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java:765: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 765 is not released after line 765.
+
+150. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1112: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 1112 is not released after line 1112.
+     **Note**: potential exception at line 1112
+
+151. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1129: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 1129 is not released after line 1129.
+     **Note**: potential exception at line 1129
+
+152. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1144: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 1144 is not released after line 1144.
+     **Note**: potential exception at line 1144
+
+153. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1158: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 1158 is not released after line 1158.
+     **Note**: potential exception at line 1158
+
+154. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1173: error: RESOURCE_LEAK
+       resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 1173 is not released after line 1173.
+     **Note**: potential exception at line 1173
+
+155. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:1268: error: NULL_DEREFERENCE
+       object returned by `PDFParser.xrefTrailerResolver.getXrefTable()` could be null and is dereferenced at line 1268.
+
+156. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1221: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PDFParser(...)` at line 1219 is not released after line 1221.
+     **Note**: potential exception at line 1221
+
+157. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1240: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `PDFParser(...)` at line 1238 is not released after line 1240.
+     **Note**: potential exception at line 1240
+
+158. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1305: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.PushBackInputStream` acquired by call to `NonSequentialPDFParser(...)` at line 1305 is not released after line 1305.
+     **Note**: potential exception at line 1305
+
+159. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:1375: error: NULL_DEREFERENCE
+       object returned by `PDFParser.xrefTrailerResolver.getXrefTable()` could be null and is dereferenced at line 1375.
+
+160. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:1503: error: NULL_DEREFERENCE
+       object returned by `parser.getObjects()` could be null and is dereferenced at line 1503.
+
+161. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1375: error: RESOURCE_LEAK
+       resource of type `java.io.BufferedInputStream` acquired by call to `new()` at line 1373 is not released after line 1375.
+     **Note**: potential exception at line 1373
+
+162. src/main/java/org/apache/pdfbox/cos/COSDictionary.java:1560: error: NULL_DEREFERENCE
+       object returned by `getDictionaryObject(key)` could be null and is dereferenced at line 1560.
+
+163. src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java:1599: error: NULL_DEREFERENCE
+       object `dict` last assigned on line 1598 could be null and is dereferenced at line 1599.
+
+164. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:1814: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.cos.COSStream` acquired to `stream` by call to `COSStream(...)` at line 1704 is not released after line 1814.
+     **Note**: potential exception at line 1715
+
+165. src/main/java/org/apache/pdfbox/pdfparser/NonSequentialPDFParser.java:1814: error: RESOURCE_LEAK
+       resource of type `org.apache.pdfbox.io.RandomAccessBuffer` acquired by call to `COSStream(...)` at line 1704 is not released after line 1814.
+     **Note**: potential exception at line 1715
+
+166. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:53: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `int RandomAccessFileInputStream.available()` reads without synchronization from `this.currentPosition`. Potentially races with write in method `RandomAccessFileInputStream.read()`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+167. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:573: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode1D(byte[],byte[],int,int)` writes to field `this.data` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+168. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:583: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decode1D(byte[],byte[],int,int)` indirectly reads without synchronization from `this.bitPointer`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+169. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:578: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode1D(byte[],byte[],int,int)` writes to field `this.bitPointer` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+170. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:579: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode1D(byte[],byte[],int,int)` writes to field `this.bytePointer` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+171. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:733: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.compression` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+172. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:736: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.bytePointer` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+173. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:732: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.data` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+174. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:780: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.prevChangingElems` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+175. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:758: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` indirectly reads without synchronization from `this.bitPointer`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+176. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:779: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` reads without synchronization from `this.prevChangingElems`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+177. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:781: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.currChangingElems` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+178. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:789: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.lastChangingElement` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+179. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:735: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.bitPointer` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+180. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:793: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` indirectly reads without synchronization from `this.lastChangingElement`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+181. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:767: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` indirectly writes to field `this.changingElemSize` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+182. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:754: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decode2D(byte[],byte[],int,int,long)` writes to field `this.uncompressedMode` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+183. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:595: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decodeNextScanline(byte[],int,int)` writes to field `this.changingElemSize` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+184. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:639: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decodeNextScanline(byte[],int,int)` reads without synchronization from `this.compression`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+185. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:601: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `void TIFFFaxDecoder.decodeNextScanline(byte[],int,int)` indirectly writes to field `this.bitPointer` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+186. src/main/java/org/apache/pdfbox/filter/TIFFFaxDecoder.java:631: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `void TIFFFaxDecoder.decodeNextScanline(byte[],int,int)` reads without synchronization from `this.changingElemSize`. Potentially races with write in method `TIFFFaxDecoder.decodeT6(...)`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+187. src/main/java/org/apache/pdfbox/cos/COSName.java:1642: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `COSName COSName.getPDFName(String)` indirectly mutates container `cos.COSName.nameMap` via call to `put` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+188. src/main/java/org/apache/pdfbox/cos/COSName.java:1638: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `COSName COSName.getPDFName(String)` reads without synchronization from container `cos.COSName.nameMap` via call to `get`. Potentially races with write in method `COSName.clearResources()`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+189. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:70: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `int RandomAccessFileInputStream.read()` reads with synchronization from `this.currentPosition`. Potentially races with unsynchronized write in method `RandomAccessFileInputStream.read(...)`.
+      Reporting because this access may occur on a background thread.
+
+190. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:96: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `int RandomAccessFileInputStream.read(byte[],int,int)` reads with synchronization from `this.currentPosition`. Potentially races with unsynchronized write in method `RandomAccessFileInputStream.read(...)`.
+      Reporting because this access may occur on a background thread.
+
+191. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:103: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `int RandomAccessFileInputStream.read(byte[],int,int)` writes to field `this.currentPosition` outside of synchronization.
+      Reporting because this access may occur on a background thread.
+
+192. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:113: warning: THREAD_SAFETY_VIOLATION
+       Read/Write race. Non-private method `long RandomAccessFileInputStream.skip(long)` indirectly reads without synchronization from `this.currentPosition`. Potentially races with write in method `RandomAccessFileInputStream.read()`.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+193. src/main/java/org/apache/pdfbox/io/RandomAccessFileInputStream.java:114: warning: THREAD_SAFETY_VIOLATION
+       Unprotected write. Non-private method `long RandomAccessFileInputStream.skip(long)` writes to field `this.currentPosition` outside of synchronization.
+      Reporting because another access to the same memory occurs on a background thread, although this access may not.
+
+Choose report to display (default=0): 

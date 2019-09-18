@@ -1,0 +1,3894 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 1/- obj/class samples
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method testDetachedSignature()V : // 0 samples
+    return:
+
+
+package org.apache.tika.exception:
+class TikaException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // cause
+
+
+package org.apache.tika.io:
+class CloseShieldInputStream : // 3/- obj/class samples
+  method <init>(Ljava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 :  // in
+  method close()V : // 1 samples
+    return:
+
+
+package org.apache.tika.io:
+class ClosedInputStream : // 1/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method read()I : // 0 samples
+    return: 
+
+
+package org.apache.tika.io:
+class ProxyInputStream : // 289/- obj/class samples
+  method <init>(Ljava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 :  // proxy
+  method afterRead(I)V : // 48 samples
+    return:
+    parameter #0 :  // n
+  method available()I : // 0 samples
+    return: 
+  method beforeRead(I)V : // 48 samples
+    return:
+    parameter #0 :  // n
+  method close()V : // 0 samples
+    return:
+  method mark(I)V : // 0 samples
+    return:
+    parameter #0 :  // readlimit
+  method markSupported()Z : // 0 samples
+    return: 
+  method read()I : // 46 samples
+    return: 
+  method read([B)I : // 0 samples
+    return: 
+    parameter #0 :  // bts
+  method read([BII)I : // 2 samples
+    return: 
+    parameter #0 :  // bts
+    parameter #1 :  // off
+    parameter #2 :  // len
+  method reset()V : // 0 samples
+    return:
+  method skip(J)J : // 0 samples
+    return: 
+    parameter #0 :  // ln
+
+
+package org.apache.tika.metadata:
+class Metadata : // 1/17 obj/class samples
+  field serialVersionUID :  // long
+  field NAMESPACE_PREFIX_DELIMITER :  // java.lang.String
+  field FORMAT :  // java.lang.String
+  field IDENTIFIER :  // java.lang.String
+  field MODIFIED :  // java.lang.String
+  field CONTRIBUTOR :  // java.lang.String
+  field COVERAGE :  // java.lang.String
+  field CREATOR :  // java.lang.String
+  field DATE :  // org.apache.tika.metadata.Property
+  field properties :  // java.util.Map
+  field SIMPLE :  // org.apache.tika.metadata.Property$PropertyType
+  field STRUCTURE :  // org.apache.tika.metadata.Property$PropertyType
+  field BAG :  // org.apache.tika.metadata.Property$PropertyType
+  field SEQ :  // org.apache.tika.metadata.Property$PropertyType
+  field ALT :  // org.apache.tika.metadata.Property$PropertyType
+  field COMPOSITE :  // org.apache.tika.metadata.Property$PropertyType
+  field $VALUES :  // org.apache.tika.metadata.Property$PropertyType[]
+  field BOOLEAN :  // org.apache.tika.metadata.Property$ValueType
+  field OPEN_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field CLOSED_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field DATE :  // org.apache.tika.metadata.Property$ValueType
+  field INTEGER :  // org.apache.tika.metadata.Property$ValueType
+  field LOCALE :  // org.apache.tika.metadata.Property$ValueType
+  field MIME_TYPE :  // org.apache.tika.metadata.Property$ValueType
+  field PROPER_NAME :  // org.apache.tika.metadata.Property$ValueType
+  field RATIONAL :  // org.apache.tika.metadata.Property$ValueType
+  field REAL :  // org.apache.tika.metadata.Property$ValueType
+  field TEXT :  // org.apache.tika.metadata.Property$ValueType
+  field URI :  // org.apache.tika.metadata.Property$ValueType
+  field URL :  // org.apache.tika.metadata.Property$ValueType
+  field XPATH :  // org.apache.tika.metadata.Property$ValueType
+  field PROPERTY :  // org.apache.tika.metadata.Property$ValueType
+  field $VALUES :  // org.apache.tika.metadata.Property$ValueType[]
+  field DESCRIPTION :  // java.lang.String
+  field LANGUAGE :  // java.lang.String
+  field PUBLISHER :  // java.lang.String
+  field RELATION :  // java.lang.String
+  field RIGHTS :  // java.lang.String
+  field SOURCE :  // java.lang.String
+  field SUBJECT :  // java.lang.String
+  field TITLE :  // java.lang.String
+  field TYPE :  // java.lang.String
+  field UTC :  // java.util.TimeZone
+  field MIDDAY :  // java.util.TimeZone
+  field iso8601InputFormats :  // java.text.DateFormat[]
+  field metadata :  // java.util.Map
+  method createDateFormat(Ljava/lang/String;Ljava/util/TimeZone;)Ljava/text/DateFormat; : // 8 samples
+    return: 
+    parameter #0 :  // format
+    parameter #1 : @Nullable // timezone
+  method formatDate(Ljava/util/Date;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // date
+  method parseDate(Ljava/lang/String;)Ljava/util/Date; : // 0 samples
+    return: 
+    parameter #0 :  // date
+  method <init>()V : // 1 samples
+    return:
+  method _getValues(Ljava/lang/String;)[Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method add(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // value
+  method add(Lorg/apache/tika/metadata/Property;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // value
+  method appendedValues([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // values
+    parameter #1 :  // value
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // o
+  method get(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method get(Lorg/apache/tika/metadata/Property;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // property
+  method getDate(Lorg/apache/tika/metadata/Property;)Ljava/util/Date; : // 0 samples
+    return: 
+    parameter #0 :  // property
+  method getInt(Lorg/apache/tika/metadata/Property;)Ljava/lang/Integer; : // 0 samples
+    return: 
+    parameter #0 :  // property
+  method getValues(Ljava/lang/String;)[Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method getValues(Lorg/apache/tika/metadata/Property;)[Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // property
+  method isMultiValued(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method isMultiValued(Lorg/apache/tika/metadata/Property;)Z : // 0 samples
+    return: 
+    parameter #0 :  // property
+  method names()[Ljava/lang/String; : // 0 samples
+    return: 
+  method remove(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method set(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // value
+  method set(Lorg/apache/tika/metadata/Property;D)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // value
+  method set(Lorg/apache/tika/metadata/Property;I)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // value
+  method set(Lorg/apache/tika/metadata/Property;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // value
+  method set(Lorg/apache/tika/metadata/Property;[Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // values
+  method set(Lorg/apache/tika/metadata/Property;Ljava/util/Date;)V : // 0 samples
+    return:
+    parameter #0 :  // property
+    parameter #1 :  // date
+  method setAll(Ljava/util/Properties;)V : // 0 samples
+    return:
+    parameter #0 :  // properties
+  method size()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.tika.metadata:
+class Property$PropertyType : // 6/6 obj/class samples
+  field SIMPLE :  // org.apache.tika.metadata.Property$PropertyType
+  field STRUCTURE :  // org.apache.tika.metadata.Property$PropertyType
+  field BAG :  // org.apache.tika.metadata.Property$PropertyType
+  field SEQ :  // org.apache.tika.metadata.Property$PropertyType
+  field ALT :  // org.apache.tika.metadata.Property$PropertyType
+  field COMPOSITE :  // org.apache.tika.metadata.Property$PropertyType
+  field $VALUES :  // org.apache.tika.metadata.Property$PropertyType[]
+  method valueOf(Ljava/lang/String;)Lorg/apache/tika/metadata/Property$PropertyType; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method values()[Lorg/apache/tika/metadata/Property$PropertyType; : // 0 samples
+    return: 
+  method PropertyType(Ljava/lang/String;I)V : // 6 samples
+    return:
+    parameter #0 :  // $hidden$1
+    parameter #1 :  // $hidden$2
+
+
+package org.apache.tika.metadata:
+class Property$ValueType : // 15/15 obj/class samples
+  field BOOLEAN :  // org.apache.tika.metadata.Property$ValueType
+  field OPEN_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field CLOSED_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field DATE :  // org.apache.tika.metadata.Property$ValueType
+  field INTEGER :  // org.apache.tika.metadata.Property$ValueType
+  field LOCALE :  // org.apache.tika.metadata.Property$ValueType
+  field MIME_TYPE :  // org.apache.tika.metadata.Property$ValueType
+  field PROPER_NAME :  // org.apache.tika.metadata.Property$ValueType
+  field RATIONAL :  // org.apache.tika.metadata.Property$ValueType
+  field REAL :  // org.apache.tika.metadata.Property$ValueType
+  field TEXT :  // org.apache.tika.metadata.Property$ValueType
+  field URI :  // org.apache.tika.metadata.Property$ValueType
+  field URL :  // org.apache.tika.metadata.Property$ValueType
+  field XPATH :  // org.apache.tika.metadata.Property$ValueType
+  field PROPERTY :  // org.apache.tika.metadata.Property$ValueType
+  field $VALUES :  // org.apache.tika.metadata.Property$ValueType[]
+  method valueOf(Ljava/lang/String;)Lorg/apache/tika/metadata/Property$ValueType; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method values()[Lorg/apache/tika/metadata/Property$ValueType; : // 0 samples
+    return: 
+  method ValueType(Ljava/lang/String;I)V : // 15 samples
+    return:
+    parameter #0 :  // $hidden$1
+    parameter #1 :  // $hidden$2
+
+
+package org.apache.tika.metadata:
+class Property : // 3/5 obj/class samples
+  field properties :  // java.util.Map
+  field name :  // java.lang.String
+  field internal :  // boolean
+  field propertyType :  // org.apache.tika.metadata.Property$PropertyType
+  field SIMPLE :  // org.apache.tika.metadata.Property$PropertyType
+  field STRUCTURE :  // org.apache.tika.metadata.Property$PropertyType
+  field BAG :  // org.apache.tika.metadata.Property$PropertyType
+  field SEQ :  // org.apache.tika.metadata.Property$PropertyType
+  field ALT :  // org.apache.tika.metadata.Property$PropertyType
+  field COMPOSITE :  // org.apache.tika.metadata.Property$PropertyType
+  field $VALUES :  // org.apache.tika.metadata.Property$PropertyType[]
+  field valueType :  // org.apache.tika.metadata.Property$ValueType
+  field BOOLEAN :  // org.apache.tika.metadata.Property$ValueType
+  field OPEN_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field CLOSED_CHOICE :  // org.apache.tika.metadata.Property$ValueType
+  field DATE :  // org.apache.tika.metadata.Property$ValueType
+  field INTEGER :  // org.apache.tika.metadata.Property$ValueType
+  field LOCALE :  // org.apache.tika.metadata.Property$ValueType
+  field MIME_TYPE :  // org.apache.tika.metadata.Property$ValueType
+  field PROPER_NAME :  // org.apache.tika.metadata.Property$ValueType
+  field RATIONAL :  // org.apache.tika.metadata.Property$ValueType
+  field REAL :  // org.apache.tika.metadata.Property$ValueType
+  field TEXT :  // org.apache.tika.metadata.Property$ValueType
+  field URI :  // org.apache.tika.metadata.Property$ValueType
+  field URL :  // org.apache.tika.metadata.Property$ValueType
+  field XPATH :  // org.apache.tika.metadata.Property$ValueType
+  field PROPERTY :  // org.apache.tika.metadata.Property$ValueType
+  field $VALUES :  // org.apache.tika.metadata.Property$ValueType[]
+  field primaryProperty :  // org.apache.tika.metadata.Property
+  field secondaryExtractProperties : @Nullable // org.apache.tika.metadata.Property[]
+  field choices : @Nullable // java.util.Set
+  method composite(Lorg/apache/tika/metadata/Property;[Lorg/apache/tika/metadata/Property;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // primaryProperty
+    parameter #1 :  // secondaryExtractProperties
+  method externalBoolean(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method externalClosedChoise(Ljava/lang/String;[Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // choices
+  method externalDate(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method externalInteger(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method externalOpenChoise(Ljava/lang/String;[Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // choices
+  method externalReal(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method externalText(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method externalTextBag(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method get(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method getProperties(Ljava/lang/String;)Ljava/util/SortedSet; : // 0 samples
+    return: 
+    parameter #0 :  // prefix
+  method getPropertyType(Ljava/lang/String;)Lorg/apache/tika/metadata/Property$PropertyType; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method internalBoolean(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalClosedChoise(Ljava/lang/String;[Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // choices
+  method internalDate(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 1 samples
+    return: 
+    parameter #0 :  // name
+  method internalInteger(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalIntegerSequence(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalOpenChoise(Ljava/lang/String;[Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // choices
+  method internalRational(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalReal(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalText(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalTextBag(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method internalURI(Ljava/lang/String;)Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method <init>(Ljava/lang/String;ZLorg/apache/tika/metadata/$Type;Lorg/apache/tika/metadata/$ValueType;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // internal
+    parameter #2 :  // propertyType
+    parameter #3 :  // valueType
+  method <init>(Ljava/lang/String;ZLorg/apache/tika/metadata/$Type;Lorg/apache/tika/metadata/$ValueType;[Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // internal
+    parameter #2 :  // propertyType
+    parameter #3 :  // valueType
+    parameter #4 : @Nullable // choices
+  method <init>(Ljava/lang/String;ZLorg/apache/tika/metadata/$Type;Lorg/apache/tika/metadata/$ValueType;[Ljava/lang/String;Lorg/apache/tika/metadata/;[Lorg/apache/tika/metadata/;)V : // 1 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // internal
+    parameter #2 :  // propertyType
+    parameter #3 :  // valueType
+    parameter #4 : @Nullable // choices
+    parameter #5 : @Nullable // primaryProperty
+    parameter #6 : @Nullable // secondaryExtractProperties
+  method <init>(Ljava/lang/String;ZLorg/apache/tika/metadata/$ValueType;)V : // 1 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // internal
+    parameter #2 :  // valueType
+  method <init>(Ljava/lang/String;ZLorg/apache/tika/metadata/$ValueType;[Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // internal
+    parameter #2 :  // valueType
+    parameter #3 :  // choices
+  method compareTo(Lorg/apache/tika/metadata/Property;)I : // 0 samples
+    return: 
+    parameter #0 :  // o
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // o
+  method getChoices()Ljava/util/Set; : // 0 samples
+    return: 
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getPrimaryProperty()Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+  method getPropertyType()Lorg/apache/tika/metadata/Property$PropertyType; : // 0 samples
+    return: 
+  method getSecondaryExtractProperties()[Lorg/apache/tika/metadata/Property; : // 0 samples
+    return: 
+  method getValueType()Lorg/apache/tika/metadata/Property$ValueType; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method isExternal()Z : // 0 samples
+    return: 
+  method isInternal()Z : // 0 samples
+    return: 
+  method isMultiValuePermitted()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.metadata:
+class PropertyTypeException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+  method <init>(Lorg/apache/tika/metadata/Property$PropertyType;)V : // 0 samples
+    return:
+    parameter #0 :  // unsupportedPropertyType
+  method <init>(Lorg/apache/tika/metadata/Property$PropertyType;Lorg/apache/tika/metadata/Property$PropertyType;)V : // 0 samples
+    return:
+    parameter #0 :  // expected
+    parameter #1 :  // found
+  method <init>(Lorg/apache/tika/metadata/Property$ValueType;Lorg/apache/tika/metadata/Property$ValueType;)V : // 0 samples
+    return:
+    parameter #0 :  // expected
+    parameter #1 :  // found
+
+
+package org.apache.tika.mime:
+class MediaType : // 7/81 obj/class samples
+  field serialVersionUID :  // long
+  field SPECIAL :  // java.util.regex.Pattern
+  field SPECIAL_OR_WHITESPACE :  // java.util.regex.Pattern
+  field VALID_CHARS :  // java.lang.String
+  field TYPE_PATTERN :  // java.util.regex.Pattern
+  field CHARSET_FIRST_PATTERN :  // java.util.regex.Pattern
+  field SIMPLE_TYPES :  // java.util.Map
+  field OCTET_STREAM :  // org.apache.tika.mime.MediaType
+  field TEXT_PLAIN :  // org.apache.tika.mime.MediaType
+  field TEXT_HTML :  // org.apache.tika.mime.MediaType
+  field APPLICATION_XML :  // org.apache.tika.mime.MediaType
+  field APPLICATION_ZIP :  // org.apache.tika.mime.MediaType
+  field $assertionsDisabled :  // boolean
+  field string :  // java.lang.String
+  field slash :  // int
+  field semicolon :  // int
+  field parameters :  // java.util.Map
+  method application(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 2 samples
+    return: 
+    parameter #0 :  // type
+  method audio(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method image(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method isSimpleName(Ljava/lang/String;)Z : // 28 samples
+    return: 
+    parameter #0 :  // name
+  method parse(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 7 samples
+    return: 
+    parameter #0 :  // string
+  method parseParameters(Ljava/lang/String;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // string
+  method set([Ljava/lang/String;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // types
+  method set([Lorg/apache/tika/mime/MediaType;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // types
+  method text(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method union(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // a
+    parameter #1 :  // b
+  method unquote(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // s
+  method video(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method <init>(Ljava/lang/String;I)V : // 7 samples
+    return:
+    parameter #0 :  // string
+    parameter #1 :  // slash
+  method <init>(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // subtype
+  method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // subtype
+    parameter #2 :  // parameters
+  method <init>(Lorg/apache/tika/mime/;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // name
+    parameter #2 :  // value
+  method <init>(Lorg/apache/tika/mime/;Ljava/nio/charset/Charset;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // charset
+  method <init>(Lorg/apache/tika/mime/;Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // parameters
+  method compareTo(Lorg/apache/tika/mime/MediaType;)I : // 0 samples
+    return: 
+    parameter #0 :  // that
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // object
+  method getBaseType()Lorg/apache/tika/mime/MediaType; : // 0 samples
+    return: 
+  method getParameters()Ljava/util/Map; : // 0 samples
+    return: 
+  method getSubtype()Ljava/lang/String; : // 0 samples
+    return: 
+  method getType()Ljava/lang/String; : // 0 samples
+    return: 
+  method hasParameters()Z : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.tika.parser:
+class AbstractParser : // 1/1 obj/class samples
+  field serialVersionUID :  // long
+  method <init>()V : // 1 samples
+    return:
+  method parse(Ljava/io/InputStream;Lorg/xml/sax/ContentHandler;Lorg/apache/tika/metadata/Metadata;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+    parameter #1 :  // handler
+    parameter #2 :  // metadata
+
+
+package org.apache.tika.parser:
+class ParseContext : // 1/1 obj/class samples
+  field serialVersionUID :  // long
+  field context :  // java.util.Map
+  method <init>()V : // 1 samples
+    return:
+  method get(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method get(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // defaultValue
+  method getSAXParser()Ljavax/xml/parsers/SAXParser; : // 0 samples
+    return: 
+  method getSAXParserFactory()Ljavax/xml/parsers/SAXParserFactory; : // 0 samples
+    return: 
+  method set(Ljava/lang/Class;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // key
+    parameter #1 :  // value
+
+
+package org.apache.tika.parser.crypto:
+class Pkcs7Parser : // 1/1 obj/class samples
+  field serialVersionUID :  // long
+  field PKCS7_MIME :  // org.apache.tika.mime.MediaType
+  field serialVersionUID :  // long
+  field SPECIAL :  // java.util.regex.Pattern
+  field SPECIAL_OR_WHITESPACE :  // java.util.regex.Pattern
+  field VALID_CHARS :  // java.lang.String
+  field TYPE_PATTERN :  // java.util.regex.Pattern
+  field CHARSET_FIRST_PATTERN :  // java.util.regex.Pattern
+  field SIMPLE_TYPES :  // java.util.Map
+  field OCTET_STREAM :  // org.apache.tika.mime.MediaType
+  field TEXT_PLAIN :  // org.apache.tika.mime.MediaType
+  field TEXT_HTML :  // org.apache.tika.mime.MediaType
+  field APPLICATION_XML :  // org.apache.tika.mime.MediaType
+  field APPLICATION_ZIP :  // org.apache.tika.mime.MediaType
+  field $assertionsDisabled :  // boolean
+  field PKCS7_SIGNATURE :  // org.apache.tika.mime.MediaType
+  field serialVersionUID :  // long
+  method <init>()V : // 1 samples
+    return:
+  method getSupportedTypes(Lorg/apache/tika/parser/ParseContext;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // context
+  method parse(Ljava/io/InputStream;Lorg/xml/sax/ContentHandler;Lorg/apache/tika/metadata/Metadata;Lorg/apache/tika/r/ParseContext;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+    parameter #1 :  // handler
+    parameter #2 :  // metadata
+    parameter #3 :  // context
+
+
+package org.apache.tika.sax:
+class BodyContentHandler : // 2/2 obj/class samples
+  field PARSER :  // org.apache.tika.sax.xpath.XPathParser
+  field MATCHER :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field $assertionsDisabled :  // boolean
+  field handler :  // org.xml.sax.ContentHandler
+  method <init>()V : // 1 samples
+    return:
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // writeLimit
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+  method <init>(Ljava/io/Writer;)V : // 0 samples
+    return:
+    parameter #0 :  // writer
+  method <init>(Lorg/xml/sax/ContentHandler;)V : // 1 samples
+    return:
+    parameter #0 :  // handler
+
+
+package org.apache.tika.sax:
+class ContentHandlerDecorator : // 3/3 obj/class samples
+  field $assertionsDisabled :  // boolean
+  field handler :  // org.xml.sax.ContentHandler
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Lorg/xml/sax/ContentHandler;)V : // 3 samples
+    return:
+    parameter #0 :  // handler
+  method characters([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method endDocument()V : // 0 samples
+    return:
+  method endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // uri
+    parameter #1 :  // localName
+    parameter #2 :  // name
+  method endPrefixMapping(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // prefix
+  method ignorableWhitespace([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method processingInstruction(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // target
+    parameter #1 :  // data
+  method setContentHandler(Lorg/xml/sax/ContentHandler;)V : // 0 samples
+    return:
+    parameter #0 :  // handler
+  method setDocumentLocator(Lorg/xml/sax/Locator;)V : // 0 samples
+    return:
+    parameter #0 :  // locator
+  method skippedEntity(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method startDocument()V : // 0 samples
+    return:
+  method startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V : // 0 samples
+    return:
+    parameter #0 :  // uri
+    parameter #1 :  // localName
+    parameter #2 :  // name
+    parameter #3 :  // atts
+  method startPrefixMapping(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // prefix
+    parameter #1 :  // uri
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax:
+class ToTextContentHandler : // 1/- obj/class samples
+  field writer :  // java.io.Writer
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+  method <init>(Ljava/io/OutputStream;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+    parameter #1 :  // encoding
+  method <init>(Ljava/io/Writer;)V : // 1 samples
+    return:
+    parameter #0 :  // writer
+  method characters([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method endDocument()V : // 0 samples
+    return:
+  method ignorableWhitespace([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax:
+class WriteOutContentHandler$WriteLimitReachedException : // 0/0 obj/class samples
+  field serialVersionUID :  // long
+  field tag :  // java.io.Serializable
+  method WriteLimitReachedException(Ljava/lang/String;Ljava/io/Serializable;)V : // 0 samples
+    return:
+    parameter #0 :  // message
+    parameter #1 :  // tag
+
+
+package org.apache.tika.sax:
+class WriteOutContentHandler : // 4/4 obj/class samples
+  field $assertionsDisabled :  // boolean
+  field tag :  // java.io.Serializable
+  field writeLimit :  // int
+  field writeCount :  // int
+  field handler :  // org.xml.sax.ContentHandler
+  method <init>()V : // 1 samples
+    return:
+  method <init>(I)V : // 1 samples
+    return:
+    parameter #0 :  // writeLimit
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // stream
+  method <init>(Ljava/io/Writer;)V : // 0 samples
+    return:
+    parameter #0 :  // writer
+  method <init>(Ljava/io/Writer;I)V : // 1 samples
+    return:
+    parameter #0 :  // writer
+    parameter #1 :  // writeLimit
+  method <init>(Lorg/xml/sax/ContentHandler;I)V : // 1 samples
+    return:
+    parameter #0 :  // handler
+    parameter #1 :  // writeLimit
+  method characters([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method ignorableWhitespace([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method isWriteLimitReached(Ljava/lang/Throwable;)Z : // 0 samples
+    return: 
+    parameter #0 :  // t
+
+
+package org.apache.tika.sax.xpath:
+class ChildMatcher : // 3/0 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field then :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method <init>(Lorg/apache/tika/sax/xpath/Matcher;)V : // 3 samples
+    return:
+    parameter #0 :  // then
+  method descend(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+
+
+package org.apache.tika.sax.xpath:
+class CompositeMatcher : // 1/0 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field a :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field b :  // org.apache.tika.sax.xpath.Matcher
+  method <init>(Lorg/apache/tika/sax/xpath/Matcher;Lorg/apache/tika/sax/xpath/Matcher;)V : // 1 samples
+    return:
+    parameter #0 :  // a
+    parameter #1 :  // b
+  method descend(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesAttribute(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesElement()Z : // 0 samples
+    return: 
+  method matchesText()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax.xpath:
+class Matcher : // 8/8 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method <init>()V : // 8 samples
+    return:
+  method descend(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesAttribute(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesElement()Z : // 0 samples
+    return: 
+  method matchesText()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax.xpath:
+class MatchingContentHandler : // 1/1 obj/class samples
+  field $assertionsDisabled :  // boolean
+  field matchers :  // java.util.LinkedList
+  field matcher :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field handler :  // org.xml.sax.ContentHandler
+  method <init>(Lorg/xml/sax/ContentHandler;Lorg/apache/tika/sax/xpath/Matcher;)V : // 1 samples
+    return:
+    parameter #0 :  // delegate
+    parameter #1 :  // matcher
+  method characters([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // uri
+    parameter #1 :  // localName
+    parameter #2 :  // name
+  method ignorableWhitespace([CII)V : // 0 samples
+    return:
+    parameter #0 :  // ch
+    parameter #1 :  // start
+    parameter #2 :  // length
+  method processingInstruction(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // target
+    parameter #1 :  // data
+  method skippedEntity(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V : // 0 samples
+    return:
+    parameter #0 :  // uri
+    parameter #1 :  // localName
+    parameter #2 :  // name
+    parameter #3 :  // attributes
+
+
+package org.apache.tika.sax.xpath:
+class NamedAttributeMatcher : // 0/0 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field namespace :  // java.lang.String
+  field name :  // java.lang.String
+  method equals(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // a
+    parameter #1 :  // b
+  method <init>(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesAttribute(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+
+
+package org.apache.tika.sax.xpath:
+class NamedElementMatcher : // 2/0 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field namespace :  // java.lang.String
+  field name :  // java.lang.String
+  field then :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method equals(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // a
+    parameter #1 :  // b
+  method <init>(Ljava/lang/String;Ljava/lang/String;Lorg/apache/tika/sax/xpath/Matcher;)V : // 2 samples
+    return:
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+    parameter #2 :  // then
+  method descend(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+
+
+package org.apache.tika.sax.xpath:
+class NodeMatcher : // 1/1 obj/class samples
+  field INSTANCE :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method <init>()V : // 1 samples
+    return:
+  method matchesAttribute(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesElement()Z : // 0 samples
+    return: 
+  method matchesText()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax.xpath:
+class SubtreeMatcher : // 1/0 obj/class samples
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  field then :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method <init>(Lorg/apache/tika/sax/xpath/Matcher;)V : // 1 samples
+    return:
+    parameter #0 :  // then
+  method descend(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesAttribute(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // namespace
+    parameter #1 :  // name
+  method matchesElement()Z : // 0 samples
+    return: 
+  method matchesText()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax.xpath:
+class TextMatcher : // 1/1 obj/class samples
+  field INSTANCE :  // org.apache.tika.sax.xpath.Matcher
+  field FAIL :  // org.apache.tika.sax.xpath.Matcher
+  method <init>()V : // 1 samples
+    return:
+  method matchesText()Z : // 0 samples
+    return: 
+
+
+package org.apache.tika.sax.xpath:
+class XPathParser : // 9/- obj/class samples
+  field prefixes :  // java.util.Map
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/lang/String;Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 :  // prefix
+    parameter #1 :  // namespace
+  method addPrefix(Ljava/lang/String;Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 :  // prefix
+    parameter #1 :  // namespace
+  method parse(Ljava/lang/String;)Lorg/apache/tika/sax/xpath/Matcher; : // 3 samples
+    return: 
+    parameter #0 :  // xpath
+
+
+package org.bouncycastle.asn1:
+class ASN1Encodable : // 301/301 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  method <init>()V : // 297 samples
+    return:
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getDEREncoded()[B : // 0 samples
+    return: 
+  method getDERObject()Lorg/bouncycastle/asn1/DERObject; : // 2 samples
+    return: 
+  method getEncoded()[B : // 0 samples
+    return: 
+  method getEncoded(Ljava/lang/String;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1EncodableVector : // 1/- obj/class samples
+  field v :  // java.util.Vector
+  method <init>()V : // 1 samples
+    return:
+
+
+package org.bouncycastle.asn1:
+class ASN1Generator : // 0/- obj/class samples
+  field _out :  // java.io.OutputStream
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class ASN1InputStream : // 0/- obj/class samples
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>([BZ)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/InputStream;I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/io/InputStream;IZ)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method buildObject(III)Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method readFully([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method readLength()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1Null : // 1/1 obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1Object : // 296/296 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  method fromByteArray([B)Lorg/bouncycastle/asn1/ASN1Object; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>()V : // 296 samples
+    return:
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class ASN1OctetString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ASN1OctetString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/ASN1OctetString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getOctetStream()Ljava/io/InputStream; : // 0 samples
+    return: 
+  method getOctets()[B : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method parser()Lorg/bouncycastle/asn1/ASN1OctetStringParser; : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1ParsingException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1Sequence : // 15/15 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ASN1Sequence; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/ASN1Sequence; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>()V : // 1 samples
+    return:
+  method addObject(Lorg/bouncycastle/asn1/DEREncodable;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObjectAt(I)Lorg/bouncycastle/asn1/DEREncodable; : // 2 samples
+    return: @Nullable
+    parameter #0 :  // arg0
+  method getObjects()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method parser()Lorg/bouncycastle/asn1/ASN1SequenceParser; : // 0 samples
+    return: 
+  method size()I : // 3 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1Set : // 0/0 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field set :  // java.util.Vector
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>()V : // 0 samples
+    return:
+  method addObject(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getEncoded(Lorg/bouncycastle/asn1/DEREncodable;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObjectAt(I)Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObjects()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method lessThanOrEqual([B[B)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method parser()Lorg/bouncycastle/asn1/ASN1SetParser; : // 0 samples
+    return: 
+  method size()I : // 0 samples
+    return: 
+  method sort()V : // 0 samples
+    return:
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1StreamParser : // 10/- obj/class samples
+  method findLimit(Ljava/io/InputStream;)I : // 3 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/InputStream;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method <init>(Ljava/io/InputStream;I)V : // 7 samples
+    return:
+    parameter #0 : @Nullable // arg0
+    parameter #1 :  // arg1
+  method readObject()Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class ASN1TaggedObject : // 0/0 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field tagNo :  // int
+  field empty :  // boolean
+  field explicit :  // boolean
+  field obj :  // org.bouncycastle.asn1.DEREncodable
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/ASN1TaggedObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/ASN1TaggedObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ZILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(ILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObject()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method getObjectParser(IZ)Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getTagNo()I : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method isExplicit()Z : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class BERConstructedOctetString : // 0/0 obj/class samples
+  method toBytes(Ljava/util/Vector;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Vector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method generateOcts()Ljava/util/Vector; : // 0 samples
+    return: 
+  method getObjects()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method getOctets()[B : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class BERGenerator : // 0/- obj/class samples
+  field _tagged :  // boolean
+  field _isExplicit :  // boolean
+  field _tagNo :  // int
+  field _out :  // java.io.OutputStream
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/OutputStream;IZ)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method getRawOutputStream()Ljava/io/OutputStream; : // 0 samples
+    return: 
+  method writeBERBody(Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method writeBEREnd()V : // 0 samples
+    return:
+  method writeBERHeader(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method writeHdr(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class BEROutputStream : // 0/- obj/class samples
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method writeObject(Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class BERSequence : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class BERSequenceGenerator : // 0/- obj/class samples
+  field _tagged :  // boolean
+  field _isExplicit :  // boolean
+  field _tagNo :  // int
+  field _out :  // java.io.OutputStream
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/OutputStream;IZ)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method addObject(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method close()V : // 0 samples
+    return:
+
+
+package org.bouncycastle.asn1:
+class BERSequenceParser : // 17/- obj/class samples
+  method <init>(Lorg/bouncycastle/asn1/ASN1StreamParser;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method getDERObject()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method readObject()Lorg/bouncycastle/asn1/DEREncodable; : // 7 samples
+    return: @Nullable
+
+
+package org.bouncycastle.asn1:
+class BERSet : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class BERTaggedObject : // 0/0 obj/class samples
+  field ZERO_BYTES :  // byte[]
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field tagNo :  // int
+  field empty :  // boolean
+  field explicit :  // boolean
+  field obj :  // org.bouncycastle.asn1.DEREncodable
+  method <init>(ZILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(ILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class BERTaggedObjectParser : // 1/- obj/class samples
+  method <init>(IILjava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 : @Nullable // arg2
+  method getObjectParser(IZ)Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getTagNo()I : // 0 samples
+    return: 
+  method isConstructed()Z : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERApplicationSpecific : // 0/0 obj/class samples
+  method <init>(ZI[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(ZILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(I[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ILorg/bouncycastle/asn1/ASN1EncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getApplicationTag()I : // 0 samples
+    return: 
+  method getContents()[B : // 0 samples
+    return: 
+  method getLengthOfLength([B)I : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObject()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method getObject(I)Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method hashCode()I : // 0 samples
+    return: 
+  method isConstructed()Z : // 0 samples
+    return: 
+  method replaceTagNumber(I[B)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.asn1:
+class DERBMPString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERBMPString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERBMPString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERBitString : // 0/0 obj/class samples
+  method getBytes(I)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERBitString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERBitString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getPadBits(I)I : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(BI)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>([BI)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getBytes()[B : // 0 samples
+    return: 
+  method getPadBits()I : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method intValue()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERBoolean : // 0/0 obj/class samples
+  method getInstance(Z)Lorg/bouncycastle/asn1/DERBoolean; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERBoolean; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERBoolean; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method hashCode()I : // 0 samples
+    return: 
+  method isTrue()Z : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DEREncodableVector : // 15/- obj/class samples
+  field v :  // java.util.Vector
+  method <init>()V : // 1 samples
+    return:
+  method add(Lorg/bouncycastle/asn1/DEREncodable;)V : // 2 samples
+    return:
+    parameter #0 :  // arg0
+  method get(I)Lorg/bouncycastle/asn1/DEREncodable; : // 2 samples
+    return: 
+    parameter #0 :  // arg0
+  method size()I : // 3 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DEREnumerated : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DEREnumerated; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DEREnumerated; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/math/BigInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getValue()Ljava/math/BigInteger; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERExternal : // 0/0 obj/class samples
+  method <init>(Lorg/bouncycastle/asn1/ASN1EncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/DERInteger;Lorg/bouncycastle/asn1/ASN1Object;ILorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/DERInteger;Lorg/bouncycastle/asn1/ASN1Object;Lorg/bouncycastle/asn1/DERTaggedObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getDataValueDescriptor()Lorg/bouncycastle/asn1/ASN1Object; : // 0 samples
+    return: 
+  method getDirectReference()Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+  method getEncoding()I : // 0 samples
+    return: 
+  method getExternalContent()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method getIndirectReference()Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method setDataValueDescriptor(Lorg/bouncycastle/asn1/ASN1Object;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method setDirectReference(Lorg/bouncycastle/asn1/DERObjectIdentifier;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method setEncoding(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method setExternalContent(Lorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method setIndirectReference(Lorg/bouncycastle/asn1/DERInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DERGeneralString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERGeneralString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERGeneralString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERGeneralizedTime : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERGeneralizedTime; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERGeneralizedTime; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Date;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method calculateGMTOffset()Ljava/lang/String; : // 0 samples
+    return: 
+  method convert(I)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getDate()Ljava/util/Date; : // 0 samples
+    return: 
+  method getOctets()[B : // 0 samples
+    return: 
+  method getTime()Ljava/lang/String; : // 0 samples
+    return: 
+  method getTimeString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hasFractionalSeconds()Z : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERIA5String : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERIA5String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERIA5String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method isIA5String(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERInteger : // 1/1 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field bytes :  // byte[]
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 1 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/math/BigInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getPositiveValue()Ljava/math/BigInteger; : // 0 samples
+    return: 
+  method getValue()Ljava/math/BigInteger; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERNull : // 1/1 obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DERNumericString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERNumericString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERNumericString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method isNumericString(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERObject : // 300/300 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  method <init>()V : // 296 samples
+    return:
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 2 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERObjectIdentifier : // 0/2 obj/class samples
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field identifier :  // java.lang.String
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 1 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DEROctetString : // 0/0 obj/class samples
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DEROutputStream : // 0/- obj/class samples
+  method <init>(Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method write([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method write([BII)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method writeEncoded(I[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method writeEncoded(II[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method writeLength(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method writeNull()V : // 0 samples
+    return:
+  method writeObject(Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method writeTag(II)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.asn1:
+class DERPrintableString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERPrintableString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERPrintableString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method isPrintableString(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERSequence : // 1/1 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>([Lorg/bouncycastle/asn1/ASN1Encodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DERSequenceParser : // 3/- obj/class samples
+  method <init>(Lorg/bouncycastle/asn1/ASN1StreamParser;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method getDERObject()Lorg/bouncycastle/asn1/DERObject; : // 1 samples
+    return: @Nullable
+  method readObject()Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERSet : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>([Lorg/bouncycastle/asn1/ASN1Encodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;Z)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DERSetParser : // 5/- obj/class samples
+  method <init>(Lorg/bouncycastle/asn1/ASN1StreamParser;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method getDERObject()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method readObject()Lorg/bouncycastle/asn1/DEREncodable; : // 2 samples
+    return: @Nullable
+
+
+package org.bouncycastle.asn1:
+class DERT61String : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERT61String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERT61String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERTaggedObject : // 0/0 obj/class samples
+  field ZERO_BYTES :  // byte[]
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field tagNo :  // int
+  field empty :  // boolean
+  field explicit :  // boolean
+  field obj :  // org.bouncycastle.asn1.DEREncodable
+  method <init>(ZILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(ILorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class DERUTCTime : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERUTCTime; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERUTCTime; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Date;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getAdjustedDate()Ljava/util/Date; : // 0 samples
+    return: 
+  method getAdjustedTime()Ljava/lang/String; : // 0 samples
+    return: 
+  method getDate()Ljava/util/Date; : // 0 samples
+    return: 
+  method getOctets()[B : // 0 samples
+    return: 
+  method getTime()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERUTF8String : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERUTF8String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERUTF8String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERUniversalString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERUniversalString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERUniversalString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERUnknownTag : // 0/0 obj/class samples
+  method <init>(ZI[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(I[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getData()[B : // 0 samples
+    return: 
+  method getTag()I : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method isConstructed()Z : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DERVisibleString : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/DERVisibleString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/DERVisibleString; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method asn1Equals(Lorg/bouncycastle/asn1/DERObject;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getOctets()[B : // 0 samples
+    return: 
+  method getString()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class DefiniteLengthInputStream : // 49/49 obj/class samples
+  method <init>(Ljava/io/InputStream;I)V : // 7 samples
+    return:
+    parameter #0 : @Nullable // arg0
+    parameter #1 :  // arg1
+  method getRemaining()I : // 2 samples
+    return: 
+  method read()I : // 12 samples
+    return: 
+  method read([BII)I : // 2 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method toByteArray()[B : // 5 samples
+    return: @Nullable
+
+
+package org.bouncycastle.asn1:
+class IndefiniteLengthInputStream : // 426/- obj/class samples
+  method <init>(Ljava/io/InputStream;)V : // 4 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method checkForEof()Z : // 103 samples
+    return: 
+  method read()I : // 87 samples
+    return: 
+  method read([BII)I : // 9 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method setEofOn00(Z)V : // 12 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1:
+class LazyDERSequence : // 0/0 obj/class samples
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method encode(Lorg/bouncycastle/asn1/DEROutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getObjectAt(I)Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getObjects()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method parse()V : // 0 samples
+    return:
+  method size()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1:
+class LimitedInputStream : // 27/- obj/class samples
+  method <init>(Ljava/io/InputStream;)V : // 11 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method setParentEofDetect(Z)V : // 8 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1.cms:
+class Attribute : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/Attribute; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/ASN1Set;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAttrType()Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+  method getAttrValues()Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class AttributeTable : // 0/- obj/class samples
+  method <init>(Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Set;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DEREncodableVector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method addAttribute(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/cms/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method copyTable(Ljava/util/Hashtable;)Ljava/util/Hashtable; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method get(Lorg/bouncycastle/asn1/DERObjectIdentifier;)Lorg/bouncycastle/asn1/cms/Attribute; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getAll(Lorg/bouncycastle/asn1/DERObjectIdentifier;)Lorg/bouncycastle/asn1/ASN1EncodableVector; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method toASN1EncodableVector()Lorg/bouncycastle/asn1/ASN1EncodableVector; : // 0 samples
+    return: 
+  method toHashtable()Ljava/util/Hashtable; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class ContentInfo : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/ContentInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getContent()Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+  method getContentType()Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class ContentInfoParser : // 8/- obj/class samples
+  field contentType :  // org.bouncycastle.asn1.DERObjectIdentifier
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field content : @Nullable // org.bouncycastle.asn1.ASN1TaggedObjectParser
+  method <init>(Lorg/bouncycastle/asn1/ASN1SequenceParser;)V : // 2 samples
+    return:
+    parameter #0 :  // arg0
+  method getContent(I)Lorg/bouncycastle/asn1/DEREncodable; : // 2 samples
+    return: @Nullable
+    parameter #0 :  // arg0
+  method getContentType()Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 1 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class IssuerAndSerialNumber : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/IssuerAndSerialNumber; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/x509/X509Name;Ljava/math/BigInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/x509/X509Name;Lorg/bouncycastle/asn1/DERInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getName()Lorg/bouncycastle/asn1/x509/X509Name; : // 0 samples
+    return: 
+  method getSerialNumber()Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class SignedData : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/SignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/cms/ContentInfo;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/ASN1Set;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method calculateVersion(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/ASN1Set;)Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method checkForVersion3(Lorg/bouncycastle/asn1/ASN1Set;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1.cms:
+class SignedDataParser : // 5/- obj/class samples
+  field _seq :  // org.bouncycastle.asn1.ASN1SequenceParser
+  field _version :  // org.bouncycastle.asn1.DERInteger
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field _nextObject : @Nullable // java.lang.Object
+  field _certsCalled :  // boolean
+  field _crlsCalled :  // boolean
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/SignedDataParser; : // 1 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1SequenceParser;)V : // 1 samples
+    return:
+    parameter #0 :  // arg0
+  method getCertificates()Lorg/bouncycastle/asn1/ASN1SetParser; : // 0 samples
+    return: 
+  method getCrls()Lorg/bouncycastle/asn1/ASN1SetParser; : // 0 samples
+    return: 
+  method getDigestAlgorithms()Lorg/bouncycastle/asn1/ASN1SetParser; : // 1 samples
+    return: 
+  method getEncapContentInfo()Lorg/bouncycastle/asn1/cms/ContentInfoParser; : // 1 samples
+    return: 
+  method getSignerInfos()Lorg/bouncycastle/asn1/ASN1SetParser; : // 0 samples
+    return: 
+  method getVersion()Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class SignerIdentifier : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/SignerIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1OctetString;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/cms/IssuerAndSerialNumber;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getId()Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+  method isTagged()Z : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class SignerInfo : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/SignerInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/cms/SignerIdentifier;Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;Lorg/bouncycastle/asn1/ASN1OctetString;Lorg/bouncycastle/asn1/ASN1Set;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method getAuthenticatedAttributes()Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+  method getDigestAlgorithm()Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+  method getDigestEncryptionAlgorithm()Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+  method getEncryptedDigest()Lorg/bouncycastle/asn1/ASN1OctetString; : // 0 samples
+    return: 
+  method getSID()Lorg/bouncycastle/asn1/cms/SignerIdentifier; : // 0 samples
+    return: 
+  method getUnauthenticatedAttributes()Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+  method getVersion()Lorg/bouncycastle/asn1/DERInteger; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.cms:
+class Time : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/cms/Time; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/cms/Time; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Date;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getDate()Ljava/util/Date; : // 0 samples
+    return: 
+  method getTime()Ljava/lang/String; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.pkcs:
+class RSASSAPSSparams : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/pkcs/RSASSAPSSparams; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;Lorg/bouncycastle/asn1/DERInteger;Lorg/bouncycastle/asn1/DERInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+
+
+package org.bouncycastle.asn1.x509:
+class AlgorithmIdentifier : // 3/2 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getObjectId()Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 1 samples
+    return: @Nullable
+  method getParameters()Lorg/bouncycastle/asn1/DEREncodable; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class DigestInfo : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/DigestInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/DigestInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAlgorithmId()Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+  method getDigest()[B : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class SubjectPublicKeyInfo : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/SubjectPublicKeyInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/SubjectPublicKeyInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;Lorg/bouncycastle/asn1/DEREncodable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAlgorithmId()Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+  method getPublicKey()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method getPublicKeyData()Lorg/bouncycastle/asn1/DERBitString; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class TBSCertificateStructure : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/TBSCertificateStructure; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/TBSCertificateStructure; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.asn1.x509:
+class Time : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/Time; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/Time; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Date;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/asn1/DERObject;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getDate()Ljava/util/Date; : // 0 samples
+    return: 
+  method getTime()Ljava/lang/String; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class X509DefaultEntryConverter : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method getConvertedValue(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.asn1.x509:
+class X509Extension : // 0/- obj/class samples
+  method convertValueToObject(Lorg/bouncycastle/asn1/x509/X509Extension;)Lorg/bouncycastle/asn1/ASN1Object; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(ZLorg/bouncycastle/asn1/ASN1OctetString;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/DERBoolean;Lorg/bouncycastle/asn1/ASN1OctetString;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getValue()Lorg/bouncycastle/asn1/ASN1OctetString; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method isCritical()Z : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class X509Extensions : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/X509Extensions; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/X509Extensions; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Vector;Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Vector;Ljava/util/Vector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method equivalent(Lorg/bouncycastle/asn1/x509/X509Extensions;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getExtension(Lorg/bouncycastle/asn1/DERObjectIdentifier;)Lorg/bouncycastle/asn1/x509/X509Extension; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method oids()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.asn1.x509:
+class X509Name : // 0/0 obj/class samples
+  method getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/X509Name; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getInstance(Lorg/bouncycastle/asn1/ASN1TaggedObject;Z)Lorg/bouncycastle/asn1/x509/X509Name; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ZLjava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ZLjava/lang/String;Lorg/bouncycastle/asn1/x509/EntryConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(ZLjava/util/Hashtable;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(ZLjava/util/Hashtable;Ljava/lang/String;Lorg/bouncycastle/asn1/x509/EntryConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Lorg/bouncycastle/asn1/x509/EntryConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Vector;Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Vector;Ljava/util/Hashtable;Lorg/bouncycastle/asn1/x509/EntryConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(Ljava/util/Vector;Ljava/util/Vector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Vector;Ljava/util/Vector;Lorg/bouncycastle/asn1/x509/EntryConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(Lorg/bouncycastle/asn1/ASN1Sequence;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method appendValue(Ljava/lang/StringBuffer;Ljava/util/Hashtable;Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method bytesToString([B)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method canonicalize(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method decodeOID(Ljava/lang/String;Ljava/util/Hashtable;)Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method decodeObject(Ljava/lang/String;)Lorg/bouncycastle/asn1/ASN1Object; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method equals(Ljava/lang/Object;Z)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method equivalentStrings(Ljava/lang/String;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getOIDs()Ljava/util/Vector; : // 0 samples
+    return: 
+  method getValues()Ljava/util/Vector; : // 0 samples
+    return: 
+  method getValues(Lorg/bouncycastle/asn1/DERObjectIdentifier;)Ljava/util/Vector; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method hashCode()I : // 0 samples
+    return: 
+  method stripInternalSpaces(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method toASN1Object()Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method toString(ZLjava/util/Hashtable;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.asn1.x509:
+class X509NameEntryConverter : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method canBePrintable(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method convertHexEncoded(Ljava/lang/String;I)Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.cms:
+class CMSContentInfoParser : // 3/- obj/class samples
+  field _contentInfo :  // org.bouncycastle.asn1.cms.ContentInfoParser
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field _data :  // java.io.InputStream
+  method <init>(Ljava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 :  // arg0
+  method close()V : // 1 samples
+    return:
+
+
+package org.bouncycastle.cms:
+class CMSException : // 0/- obj/class samples
+  field e :  // java.lang.Exception
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Ljava/lang/Exception;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+  method getUnderlyingException()Ljava/lang/Exception; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class CMSSignedData : // 0/0 obj/class samples
+  method replaceCertificatesAndCRLs(Lorg/bouncycastle/cms/CMSSignedData;Ljava/security/cert/CertStore;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method replaceSigners(Lorg/bouncycastle/cms/CMSSignedData;Lorg/bouncycastle/cms/SignerInformationStore;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Map;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Map;Lorg/bouncycastle/asn1/cms/ContentInfo;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/cms/ContentInfo;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/cms/CMSProcessable;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/cms/CMSProcessable;Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/cms/CMSProcessable;Lorg/bouncycastle/asn1/cms/ContentInfo;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/cms/;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getAttributeCertificates(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAttributeCertificates(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCRLs(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCRLs(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificates(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificates(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificatesAndCRLs(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificatesAndCRLs(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getContentInfo()Lorg/bouncycastle/asn1/cms/ContentInfo; : // 0 samples
+    return: 
+  method getEncoded()[B : // 0 samples
+    return: 
+  method getSignedContent()Lorg/bouncycastle/cms/CMSProcessable; : // 0 samples
+    return: 
+  method getSignedContentTypeOID()Ljava/lang/String; : // 0 samples
+    return: 
+  method getSignerInfos()Lorg/bouncycastle/cms/SignerInformationStore; : // 0 samples
+    return: 
+  method getVersion()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class CMSSignedDataGenerator : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/security/SecureRandom;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/cms/AttributeTable;Lorg/bouncycastle/asn1/cms/AttributeTable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;Ljava/lang/String;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;Lorg/bouncycastle/asn1/cms/AttributeTable;Lorg/bouncycastle/asn1/cms/AttributeTable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method addSigner(Ljava/security/PrivateKey;[BLjava/lang/String;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/asn1/cms/AttributeTable;Lorg/bouncycastle/asn1/cms/AttributeTable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;Lorg/bouncycastle/asn1/cms/AttributeTable;Lorg/bouncycastle/asn1/cms/AttributeTable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method addSigner(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;Ljava/lang/String;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;Lorg/bouncycastle/cms/CMSAttributeTableGenerator;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method generate(Ljava/lang/String;Lorg/bouncycastle/cms/CMSProcessable;ZLjava/lang/String;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method generate(Ljava/lang/String;Lorg/bouncycastle/cms/CMSProcessable;ZLjava/lang/String;Z)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method generate(Ljava/lang/String;Lorg/bouncycastle/cms/CMSProcessable;ZLjava/security/Provider;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method generate(Ljava/lang/String;Lorg/bouncycastle/cms/CMSProcessable;ZLjava/security/Provider;Z)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method generate(Lorg/bouncycastle/cms/CMSProcessable;ZLjava/lang/String;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method generate(Lorg/bouncycastle/cms/CMSProcessable;ZLjava/security/Provider;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method generate(Lorg/bouncycastle/cms/CMSProcessable;Ljava/lang/String;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method generate(Lorg/bouncycastle/cms/CMSProcessable;Ljava/security/Provider;)Lorg/bouncycastle/cms/CMSSignedData; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method generateCounterSigners(Lorg/bouncycastle/cms/SignerInformation;Ljava/lang/String;)Lorg/bouncycastle/cms/SignerInformationStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method generateCounterSigners(Lorg/bouncycastle/cms/SignerInformation;Ljava/security/Provider;)Lorg/bouncycastle/cms/SignerInformationStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.cms:
+class CMSSignedDataParser : // 4/4 obj/class samples
+  field HELPER :  // org.bouncycastle.cms.CMSSignedHelper
+  field INSTANCE :  // org.bouncycastle.cms.CMSSignedHelper
+  field encryptionAlgs :  // java.util.Map
+  field digestAlgs :  // java.util.Map
+  field digestAliases :  // java.util.Map
+  field _signedData :  // org.bouncycastle.asn1.cms.SignedDataParser
+  field DER :  // java.lang.String
+  field BER :  // java.lang.String
+  field _signedContentType :  // org.bouncycastle.asn1.DERObjectIdentifier
+  field _signedContent : @Nullable // org.bouncycastle.cms.CMSTypedStream
+  field BUF_SIZ :  // int
+  field _digests :  // java.util.Map
+  field _certStore : @Nullable // java.security.cert.CertStore
+  field _signerInfoStore : @Nullable // org.bouncycastle.cms.SignerInformationStore
+  field _attributeStore : @Nullable // org.bouncycastle.x509.X509Store
+  field _certSet : @Nullable // org.bouncycastle.asn1.ASN1Set
+  field _crlSet : @Nullable // org.bouncycastle.asn1.ASN1Set
+  field _isCertCrlParsed :  // boolean
+  field _certificateStore : @Nullable // org.bouncycastle.x509.X509Store
+  field _crlStore : @Nullable // org.bouncycastle.x509.X509Store
+  field _contentInfo :  // org.bouncycastle.asn1.cms.ContentInfoParser
+  field _data :  // java.io.InputStream
+  method getASN1Set(Lorg/bouncycastle/asn1/ASN1SetParser;)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method pipeOctetString(Lorg/bouncycastle/asn1/ASN1OctetStringParser;Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method replaceCertificatesAndCRLs(Ljava/io/InputStream;Ljava/security/cert/CertStore;Ljava/io/OutputStream;)Ljava/io/OutputStream; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method replaceSigners(Ljava/io/InputStream;Lorg/bouncycastle/cms/SignerInformationStore;Ljava/io/OutputStream;)Ljava/io/OutputStream; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method writeSetToGeneratorTagged(Lorg/bouncycastle/asn1/ASN1Generator;Lorg/bouncycastle/asn1/ASN1SetParser;I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Lorg/bouncycastle/cms/CMSTypedStream;[B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/cms/CMSTypedStream;Ljava/io/InputStream;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // arg0
+    parameter #1 :  // arg1
+  method getAttributeCertificates(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAttributeCertificates(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCRLs(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCRLs(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificates(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificates(Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificatesAndCRLs(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCertificatesAndCRLs(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getSignedContent()Lorg/bouncycastle/cms/CMSTypedStream; : // 1 samples
+    return: @Nullable
+  method getSignedContentTypeOID()Ljava/lang/String; : // 0 samples
+    return: 
+  method getSignerInfos()Lorg/bouncycastle/cms/SignerInformationStore; : // 0 samples
+    return: 
+  method getVersion()I : // 0 samples
+    return: 
+  method populateCertCrlSets()V : // 0 samples
+    return:
+
+
+package org.bouncycastle.cms:
+class CMSSignedGenerator$DigOutputStream : // 0/- obj/class samples
+  method DigOutputStream(Ljava/security/MessageDigest;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method write([BII)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method write(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.cms:
+class CMSSignedGenerator$SigOutputStream : // 0/- obj/class samples
+  method SigOutputStream(Ljava/security/Signature;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method write([BII)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method write(I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.cms:
+class CMSSignedGenerator : // 0/0 obj/class samples
+  method getSignerIdentifier([B)Lorg/bouncycastle/asn1/cms/SignerIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getSignerIdentifier(Ljava/security/cert/X509Certificate;)Lorg/bouncycastle/asn1/cms/SignerIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Ljava/security/SecureRandom;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method addAttributeCertificates(Lorg/bouncycastle/x509/X509Store;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method addCertificatesAndCRLs(Ljava/security/cert/CertStore;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method addSigners(Lorg/bouncycastle/cms/SignerInformationStore;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getAttributeSet(Lorg/bouncycastle/asn1/cms/AttributeTable;)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getBaseParameters(Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;[B)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method getEncAlgorithmIdentifier(Ljava/lang/String;Ljava/security/Signature;)Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getEncOID(Ljava/security/PrivateKey;Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getGeneratedDigests()Ljava/util/Map; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class CMSSignedHelper : // 7/71 obj/class samples
+  field INSTANCE :  // org.bouncycastle.cms.CMSSignedHelper
+  field encryptionAlgs :  // java.util.Map
+  field digestAlgs :  // java.util.Map
+  field digestAliases :  // java.util.Map
+  method addEntries(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;Ljava/lang/String;)V : // 32 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>()V : // 1 samples
+    return:
+  method addCRLsFromSet(Ljava/util/List;Lorg/bouncycastle/asn1/ASN1Set;Ljava/security/Provider;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method addCertsFromSet(Ljava/util/List;Lorg/bouncycastle/asn1/ASN1Set;Ljava/security/Provider;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method createAttributeStore(Ljava/lang/String;Ljava/security/Provider;Lorg/bouncycastle/asn1/ASN1Set;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method createCRLsStore(Ljava/lang/String;Ljava/security/Provider;Lorg/bouncycastle/asn1/ASN1Set;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method createCertStore(Ljava/lang/String;Ljava/security/Provider;Lorg/bouncycastle/asn1/ASN1Set;Lorg/bouncycastle/asn1/ASN1Set;)Ljava/security/cert/CertStore; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method createCertificateStore(Ljava/lang/String;Ljava/security/Provider;Lorg/bouncycastle/asn1/ASN1Set;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method createDigestInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest; : // 1 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 : @Nullable // arg1
+  method fixAlgID(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;)Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getDigestAlgName(Ljava/lang/String;)Ljava/lang/String; : // 1 samples
+    return: 
+    parameter #0 :  // arg0
+  method getDigestAliases(Ljava/lang/String;)[Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getDigestInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest; : // 1 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 : @Nullable // arg1
+  method getEncryptionAlgName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getSignatureInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/Signature; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method setSigningDigestAlgorithmMapping(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method setSigningEncryptionAlgorithmMapping(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+
+
+package org.bouncycastle.cms:
+class CMSStreamException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class CMSTypedStream$FullReaderStream : // 0/- obj/class samples
+  method FullReaderStream(Lorg/bouncycastle/cms/CMSTypedStream;Ljava/io/InputStream;I)V : // 0 samples
+    return:
+    parameter #0 :  // arg1
+    parameter #1 :  // arg2
+  method close()V : // 0 samples
+    return:
+  method read()I : // 0 samples
+    return: 
+  method read([BII)I : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+
+
+package org.bouncycastle.cms:
+class CMSTypedStream : // 0/0 obj/class samples
+  field BUF_SIZ :  // int
+  field _oid :  // java.lang.String
+  field _in :  // java.io.InputStream
+  method <init>(Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/lang/String;Ljava/io/InputStream;I)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method drain()V : // 0 samples
+    return:
+  method getContentStream()Ljava/io/InputStream; : // 0 samples
+    return: 
+  method getContentType()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class CMSUtils : // 0/2 obj/class samples
+  method createBEROctetOutputStream(Ljava/io/OutputStream;IZI)Ljava/io/OutputStream; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method createBerSetFromList(Ljava/util/List;)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method createDerSetFromList(Ljava/util/List;)Lorg/bouncycastle/asn1/ASN1Set; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getCRLsFromStore(Ljava/security/cert/CertStore;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getCertificatesFromStore(Ljava/security/cert/CertStore;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getMaximumMemory()I : // 1 samples
+    return: 
+  method getProvider(Ljava/lang/String;)Ljava/security/Provider; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getTBSCertificateStructure(Ljava/security/cert/X509Certificate;)Lorg/bouncycastle/asn1/x509/TBSCertificateStructure; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method readContentInfo([B)Lorg/bouncycastle/asn1/cms/ContentInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method readContentInfo(Ljava/io/InputStream;)Lorg/bouncycastle/asn1/cms/ContentInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method readContentInfo(Lorg/bouncycastle/asn1/ASN1InputStream;)Lorg/bouncycastle/asn1/cms/ContentInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method streamToByteArray(Ljava/io/InputStream;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method streamToByteArray(Ljava/io/InputStream;I)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.bouncycastle.cms:
+class SignerId : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method equalsObj(Ljava/lang/Object;Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.cms:
+class SignerInformation : // 0/- obj/class samples
+  method <init>(Lorg/bouncycastle/asn1/cms/SignerInfo;Lorg/bouncycastle/asn1/DERObjectIdentifier;Lorg/bouncycastle/cms/CMSProcessable;Lorg/bouncycastle/cms/DigestCalculator;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method derDecode([B)Lorg/bouncycastle/asn1/x509/DigestInfo; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method doVerify(Ljava/security/PublicKey;Ljava/security/Provider;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method encodeObj(Lorg/bouncycastle/asn1/DEREncodable;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getContentDigest()[B : // 0 samples
+    return: 
+  method getCounterSignatures()Lorg/bouncycastle/cms/SignerInformationStore; : // 0 samples
+    return: 
+  method getDigestAlgOID()Ljava/lang/String; : // 0 samples
+    return: 
+  method getDigestAlgParams()[B : // 0 samples
+    return: 
+  method getDigestAlgorithmID()Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+  method getEncodedSignedAttributes()[B : // 0 samples
+    return: 
+  method getEncryptionAlgOID()Ljava/lang/String; : // 0 samples
+    return: 
+  method getEncryptionAlgParams()[B : // 0 samples
+    return: 
+  method getSID()Lorg/bouncycastle/cms/SignerId; : // 0 samples
+    return: 
+  method getSignature()[B : // 0 samples
+    return: 
+  method getSignedAttributes()Lorg/bouncycastle/asn1/cms/AttributeTable; : // 0 samples
+    return: 
+  method getSingleValuedSignedAttribute(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)Lorg/bouncycastle/asn1/DERObject; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getUnsignedAttributes()Lorg/bouncycastle/asn1/cms/AttributeTable; : // 0 samples
+    return: 
+  method getVersion()I : // 0 samples
+    return: 
+  method isNull(Lorg/bouncycastle/asn1/DEREncodable;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method toSignerInfo()Lorg/bouncycastle/asn1/cms/SignerInfo; : // 0 samples
+    return: 
+  method verify(Ljava/security/PublicKey;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method verify(Ljava/security/PublicKey;Ljava/security/Provider;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method verify(Ljava/security/cert/X509Certificate;Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method verify(Ljava/security/cert/X509Certificate;Ljava/security/Provider;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method verifyDigest([BLjava/security/PublicKey;[BLjava/security/Provider;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+
+
+package org.bouncycastle.cms:
+class SignerInformationStore : // 0/- obj/class samples
+  field table :  // java.util.Map
+  method <init>(Ljava/util/Collection;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method get(Lorg/bouncycastle/cms/SignerId;)Lorg/bouncycastle/cms/SignerInformation; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getSigners()Ljava/util/Collection; : // 0 samples
+    return: 
+  method getSigners(Lorg/bouncycastle/cms/SignerId;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method size()I : // 0 samples
+    return: 
+
+
+package org.bouncycastle.jce:
+class X509Principal : // 0/0 obj/class samples
+  method readSequence(Lorg/bouncycastle/asn1/ASN1InputStream;)Lorg/bouncycastle/asn1/ASN1Sequence; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method <init>(ZLjava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(ZLjava/util/Hashtable;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>([B)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method <init>(Ljava/util/Vector;Ljava/util/Hashtable;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Ljava/util/Vector;Ljava/util/Vector;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>(Lorg/bouncycastle/asn1/x509/X509Name;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method getEncoded()[B : // 0 samples
+    return: 
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.util.io:
+class StreamOverflowException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.util.io:
+class Streams : // 0/16 obj/class samples
+  method drain(Ljava/io/InputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method pipeAll(Ljava/io/InputStream;Ljava/io/OutputStream;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method pipeAllLimited(Ljava/io/InputStream;JLjava/io/OutputStream;)J : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method readAll(Ljava/io/InputStream;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method readAllLimited(Ljava/io/InputStream;I)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method readFully(Ljava/io/InputStream;[B)I : // 4 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+    parameter #1 : @Nullable // arg1
+  method readFully(Ljava/io/InputStream;[BII)I : // 4 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+    parameter #1 : @Nullable // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.bouncycastle.x509:
+class NoSuchStoreException : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+
+
+package org.bouncycastle.x509:
+class X509Store : // 0/- obj/class samples
+  field _provider :  // java.security.Provider
+  field _spi :  // org.bouncycastle.x509.X509StoreSpi
+  method createStore(Lorg/bouncycastle/x509/X509Util$Implementation;Lorg/bouncycastle/x509/X509StoreParameters;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getInstance(Ljava/lang/String;Lorg/bouncycastle/x509/X509StoreParameters;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getInstance(Ljava/lang/String;Lorg/bouncycastle/x509/X509StoreParameters;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method getInstance(Ljava/lang/String;Lorg/bouncycastle/x509/X509StoreParameters;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Store; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method <init>(Ljava/security/Provider;Lorg/bouncycastle/x509/Spi;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getMatches(Lorg/bouncycastle/util/Selector;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getProvider()Ljava/security/Provider; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.x509:
+class X509StoreSpi : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.bouncycastle.x509:
+class X509Util$Implementation : // 0/- obj/class samples
+  method Implementation(Ljava/lang/Object;Ljava/security/Provider;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getEngine()Ljava/lang/Object; : // 0 samples
+    return: 
+  method getProvider()Ljava/security/Provider; : // 0 samples
+    return: 
+
+
+package org.bouncycastle.x509:
+class X509Util : // 0/0 obj/class samples
+  method calculateSignature(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;Ljava/lang/String;Ljava/security/PrivateKey;Ljava/security/SecureRandom;Lorg/bouncycastle/asn1/ASN1Encodable;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+    parameter #5 :  // arg5
+  method calculateSignature(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;Ljava/security/PrivateKey;Ljava/security/SecureRandom;Lorg/bouncycastle/asn1/ASN1Encodable;)[B : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+    parameter #3 :  // arg3
+    parameter #4 :  // arg4
+  method convertPrincipal(Ljavax/security/auth/x500/X500Principal;)Lorg/bouncycastle/jce/X509Principal; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method creatPSSParams(Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier;I)Lorg/bouncycastle/asn1/pkcs/RSASSAPSSparams; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getAlgNames()Ljava/util/Iterator; : // 0 samples
+    return: 
+  method getAlgorithmOID(Ljava/lang/String;)Lorg/bouncycastle/asn1/DERObjectIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getImplementation(Ljava/lang/String;Ljava/lang/String;)Lorg/bouncycastle/x509/X509Util$Implementation; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getImplementation(Ljava/lang/String;Ljava/lang/String;Ljava/security/Provider;)Lorg/bouncycastle/x509/X509Util$Implementation; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+    parameter #2 :  // arg2
+  method getProvider(Ljava/lang/String;)Ljava/security/Provider; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getSigAlgID(Lorg/bouncycastle/asn1/DERObjectIdentifier;Ljava/lang/String;)Lorg/bouncycastle/asn1/x509/AlgorithmIdentifier; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method getSignatureInstance(Ljava/lang/String;)Ljava/security/Signature; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method getSignatureInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Signature; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+    parameter #1 :  // arg1
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+

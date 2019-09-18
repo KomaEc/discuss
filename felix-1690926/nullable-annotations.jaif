@@ -1,0 +1,4501 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 1/- obj/class samples
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method testGetServiceWithNullComponentContext()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl:
+class Activator : // 0/2 obj/class samples
+  method isLogEnabled(I)Z : // 1 samples
+    return: 
+    parameter #0 :  // level
+  method log(ILorg/osgi/framework/Bundle;Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // bundle
+    parameter #2 :  // pattern
+    parameter #3 :  // arguments
+    parameter #4 :  // ex
+  method log(ILorg/osgi/framework/Bundle;Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // bundle
+    parameter #2 :  // message
+    parameter #3 :  // ex
+  method <init>()V : // 0 samples
+    return:
+  method debug(Lorg/osgi/framework/Bundle;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // msg
+  method disposeComponents(Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+  method doCreateExtension(Lorg/osgi/framework/Bundle;)Lorg/apache/felix/utils/extender/Extension; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+  method doStart()V : // 0 samples
+    return:
+  method doStop()V : // 0 samples
+    return:
+  method error(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // t
+  method loadComponents(Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+  method restart(Z)V : // 0 samples
+    return:
+    parameter #0 :  // globalExtender
+  method start(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+  method stop(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+  method warn(Lorg/osgi/framework/Bundle;Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // msg
+    parameter #2 :  // t
+
+
+package org.apache.felix.scr.impl:
+class BundleComponentActivator : // 0/- obj/class samples
+  method findDescriptors(Lorg/osgi/framework/Bundle;Ljava/lang/String;)[Ljava/net/URL; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // descriptorLocation
+  method <init>(Lorg/apache/felix/scr/impl/ComponentRegistry;Lorg/apache/felix/scr/impl/ComponentActorThread;Lorg/osgi/framework/BundleContext;Lorg/apache/felix/scr/impl/config/ScrConfiguration;)V : // 0 samples
+    return:
+    parameter #0 :  // componentRegistry
+    parameter #1 :  // componentActor
+    parameter #2 :  // context
+    parameter #3 :  // configuration
+  method disableComponent(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method dispose(I)V : // 0 samples
+    return:
+    parameter #0 :  // reason
+  method enableComponent(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method getBundleContext()Lorg/osgi/framework/BundleContext; : // 0 samples
+    return: 
+  method getConfiguration()Lorg/apache/felix/scr/impl/config/ScrConfiguration; : // 0 samples
+    return: 
+  method getSelectedComponents(Ljava/lang/String;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method initialEnable()V : // 0 samples
+    return:
+  method initialize(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // descriptorLocations
+  method isActive()Z : // 0 samples
+    return: 
+  method isLogEnabled(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // level
+  method loadDescriptor(Ljava/net/URL;)V : // 0 samples
+    return:
+    parameter #0 :  // descriptorURL
+  method log(ILjava/lang/String;[Ljava/lang/Object;Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;Ljava/lang/Long;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // pattern
+    parameter #2 :  // arguments
+    parameter #3 :  // metadata
+    parameter #4 :  // componentId
+    parameter #5 :  // ex
+  method log(ILjava/lang/String;Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;Ljava/lang/Long;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // message
+    parameter #2 :  // metadata
+    parameter #3 :  // componentId
+    parameter #4 :  // ex
+  method missingServicePresent(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+  method registerComponentId(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;)J : // 0 samples
+    return: 
+    parameter #0 :  // componentManager
+  method registerMissingDependency(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/osgi/framework/ServiceReference;I)V : // 0 samples
+    return:
+    parameter #0 :  // dependencyManager
+    parameter #1 :  // serviceReference
+    parameter #2 :  // trackingCount
+  method schedule(Ljava/lang/Runnable;)V : // 0 samples
+    return:
+    parameter #0 :  // task
+  method unregisterComponentId(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;)V : // 0 samples
+    return:
+    parameter #0 :  // componentManager
+
+
+package org.apache.felix.scr.impl:
+class ComponentActorThread : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method run()V : // 0 samples
+    return:
+  method schedule(Ljava/lang/Runnable;)V : // 0 samples
+    return:
+    parameter #0 :  // task
+  method terminate()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl:
+class ComponentRegistry : // 0/0 obj/class samples
+  method isBundleActive(Lorg/osgi/framework/Bundle;)Z : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+  method <init>(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+  method checkComponentName(Lorg/osgi/framework/Bundle;Ljava/lang/String;)Lorg/apache/felix/scr/impl/ComponentRegistryKey; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // name
+  method createComponentHolder(Lorg/apache/felix/scr/impl/BundleComponentActivator;Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;)Lorg/apache/felix/scr/impl/config/ComponentHolder; : // 0 samples
+    return: 
+    parameter #0 :  // activator
+    parameter #1 :  // metadata
+  method dispose()V : // 0 samples
+    return:
+  method disposeConfigurationSupport()V : // 0 samples
+    return:
+  method getComponentHolder(Lorg/osgi/framework/Bundle;Ljava/lang/String;)Lorg/apache/felix/scr/impl/config/ComponentHolder; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // name
+  method getComponentHolders()Ljava/util/List; : // 0 samples
+    return: 
+  method getComponentHolders([Lorg/osgi/framework/Bundle;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // bundles
+  method getComponentHoldersByPid(Lorg/apache/felix/scr/impl/TargetedPID;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // targetedPid
+  method getOrCreateConfigurationSupport()Lorg/apache/felix/scr/impl/config/ConfigurationSupport; : // 0 samples
+    return: 
+  method missingServicePresent(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/ComponentActorThread;)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // actor
+  method registerComponentHolder(Lorg/apache/felix/scr/impl/ComponentRegistryKey;Lorg/apache/felix/scr/impl/config/ComponentHolder;)V : // 0 samples
+    return:
+    parameter #0 :  // key
+    parameter #1 :  // componentHolder
+  method registerComponentId(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;)J : // 0 samples
+    return: 
+    parameter #0 :  // componentManager
+  method registerMissingDependency(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/osgi/framework/ServiceReference;I)V : // 0 samples
+    return:
+    parameter #0 :  // dependencyManager
+    parameter #1 :  // serviceReference
+    parameter #2 :  // trackingCount
+  method serviceChanged(Lorg/osgi/framework/ServiceEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+  method unregisterComponentHolder(Lorg/apache/felix/scr/impl/ComponentRegistryKey;)V : // 0 samples
+    return:
+    parameter #0 :  // key
+  method unregisterComponentHolder(Lorg/osgi/framework/Bundle;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // name
+  method unregisterComponentId(J)V : // 0 samples
+    return:
+    parameter #0 :  // componentId
+
+
+package org.apache.felix.scr.impl:
+class ComponentRegistryKey : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/Bundle;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // componentName
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method getBundleId()J : // 0 samples
+    return: 
+  method getComponentName()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl:
+class ScrCommand : // 0/- obj/class samples
+  method register(Lorg/osgi/framework/BundleContext;Lorg/osgi/service/component/runtime/ServiceComponentRuntime;Lorg/apache/felix/scr/impl/config/ScrConfiguration;)Lorg/apache/felix/scr/impl/ScrCommand; : // 0 samples
+    return: 
+    parameter #0 :  // bundleContext
+    parameter #1 :  // scrService
+    parameter #2 :  // scrConfiguration
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/service/component/runtime/ServiceComponentRuntime;Lorg/apache/felix/scr/impl/config/ScrConfiguration;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleContext
+    parameter #1 :  // scrService
+    parameter #2 :  // scrConfiguration
+  method change(Ljava/lang/String;Ljava/io/PrintWriter;Z)V : // 0 samples
+    return:
+    parameter #0 :  // componentIdentifier
+    parameter #1 :  // out
+    parameter #2 :  // enable
+  method config(Ljava/io/PrintWriter;)V : // 0 samples
+    return:
+    parameter #0 :  // out
+  method info(Ljava/lang/String;Ljava/io/PrintWriter;)V : // 0 samples
+    return:
+    parameter #0 :  // componentId
+    parameter #1 :  // out
+  method info(Lorg/osgi/service/component/runtime/dto/ComponentConfigurationDTO;Ljava/io/PrintWriter;)V : // 0 samples
+    return:
+    parameter #0 :  // cc
+    parameter #1 :  // out
+  method list(Ljava/lang/String;Ljava/io/PrintWriter;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleIdentifier
+    parameter #1 :  // out
+  method propertyInfo(Ljava/util/Map;Ljava/io/PrintWriter;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // props
+    parameter #1 :  // out
+    parameter #2 :  // prefix
+  method registerCommands(Lorg/osgi/framework/BundleContext;Lorg/osgi/service/component/runtime/ServiceComponentRuntime;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleContext
+    parameter #1 :  // scrService
+  method toStateString(I)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // state
+  method unregister()V : // 0 samples
+    return:
+  method update(Z)V : // 0 samples
+    return:
+    parameter #0 :  // infoAsService
+
+
+package org.apache.felix.scr.impl:
+class TargetedPID : // 0/- obj/class samples
+  method getBundleVersion(Lorg/osgi/framework/Bundle;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // rawPid
+  method bindsStronger(Lorg/apache/felix/scr/impl/TargetedPID;)Z : // 0 samples
+    return: 
+    parameter #0 :  // other
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method getRawPid()Ljava/lang/String; : // 0 samples
+    return: 
+  method getServicePid()Ljava/lang/String; : // 0 samples
+    return: 
+  method hashCode()I : // 0 samples
+    return: 
+  method matchesTarget(Lorg/apache/felix/scr/impl/config/ComponentHolder;)Z : // 0 samples
+    return: 
+    parameter #0 :  // holder
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.config:
+class ComponentContainer$$EnhancerByMockitoWithCGLIB$$27ea98fe : // 14/16 obj/class samples
+  method CGLIB$STATICHOOK1()V : // 1 samples
+    return:
+  method CGLIB$findMethodProxy(Lorg/mockito/cglib/core/Signature;)Lorg/mockito/cglib/proxy/MethodProxy; : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method CGLIB$clone$4()Ljava/lang/Object; : // 0 samples
+    return: 
+  method CGLIB$disposed$6(Lorg/apache/felix/scr/impl/manager/SingleComponentManager;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method CGLIB$equals$1(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // arg0
+  method CGLIB$finalize$0()V : // 0 samples
+    return:
+  method CGLIB$getActivator$7()Lorg/apache/felix/scr/impl/BundleComponentActivator; : // 0 samples
+    return: 
+  method CGLIB$getComponentMetadata$5()Lorg/apache/felix/scr/impl/metadata/ComponentMetadata; : // 0 samples
+    return: 
+  method CGLIB$hashCode$3()I : // 0 samples
+    return: 
+  method CGLIB$toString$2()Ljava/lang/String; : // 0 samples
+    return: 
+  method clone()Ljava/lang/Object; : // 0 samples
+    return: 
+  method disposed(Lorg/apache/felix/scr/impl/manager/SingleComponentManager;)V : // 0 samples
+    return:
+    parameter #0 :  // arg0
+  method equals(Ljava/lang/Object;)Z : // 3 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+  method finalize()V : // 0 samples
+    return:
+  method getActivator()Lorg/apache/felix/scr/impl/BundleComponentActivator; : // 2 samples
+    return: @Nullable
+  method getComponentMetadata()Lorg/apache/felix/scr/impl/metadata/ComponentMetadata; : // 2 samples
+    return: @Nullable
+  method hashCode()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.config:
+class ConfigurationSupport$ConfigurationInfo : // 0/- obj/class samples
+  method ConfigurationInfo(Ljava/util/Dictionary;Ljava/lang/String;J)V : // 0 samples
+    return:
+    parameter #0 :  // props
+    parameter #1 :  // bundleLocation
+    parameter #2 :  // changeCount
+  method getBundleLocation()Ljava/lang/String; : // 0 samples
+    return: 
+  method getChangeCount()J : // 0 samples
+    return: 
+  method getProps()Ljava/util/Dictionary; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.config:
+class ConfigurationSupport$R4ChangeCount : // 0/- obj/class samples
+  method R4ChangeCount()V : // 0 samples
+    return:
+  method getChangeCount(Lorg/osgi/service/cm/Configuration;ZJ)J : // 0 samples
+    return: 
+    parameter #0 :  // configuration
+    parameter #1 :  // fromEvent
+    parameter #2 :  // previous
+
+
+package org.apache.felix.scr.impl.config:
+class ConfigurationSupport$R5ChangeCount : // 0/- obj/class samples
+  method R5ChangeCount()V : // 0 samples
+    return:
+  method getChangeCount(Lorg/osgi/service/cm/Configuration;ZJ)J : // 0 samples
+    return: 
+    parameter #0 :  // configuration
+    parameter #1 :  // fromEvent
+    parameter #2 :  // previous
+
+
+package org.apache.felix.scr.impl.config:
+class ConfigurationSupport : // 0/0 obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/apache/felix/scr/impl/ComponentRegistry;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleContext
+    parameter #1 :  // registry
+  method configurationEvent(Lorg/osgi/service/cm/ConfigurationEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+  method configureComponentHolder(Lorg/apache/felix/scr/impl/config/ComponentHolder;)Z : // 0 samples
+    return: 
+    parameter #0 :  // holder
+  method configureComponentHolders(Lorg/osgi/framework/ServiceReference;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // configurationAdminReference
+    parameter #1 :  // configurationAdmin
+  method dispose()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl.config:
+class ScrConfiguration : // 0/0 obj/class samples
+  method <init>(Lorg/apache/felix/scr/impl/Activator;)V : // 0 samples
+    return:
+    parameter #0 :  // activator
+  method configure(Ljava/util/Dictionary;Z)V : // 0 samples
+    return:
+    parameter #0 :  // config
+    parameter #1 :  // fromConfig
+  method getDefaultFactoryEnabled()Z : // 0 samples
+    return: 
+  method getDefaultGlobalExtender()Z : // 0 samples
+    return: 
+  method getDefaultInfoAsService()Z : // 0 samples
+    return: 
+  method getDefaultKeepInstances()Z : // 0 samples
+    return: 
+  method getDefaultLockTimeout()J : // 0 samples
+    return: 
+  method getDefaultLogLevel()I : // 0 samples
+    return: 
+  method getDefaultStopTimeout()J : // 0 samples
+    return: 
+  method getLogLevel()I : // 0 samples
+    return: 
+  method getLogLevel(Ljava/lang/Object;)I : // 0 samples
+    return: 
+    parameter #0 :  // levelObject
+  method globalExtender()Z : // 0 samples
+    return: 
+  method infoAsService()Z : // 0 samples
+    return: 
+  method isFactoryEnabled()Z : // 0 samples
+    return: 
+  method keepInstances()Z : // 0 samples
+    return: 
+  method lockTimeout()J : // 0 samples
+    return: 
+  method setScrCommand(Lorg/apache/felix/scr/impl/ScrCommand;)V : // 0 samples
+    return:
+    parameter #0 :  // scrCommand
+  method start(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleContext
+  method stop()V : // 0 samples
+    return:
+  method stopTimeout()J : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class ActivateMethod : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;ZLjava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;ZZ)V : // 0 samples
+    return:
+    parameter #0 :  // methodName
+    parameter #1 :  // methodRequired
+    parameter #2 :  // componentClass
+    parameter #3 :  // dsVersion
+    parameter #4 :  // configurableServiceProperties
+    parameter #5 :  // supportsInterfaces
+  method doFindMethod(Ljava/lang/Class;ZZLorg/apache/felix/scr/impl/helper/SimpleLogger;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // targetClass
+    parameter #1 :  // acceptPrivate
+    parameter #2 :  // acceptPackage
+    parameter #3 :  // logger
+  method getMethodNamePrefix()Ljava/lang/String; : // 0 samples
+    return: 
+  method getParameters(Ljava/lang/reflect/Method;Lorg/apache/felix/scr/impl/helper/ActivatorParameter;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // method
+    parameter #1 :  // rawParameter
+  method getSortedMethods(Ljava/lang/Class;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // targetClass
+  method invoke(Ljava/lang/Object;Lorg/apache/felix/scr/impl/helper/ActivatorParameter;Lorg/apache/felix/scr/impl/helper/MethodResult;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Lorg/apache/felix/scr/impl/helper/MethodResult; : // 0 samples
+    return: 
+    parameter #0 :  // componentInstance
+    parameter #1 :  // rawParameter
+    parameter #2 :  // methodCallFailureResult
+    parameter #3 :  // logger
+  method isAnnotation(Ljava/lang/Class;)Z : // 0 samples
+    return: 
+    parameter #0 :  // t1
+  method isDeactivate()Z : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class ActivatorParameter : // 0/- obj/class samples
+  method <init>(Lorg/osgi/service/component/ComponentContext;I)V : // 0 samples
+    return:
+    parameter #0 :  // componentContext
+    parameter #1 :  // reason
+  method getComponentContext()Lorg/osgi/service/component/ComponentContext; : // 0 samples
+    return: 
+  method getReason()I : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class BaseMethod : // 0/- obj/class samples
+  method accept(Ljava/lang/reflect/Method;ZZZ)Z : // 0 samples
+    return: 
+    parameter #0 :  // method
+    parameter #1 :  // acceptPrivate
+    parameter #2 :  // acceptPackage
+    parameter #3 :  // allowReturnValue
+  method getPackageName(Ljava/lang/Class;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method setAccessible(Ljava/lang/reflect/Method;)V : // 0 samples
+    return:
+    parameter #0 :  // method
+  method <init>(Ljava/lang/String;ZLjava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;Z)V : // 0 samples
+    return:
+    parameter #0 :  // methodName
+    parameter #1 :  // methodRequired
+    parameter #2 :  // componentClass
+    parameter #3 :  // dsVersion
+    parameter #4 :  // configurableServiceProperties
+  method <init>(Ljava/lang/String;Ljava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;Z)V : // 0 samples
+    return:
+    parameter #0 :  // methodName
+    parameter #1 :  // componentClass
+    parameter #2 :  // dsVersion
+    parameter #3 :  // configurableServiceProperties
+  method findMethod(Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // logger
+  method getComponentClass()Ljava/lang/Class; : // 0 samples
+    return: 
+  method getDSVersion()Lorg/apache/felix/scr/impl/metadata/DSVersion; : // 0 samples
+    return: 
+  method getMethod()Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+  method getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;ZZLorg/apache/felix/scr/impl/helper/SimpleLogger;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+    parameter #1 :  // name
+    parameter #2 :  // parameterTypes
+    parameter #3 :  // acceptPrivate
+    parameter #4 :  // acceptPackage
+    parameter #5 :  // logger
+  method getMethodName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getMethodNamePrefix()Ljava/lang/String; : // 0 samples
+    return: 
+  method getState()Lorg/apache/felix/scr/impl/helper/BaseMethod$State; : // 0 samples
+    return: 
+  method invoke(Ljava/lang/Object;Ljava/lang/Object;Lorg/apache/felix/scr/impl/helper/MethodResult;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Lorg/apache/felix/scr/impl/helper/MethodResult; : // 0 samples
+    return: 
+    parameter #0 :  // componentInstance
+    parameter #1 :  // rawParameter
+    parameter #2 :  // methodCallFailureResult
+    parameter #3 :  // logger
+  method invokeMethod(Ljava/lang/Object;Ljava/lang/Object;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Lorg/apache/felix/scr/impl/helper/MethodResult; : // 0 samples
+    return: 
+    parameter #0 :  // componentInstance
+    parameter #1 :  // rawParameter
+    parameter #2 :  // logger
+  method isDS12Felix()Z : // 0 samples
+    return: 
+  method methodExists(Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Z : // 0 samples
+    return: 
+    parameter #0 :  // logger
+  method returnValue()Z : // 0 samples
+    return: 
+  method setMethod(Ljava/lang/reflect/Method;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)V : // 0 samples
+    return:
+    parameter #0 :  // method
+    parameter #1 :  // logger
+
+
+package org.apache.felix.scr.impl.helper:
+class ComponentMethods : // 1/- obj/class samples
+  field m_activateMethod : @Nullable // org.apache.felix.scr.impl.helper.ActivateMethod
+  field COMPONENT_CONTEXT_CLASS :  // java.lang.Class
+  field BUNDLE_CONTEXT_CLASS :  // java.lang.Class
+  field INTEGER_CLASS :  // java.lang.Class
+  field DSnone :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS10 :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS11 :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS11Felix :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS12 :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS12Felix :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field DS13 :  // org.apache.felix.scr.impl.metadata.DSVersion
+  field ENUM$VALUES :  // org.apache.felix.scr.impl.metadata.DSVersion[]
+  field m_modifiedMethod : @Nullable // org.apache.felix.scr.impl.helper.ModifiedMethod
+  field m_deactivateMethod : @Nullable // org.apache.felix.scr.impl.helper.DeactivateMethod
+  field bindMethodMap :  // java.util.Map
+  method <init>()V : // 1 samples
+    return:
+  method getActivateMethod()Lorg/apache/felix/scr/impl/helper/ActivateMethod; : // 0 samples
+    return: 
+  method getBindMethods(Ljava/lang/String;)Lorg/apache/felix/scr/impl/helper/ReferenceMethods; : // 0 samples
+    return: 
+    parameter #0 :  // refName
+  method getDeactivateMethod()Lorg/apache/felix/scr/impl/helper/DeactivateMethod; : // 0 samples
+    return: 
+  method getModifiedMethod()Lorg/apache/felix/scr/impl/helper/ModifiedMethod; : // 0 samples
+    return: 
+  method initComponentMethods(Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;Ljava/lang/Class;)V : // 0 samples
+    return:
+    parameter #0 :  // componentMetadata
+    parameter #1 :  // implementationObjectClass
+
+
+package org.apache.felix.scr.impl.helper:
+class ComponentServiceObjectsHelper : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // bundleContext
+  method cleanup()V : // 0 samples
+    return:
+  method getPrototypeRefInstance(Lorg/osgi/framework/ServiceReference;Lorg/osgi/framework/ServiceObjects;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // ref
+    parameter #1 :  // serviceObjects
+  method getServiceObjects(Lorg/osgi/framework/ServiceReference;)Lorg/osgi/service/component/ComponentServiceObjects; : // 0 samples
+    return: 
+    parameter #0 :  // ref
+
+
+package org.apache.felix.scr.impl.helper:
+class DeactivateMethod : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;ZLjava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;ZZ)V : // 0 samples
+    return:
+    parameter #0 :  // methodName
+    parameter #1 :  // methodRequired
+    parameter #2 :  // componentClass
+    parameter #3 :  // dsVersion
+    parameter #4 :  // configurableServiceProperties
+    parameter #5 :  // supportsInterfaces
+  method getMethodNamePrefix()Ljava/lang/String; : // 0 samples
+    return: 
+  method isDeactivate()Z : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class DuplexReferenceMethods : // 0/- obj/class samples
+  method <init>(Lorg/apache/felix/scr/impl/helper/ReferenceMethods;Lorg/apache/felix/scr/impl/helper/ReferenceMethods;)V : // 0 samples
+    return:
+    parameter #0 :  // first
+    parameter #1 :  // second
+  method getBind()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+  method getInit()Lorg/apache/felix/scr/impl/helper/InitReferenceMethod; : // 0 samples
+    return: 
+  method getUnbind()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+  method getUpdated()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class FieldMethods : // 0/- obj/class samples
+  method <init>(Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata;Ljava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;Z)V : // 0 samples
+    return:
+    parameter #0 :  // m_dependencyMetadata
+    parameter #1 :  // instanceClass
+    parameter #2 :  // dsVersion
+    parameter #3 :  // configurableServiceProperties
+  method getBind()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+  method getInit()Lorg/apache/felix/scr/impl/helper/InitReferenceMethod; : // 0 samples
+    return: 
+  method getUnbind()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+  method getUpdated()Lorg/apache/felix/scr/impl/helper/ReferenceMethod; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class MethodResult : // 0/0 obj/class samples
+  method <init>(ZLjava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // hasResult
+    parameter #1 :  // result
+  method getResult()Ljava/util/Map; : // 0 samples
+    return: 
+  method hasResult()Z : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class ModifiedMethod : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;Ljava/lang/Class;Lorg/apache/felix/scr/impl/metadata/DSVersion;ZZ)V : // 0 samples
+    return:
+    parameter #0 :  // methodName
+    parameter #1 :  // componentClass
+    parameter #2 :  // dsVersion
+    parameter #3 :  // configurableServiceProperties
+    parameter #4 :  // supportsInterfaces
+  method acceptEmpty()Z : // 0 samples
+    return: 
+  method getMethodNamePrefix()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class ReadOnlyDictionary : // 0/- obj/class samples
+  method <init>(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // delegate
+  method <init>(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+  method compareTo(Lorg/apache/felix/scr/impl/helper/ReadOnlyDictionary;)I : // 0 samples
+    return: 
+    parameter #0 :  // o
+  method containsKey(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method containsValue(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method elements()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method entrySet()Ljava/util/Set; : // 0 samples
+    return: 
+  method get(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method isEmpty()Z : // 0 samples
+    return: 
+  method keySet()Ljava/util/Set; : // 0 samples
+    return: 
+  method keys()Ljava/util/Enumeration; : // 0 samples
+    return: 
+  method size()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method values()Ljava/util/Collection; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.helper:
+class SuitableMethodNotAccessibleException : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+
+package org.apache.felix.scr.impl.manager:
+class AbstractComponentManager : // 13/13 obj/class samples
+  field REASONS :  // java.lang.String[]
+  field taskCounter :  // java.util.concurrent.atomic.AtomicLong
+  field m_container :  // org.apache.felix.scr.impl.config.ComponentContainer
+  field m_factoryInstance :  // boolean
+  field m_componentId :  // long
+  field m_componentMethods :  // org.apache.felix.scr.impl.helper.ComponentMethods
+  field COMPONENT_CONTEXT_CLASS :  // java.lang.Class
+  field BUNDLE_CONTEXT_CLASS :  // java.lang.Class
+  field INTEGER_CLASS :  // java.lang.Class
+  field m_dependencyManagers : @Nullable // java.util.List
+  field m_dependencyManagersInitialized :  // boolean
+  field m_trackingCount :  // java.util.concurrent.atomic.AtomicInteger
+  field m_stateLock : @Nullable // java.util.concurrent.locks.ReentrantLock
+  field m_enabledLatchRef :  // java.util.concurrent.atomic.AtomicReference
+  field m_internalEnabled :  // boolean
+  field m_satisfied :  // boolean
+  field m_disposed :  // boolean
+  field m_floor :  // int
+  field m_ceiling :  // int
+  field m_missingLock :  // java.util.concurrent.locks.Lock
+  field m_missingCondition :  // java.util.concurrent.locks.Condition
+  field m_missing :  // java.util.Set
+  field m_activated :  // boolean
+  field m_activationLock :  // java.util.concurrent.locks.ReentrantReadWriteLock
+  field registrationManager :  // org.apache.felix.scr.impl.manager.RegistrationManager
+  method copyTo(Ljava/util/Dictionary;Ljava/util/Map;Z)Ljava/util/Dictionary; : // 0 samples
+    return: 
+    parameter #0 :  // target
+    parameter #1 :  // source
+    parameter #2 :  // allProps
+  method copyToDictionary(Ljava/util/Dictionary;Z)Ljava/util/Dictionary; : // 0 samples
+    return: 
+    parameter #0 :  // source
+    parameter #1 :  // allProps
+  method copyToMap(Ljava/util/Dictionary;Z)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // source
+    parameter #1 :  // allProps
+  method <init>(Lorg/apache/felix/scr/impl/config/ComponentContainer;Lorg/apache/felix/scr/impl/helper/ComponentMethods;)V : // 0 samples
+    return:
+    parameter #0 :  // container
+    parameter #1 :  // componentMethods
+  method <init>(Lorg/apache/felix/scr/impl/config/ComponentContainer;Lorg/apache/felix/scr/impl/helper/ComponentMethods;Z)V : // 1 samples
+    return:
+    parameter #0 :  // container
+    parameter #1 :  // componentMethods
+    parameter #2 :  // factoryInstance
+  method activateInternal()V : // 0 samples
+    return:
+  method clear()V : // 0 samples
+    return:
+  method collectDependencies(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+  method deactivateDependencyManagers()V : // 0 samples
+    return:
+  method deactivateInternal(IZZ)V : // 0 samples
+    return:
+    parameter #0 :  // reason
+    parameter #1 :  // disable
+    parameter #2 :  // dispose
+  method disable(Z)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // async
+  method disableDependencyManagers()V : // 0 samples
+    return:
+  method disableInternal()V : // 0 samples
+    return:
+  method dispose()V : // 0 samples
+    return:
+  method dispose(I)V : // 0 samples
+    return:
+    parameter #0 :  // reason
+  method doDeactivate(IZ)V : // 0 samples
+    return:
+    parameter #0 :  // reason
+    parameter #1 :  // disable
+  method doMissingWait()Z : // 0 samples
+    return: 
+  method dumpThreads()V : // 0 samples
+    return:
+  method enable(Z)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // async
+  method enableInternal()V : // 0 samples
+    return:
+  method enableLatchWait()Lorg/osgi/util/promise/Deferred; : // 0 samples
+    return: 
+  method getActivator()Lorg/apache/felix/scr/impl/BundleComponentActivator; : // 2 samples
+    return: @Nullable
+  method getBundle()Lorg/osgi/framework/Bundle; : // 0 samples
+    return: 
+  method getBundleContext()Lorg/osgi/framework/BundleContext; : // 0 samples
+    return: 
+  method getComponentMetadata()Lorg/apache/felix/scr/impl/metadata/ComponentMetadata; : // 0 samples
+    return: 
+  method getComponentMethods()Lorg/apache/felix/scr/impl/helper/ComponentMethods; : // 0 samples
+    return: 
+  method getDependencyManager(Ljava/lang/String;)Lorg/apache/felix/scr/impl/manager/DependencyManager; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method getDependencyManagers()Ljava/util/List; : // 0 samples
+    return: 
+  method getId()J : // 0 samples
+    return: 
+  method getLockTimeout()J : // 0 samples
+    return: 
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getProvidedServices()[Ljava/lang/String; : // 0 samples
+    return: 
+  method getReferenceManagers()Ljava/util/List; : // 0 samples
+    return: 
+  method getReversedDependencyManagers()Ljava/util/List; : // 0 samples
+    return: 
+  method getService()Ljava/lang/Object; : // 0 samples
+    return: 
+  method getServiceInternal()Z : // 0 samples
+    return: 
+  method getServiceProperties()Ljava/util/Dictionary; : // 0 samples
+    return: 
+  method getServiceReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServiceRegistration()Lorg/osgi/framework/ServiceRegistration; : // 0 samples
+    return: 
+  method getState()I : // 0 samples
+    return: 
+  method getTrackingCount()Ljava/util/concurrent/atomic/AtomicInteger; : // 0 samples
+    return: 
+  method hasServiceRegistrationPermissions()Z : // 0 samples
+    return: 
+  method initDependencyManagers()V : // 0 samples
+    return:
+  method isActivatorActive()Z : // 0 samples
+    return: 
+  method isFactory()Z : // 0 samples
+    return: 
+  method isImmediate()Z : // 0 samples
+    return: 
+  method isInternalEnabled()Z : // 0 samples
+    return: 
+  method isLogEnabled(I)Z : // 1 samples
+    return: 
+    parameter #0 :  // level
+  method isSatisfied()Z : // 0 samples
+    return: 
+  method isStateLocked()Z : // 0 samples
+    return: 
+  method loadDependencyManagers(Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;)Ljava/util/List; : // 1 samples
+    return: 
+    parameter #0 :  // metadata
+  method log(ILjava/lang/String;[Ljava/lang/Object;Ljava/lang/Throwable;)V : // 2 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // message
+    parameter #2 :  // arguments
+    parameter #3 : @Nullable // ex
+  method log(ILjava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // level
+    parameter #1 :  // message
+    parameter #2 :  // ex
+  method obtainActivationReadLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method obtainActivationWriteLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method obtainLock(Ljava/util/concurrent/locks/Lock;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // lock
+    parameter #1 :  // source
+  method obtainStateLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method registerComponentId()V : // 0 samples
+    return:
+  method registerMissingDependency(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/osgi/framework/ServiceReference;I)V : // 0 samples
+    return:
+    parameter #0 :  // dm
+    parameter #1 :  // ref
+    parameter #2 :  // trackingCount
+  method registerService()Z : // 0 samples
+    return: 
+  method releaseActivationReadLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method releaseActivationWriteeLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method releaseStateLock(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+  method setServiceProperties(Lorg/apache/felix/scr/impl/helper/MethodResult;)V : // 0 samples
+    return:
+    parameter #0 :  // methodResult
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method tracked(I)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+  method unregisterComponentId()V : // 0 samples
+    return:
+  method unregisterService()Z : // 0 samples
+    return: 
+  method updateTargets(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // properties
+  method verifyDependencyManagers()Z : // 0 samples
+    return: 
+  method waitForTracked(I)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class ComponentContextImpl : // 0/- obj/class samples
+  method <init>(Lorg/apache/felix/scr/impl/manager/SingleComponentManager;Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // componentManager
+    parameter #1 :  // usingBundle
+  method cleanup()V : // 0 samples
+    return:
+  method disableComponent(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method enableComponent(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method getBundleContext()Lorg/osgi/framework/BundleContext; : // 0 samples
+    return: 
+  method getComponentInstance()Lorg/osgi/service/component/ComponentInstance; : // 0 samples
+    return: 
+  method getComponentManager()Lorg/apache/felix/scr/impl/manager/SingleComponentManager; : // 0 samples
+    return: 
+  method getComponentServiceObjectsHelper()Lorg/apache/felix/scr/impl/helper/ComponentServiceObjectsHelper; : // 0 samples
+    return: 
+  method getEdgeInfo(Lorg/apache/felix/scr/impl/manager/DependencyManager;)Lorg/apache/felix/scr/impl/manager/EdgeInfo; : // 0 samples
+    return: 
+    parameter #0 :  // dm
+  method getImplementationObject(Z)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // requireAccessible
+  method getProperties()Ljava/util/Dictionary; : // 0 samples
+    return: 
+  method getServiceReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getUsingBundle()Lorg/osgi/framework/Bundle; : // 0 samples
+    return: 
+  method locateService(Ljava/lang/String;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method locateService(Ljava/lang/String;Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // ref
+  method locateServices(Ljava/lang/String;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method setImplementationAccessible(Z)V : // 0 samples
+    return:
+    parameter #0 :  // implementationAccessible
+  method setImplementationObject(Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // implementationObject
+  method setServiceProperties(Ljava/util/Dictionary;)V : // 0 samples
+    return:
+    parameter #0 :  // properties
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$AbstractCustomizer : // 0/- obj/class samples
+  method AbstractCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method deactivateTracker()V : // 0 samples
+    return:
+  method getPreviousRefMap()Ljava/util/Map; : // 0 samples
+    return: 
+  method getTracker()Lorg/apache/felix/scr/impl/manager/ServiceTracker; : // 0 samples
+    return: 
+  method isActive()Z : // 0 samples
+    return: 
+  method isSatisfied()Z : // 0 samples
+    return: 
+  method isTrackerOpened()Z : // 0 samples
+    return: 
+  method setPreviousRefMap(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // previousRefMap
+  method setTracker(Lorg/apache/felix/scr/impl/manager/ServiceTracker;)V : // 0 samples
+    return:
+    parameter #0 :  // tracker
+  method setTrackerOpened()V : // 0 samples
+    return:
+  method tracked(I)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+  method ungetService(Lorg/apache/felix/scr/impl/manager/RefPair;)V : // 0 samples
+    return:
+    parameter #0 :  // ref
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$FactoryCustomizer : // 0/- obj/class samples
+  method FactoryCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method addedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;II)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // serviceCount
+  method addingService(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method close()V : // 0 samples
+    return:
+  method getRefs(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method removedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$MultipleDynamicCustomizer : // 0/- obj/class samples
+  method MultipleDynamicCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method addedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;II)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // serviceCount
+  method addingService(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method close()V : // 0 samples
+    return:
+  method getRefs(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method removedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$MultipleStaticGreedyCustomizer : // 0/- obj/class samples
+  method MultipleStaticGreedyCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method addedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;II)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // serviceCount
+  method addingService(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method close()V : // 0 samples
+    return:
+  method getRefs(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method removedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$MultipleStaticReluctantCustomizer : // 0/- obj/class samples
+  method MultipleStaticReluctantCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method addedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;II)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // serviceCount
+  method addingService(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method close()V : // 0 samples
+    return:
+  method getRefs(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method removedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // serviceReference
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager$NoPermissionsCustomizer : // 0/- obj/class samples
+  method NoPermissionsCustomizer(Lorg/apache/felix/scr/impl/manager/DependencyManager;)V : // 0 samples
+    return:
+  method addedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;II)V : // 0 samples
+    return:
+    parameter #0 :  // tServiceReference
+    parameter #1 :  // service
+    parameter #2 :  // trackingCount
+    parameter #3 :  // serviceCount
+  method addingService(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // tServiceReference
+  method close()V : // 0 samples
+    return:
+  method getRefs(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method isSatisfied()Z : // 0 samples
+    return: 
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // tServiceReference
+    parameter #1 :  // service
+    parameter #2 :  // trackingCount
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method removedService(Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // tServiceReference
+    parameter #1 :  // service
+    parameter #2 :  // trackingCount
+  method setPreviousRefMap(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // previousRefMap
+  method setTracker(Lorg/apache/felix/scr/impl/manager/ServiceTracker;)V : // 0 samples
+    return:
+    parameter #0 :  // tRefPairServiceTracker
+  method setTrackerOpened()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl.manager:
+class DependencyManager : // 0/- obj/class samples
+  method defaultMinimumCardinality(Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata;)I : // 0 samples
+    return: 
+    parameter #0 :  // dependency
+  method <init>(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata;I)V : // 0 samples
+    return:
+    parameter #0 :  // componentManager
+    parameter #1 :  // dependency
+    parameter #2 :  // index
+  method canUpdateDynamically(Ljava/util/Map;)Z : // 0 samples
+    return: 
+    parameter #0 :  // properties
+  method cardinalityJustSatisfied(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // serviceCount
+  method cardinalitySatisfied(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // serviceCount
+  method close(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/EdgeInfo;)V : // 0 samples
+    return:
+    parameter #0 :  // componentContext
+    parameter #1 :  // edgeInfo
+  method deactivate()V : // 0 samples
+    return:
+  method doInvokeBindMethod(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/RefPair;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+    parameter #1 :  // refPair
+  method getBestRefPair()Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+  method getFrameworkServiceReferences(Ljava/lang/String;)[Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+    parameter #0 :  // targetFilter
+  method getIndex()I : // 0 samples
+    return: 
+  method getMinimumCardinality(Ljava/util/Map;)I : // 0 samples
+    return: 
+    parameter #0 :  // properties
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getRefPair(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method getService(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method getService(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/RefPair;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // refPair
+  method getService(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // serviceReference
+  method getServiceName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/helper/ReferenceMethod;Lorg/apache/felix/scr/impl/manager/RefPair;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // bindMethod
+    parameter #2 :  // refPair
+  method getServiceReferences()Ljava/util/List; : // 0 samples
+    return: 
+  method getServices(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method getTarget()Ljava/lang/String; : // 0 samples
+    return: 
+  method hasGetPermission()Z : // 0 samples
+    return: 
+  method initBindingMethods(Lorg/apache/felix/scr/impl/helper/ReferenceMethods;)V : // 0 samples
+    return:
+    parameter #0 :  // bindMethods
+  method invokeBindMethod(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/RefPair;ILorg/apache/felix/scr/impl/manager/EdgeInfo;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // info
+  method invokeBindMethodLate(Lorg/osgi/framework/ServiceReference;I)V : // 0 samples
+    return:
+    parameter #0 :  // ref
+    parameter #1 :  // trackingCount
+  method invokeInitMethod(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+  method invokeUnbindMethod(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/RefPair;ILorg/apache/felix/scr/impl/manager/EdgeInfo;)V : // 0 samples
+    return:
+    parameter #0 :  // componentContext
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // info
+  method invokeUpdatedMethod(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/RefPair;ILorg/apache/felix/scr/impl/manager/EdgeInfo;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+    parameter #3 :  // info
+  method isEffectivelyOptional()Z : // 0 samples
+    return: 
+  method isMultiple()Z : // 0 samples
+    return: 
+  method isOptional()Z : // 0 samples
+    return: 
+  method isReluctant()Z : // 0 samples
+    return: 
+  method isSatisfied()Z : // 0 samples
+    return: 
+  method isStatic()Z : // 0 samples
+    return: 
+  method newCustomizer()Lorg/apache/felix/scr/impl/manager/DependencyManager$Customizer; : // 0 samples
+    return: 
+  method newRefPair(Lorg/osgi/framework/ServiceReference;)Lorg/apache/felix/scr/impl/manager/RefPair; : // 0 samples
+    return: 
+    parameter #0 :  // serviceReference
+  method open(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/apache/felix/scr/impl/manager/EdgeInfo;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+    parameter #1 :  // edgeInfo
+  method prebind(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method setTargetFilter(Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // target
+    parameter #1 :  // minimumCardinality
+  method setTargetFilter(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // properties
+  method size()I : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method unregisterServiceListener(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/SortedMap; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class EdgeInfo : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method afterRange(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method beforeRange(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method getCloseLatch()Ljava/util/concurrent/CountDownLatch; : // 0 samples
+    return: 
+  method getOpenLatch()Ljava/util/concurrent/CountDownLatch; : // 0 samples
+    return: 
+  method ignore()V : // 0 samples
+    return:
+  method outOfRange(I)Z : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method setClose(I)V : // 0 samples
+    return:
+    parameter #0 :  // close
+  method setOpen(I)V : // 0 samples
+    return:
+    parameter #0 :  // open
+  method waitForClose(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // m_componentManager
+    parameter #1 :  // componentName
+    parameter #2 :  // methodName
+  method waitForLatch(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;Ljava/util/concurrent/CountDownLatch;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // m_componentManager
+    parameter #1 :  // latch
+    parameter #2 :  // componentName
+    parameter #3 :  // methodName
+    parameter #4 :  // latchName
+  method waitForOpen(Lorg/apache/felix/scr/impl/manager/AbstractComponentManager;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // m_componentManager
+    parameter #1 :  // componentName
+    parameter #2 :  // methodName
+
+
+package org.apache.felix.scr.impl.manager:
+class Helper : // 3/0 obj/class samples
+  field REASONS :  // java.lang.String[]
+  field taskCounter :  // java.util.concurrent.atomic.AtomicLong
+  field m_useCount :  // java.util.concurrent.atomic.AtomicInteger
+  field m_componentContext : @Nullable // org.apache.felix.scr.impl.manager.ComponentContextImpl
+  field REASONS :  // java.lang.String[]
+  field taskCounter :  // java.util.concurrent.atomic.AtomicLong
+  field m_configurationProperties : @Nullable // java.util.Map
+  field m_factoryProperties : @Nullable // java.util.Map
+  field m_properties : @Nullable // java.util.Map
+  field m_serviceProperties : @Nullable // java.util.Dictionary
+  field m_circularReferences :  // java.lang.ThreadLocal
+  field m_container :  // org.apache.felix.scr.impl.config.ComponentContainer
+  field m_factoryInstance :  // boolean
+  field m_componentId :  // long
+  field m_componentMethods :  // org.apache.felix.scr.impl.helper.ComponentMethods
+  field COMPONENT_CONTEXT_CLASS :  // java.lang.Class
+  field BUNDLE_CONTEXT_CLASS :  // java.lang.Class
+  field INTEGER_CLASS :  // java.lang.Class
+  field m_dependencyManagers :  // java.util.List
+  field m_dependencyManagersInitialized :  // boolean
+  field m_trackingCount :  // java.util.concurrent.atomic.AtomicInteger
+  field m_stateLock :  // java.util.concurrent.locks.ReentrantLock
+  field m_enabledLatchRef :  // java.util.concurrent.atomic.AtomicReference
+  field m_internalEnabled :  // boolean
+  field m_satisfied :  // boolean
+  field m_disposed :  // boolean
+  field m_floor :  // int
+  field m_ceiling :  // int
+  field m_missingLock :  // java.util.concurrent.locks.Lock
+  field m_missingCondition :  // java.util.concurrent.locks.Condition
+  field m_missing :  // java.util.Set
+  field m_activated :  // boolean
+  field m_activationLock :  // java.util.concurrent.locks.ReentrantReadWriteLock
+  field registrationManager :  // org.apache.felix.scr.impl.manager.RegistrationManager
+  method <init>(Lorg/apache/felix/scr/impl/config/ComponentContainer;Lorg/apache/felix/scr/impl/helper/ComponentMethods;)V : // 1 samples
+    return:
+    parameter #0 :  // container
+    parameter #1 :  // componentMethods
+  method getServiceInternal()Z : // 1 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.manager:
+class MultiplePrototypeRefPair : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // ref
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/osgi/framework/BundleContext;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // context
+    parameter #2 :  // logger
+  method getServiceObjects()Lorg/osgi/framework/ServiceObjects; : // 0 samples
+    return: 
+  method setServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // serviceObject
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method unsetServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+
+
+package org.apache.felix.scr.impl.manager:
+class RefPair : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // ref
+  method getRef()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServiceObjects()Lorg/osgi/framework/ServiceObjects; : // 0 samples
+    return: 
+  method isDeleted()Z : // 0 samples
+    return: 
+  method isFailed()Z : // 0 samples
+    return: 
+  method setDeleted(Z)V : // 0 samples
+    return:
+    parameter #0 :  // deleted
+  method setFailed()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl.manager:
+class RegistrationManager$RegState : // 0/0 obj/class samples
+  method valueOf(Ljava/lang/String;)Lorg/apache/felix/scr/impl/manager/RegistrationManager$RegState; : // 0 samples
+    return: 
+    parameter #0 :  // $hidden$0
+  method values()[Lorg/apache/felix/scr/impl/manager/RegistrationManager$RegState; : // 0 samples
+    return: 
+  method RegState(Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // $hidden$1
+    parameter #1 :  // $hidden$2
+
+
+package org.apache.felix.scr.impl.manager:
+class RegistrationManager : // 1/- obj/class samples
+  field registrationLock :  // java.util.concurrent.locks.Lock
+  field opqueue :  // java.util.List
+  field m_serviceRegistration : @Nullable // java.lang.Object
+  method <init>()V : // 1 samples
+    return:
+  method changeRegistration(Lorg/apache/felix/scr/impl/manager/RegistrationManager$RegState;[Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // desired
+    parameter #1 :  // services
+  method getServiceRegistration()Ljava/lang/Object; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.manager:
+class ServiceTracker$AbstractTracked : // 0/0 obj/class samples
+  method AbstractTracked(Lorg/apache/felix/scr/impl/manager/ServiceTracker;Ljava/util/concurrent/atomic/AtomicInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+  method close()V : // 0 samples
+    return:
+  method copyEntries(Ljava/util/Map;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // map
+  method copyKeys([Ljava/lang/Object;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // list
+  method getCustomizedObject(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // item
+  method getTrackingCount()I : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method modified()I : // 0 samples
+    return: 
+  method setInitial([Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // list
+  method size()I : // 0 samples
+    return: 
+  method track(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+  method trackAdding(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+  method trackInitial()V : // 0 samples
+    return:
+  method untrack(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+
+
+package org.apache.felix.scr.impl.manager:
+class ServiceTracker$AllTracked : // 0/0 obj/class samples
+  method AllTracked(Lorg/apache/felix/scr/impl/manager/ServiceTracker;Ljava/util/concurrent/atomic/AtomicInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+
+
+package org.apache.felix.scr.impl.manager:
+class ServiceTracker$Tracked : // 0/0 obj/class samples
+  method Tracked(Lorg/apache/felix/scr/impl/manager/ServiceTracker;Ljava/util/concurrent/atomic/AtomicInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+  method serviceChanged(Lorg/osgi/framework/ServiceEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+
+
+package org.apache.felix.scr.impl.manager:
+class ServiceTracker : // 0/0 obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;Ljava/lang/Class;Lorg/apache/felix/scr/impl/manager/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // clazz
+    parameter #2 :  // customizer
+  method <init>(Lorg/osgi/framework/BundleContext;Ljava/lang/String;Lorg/apache/felix/scr/impl/manager/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // clazz
+    parameter #2 :  // customizer
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/Filter;Lorg/apache/felix/scr/impl/manager/Customizer;Z)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // filter
+    parameter #2 :  // customizer
+    parameter #3 :  // initialActive
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/ServiceReference;Lorg/apache/felix/scr/impl/manager/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // reference
+    parameter #2 :  // customizer
+  method addingService(Lorg/osgi/framework/ServiceReference;I)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // reference
+    parameter #1 :  // trackingCount
+  method close(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/SortedMap; : // 0 samples
+    return: 
+    parameter #0 :  // trackingCount
+  method completeClose(Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // toUntrack
+  method deactivate()V : // 0 samples
+    return:
+  method getInitialReferences(ZLjava/lang/String;Ljava/lang/String;)[Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+    parameter #0 :  // trackAllServices
+    parameter #1 :  // className
+    parameter #2 :  // filterString
+  method getService()Ljava/lang/Object; : // 0 samples
+    return: 
+  method getService(Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // reference
+  method getServiceCount()I : // 0 samples
+    return: 
+  method getServiceReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServiceReferences()[Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServices()[Ljava/lang/Object; : // 0 samples
+    return: 
+  method getServices([Ljava/lang/Object;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // array
+  method getTracked(Ljava/lang/Boolean;Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/util/SortedMap; : // 0 samples
+    return: 
+    parameter #0 :  // activate
+    parameter #1 :  // trackingCount
+  method getTrackingCount()I : // 0 samples
+    return: 
+  method isActive()Z : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method modified()V : // 0 samples
+    return:
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Ljava/lang/Object;I)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+    parameter #1 :  // service
+    parameter #2 :  // trackingCount
+  method open(ZLjava/util/concurrent/atomic/AtomicInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // trackAllServices
+    parameter #1 :  // trackingCount
+  method open(Ljava/util/concurrent/atomic/AtomicInteger;)V : // 0 samples
+    return:
+    parameter #0 :  // trackingCount
+  method remove(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+  method removedService(Lorg/osgi/framework/ServiceReference;Ljava/lang/Object;I)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+    parameter #1 :  // service
+    parameter #2 :  // trackingCount
+  method size()I : // 0 samples
+    return: 
+  method tracked()Lorg/apache/felix/scr/impl/manager/ServiceTracker$Tracked; : // 0 samples
+    return: 
+  method waitForService(J)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // timeout
+
+
+package org.apache.felix.scr.impl.manager:
+class SingleComponentManager : // 2/0 obj/class samples
+  field REASONS :  // java.lang.String[]
+  field taskCounter :  // java.util.concurrent.atomic.AtomicLong
+  field m_useCount :  // java.util.concurrent.atomic.AtomicInteger
+  field m_componentContext : @Nullable // org.apache.felix.scr.impl.manager.ComponentContextImpl
+  field REASONS :  // java.lang.String[]
+  field taskCounter :  // java.util.concurrent.atomic.AtomicLong
+  field m_configurationProperties : @Nullable // java.util.Map
+  field m_factoryProperties : @Nullable // java.util.Map
+  field m_properties : @Nullable // java.util.Map
+  field m_serviceProperties : @Nullable // java.util.Dictionary
+  field m_circularReferences :  // java.lang.ThreadLocal
+  field m_container :  // org.apache.felix.scr.impl.config.ComponentContainer
+  field m_factoryInstance :  // boolean
+  field m_componentId :  // long
+  field m_componentMethods :  // org.apache.felix.scr.impl.helper.ComponentMethods
+  field COMPONENT_CONTEXT_CLASS :  // java.lang.Class
+  field BUNDLE_CONTEXT_CLASS :  // java.lang.Class
+  field INTEGER_CLASS :  // java.lang.Class
+  field m_dependencyManagers :  // java.util.List
+  field m_dependencyManagersInitialized :  // boolean
+  field m_trackingCount :  // java.util.concurrent.atomic.AtomicInteger
+  field m_stateLock :  // java.util.concurrent.locks.ReentrantLock
+  field m_enabledLatchRef :  // java.util.concurrent.atomic.AtomicReference
+  field m_internalEnabled :  // boolean
+  field m_satisfied :  // boolean
+  field m_disposed :  // boolean
+  field m_floor :  // int
+  field m_ceiling :  // int
+  field m_missingLock :  // java.util.concurrent.locks.Lock
+  field m_missingCondition :  // java.util.concurrent.locks.Condition
+  field m_missing :  // java.util.Set
+  field m_activated :  // boolean
+  field m_activationLock :  // java.util.concurrent.locks.ReentrantReadWriteLock
+  field registrationManager :  // org.apache.felix.scr.impl.manager.RegistrationManager
+  method <init>(Lorg/apache/felix/scr/impl/config/ComponentContainer;Lorg/apache/felix/scr/impl/helper/ComponentMethods;)V : // 1 samples
+    return:
+    parameter #0 :  // container
+    parameter #1 :  // componentMethods
+  method <init>(Lorg/apache/felix/scr/impl/config/ComponentContainer;Lorg/apache/felix/scr/impl/helper/ComponentMethods;Z)V : // 1 samples
+    return:
+    parameter #0 :  // container
+    parameter #1 :  // componentMethods
+    parameter #2 :  // factoryInstance
+  method clear()V : // 0 samples
+    return:
+  method clearServiceProperties()V : // 0 samples
+    return:
+  method createComponent(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Z : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+  method createImplementationObject(Lorg/osgi/framework/Bundle;Lorg/apache/felix/scr/impl/manager/SingleComponentManager$SetImplementationObject;Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // usingBundle
+    parameter #1 :  // setter
+    parameter #2 :  // componentContext
+  method deleteComponent(I)V : // 0 samples
+    return:
+    parameter #0 :  // reason
+  method disposeImplementationObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;I)V : // 0 samples
+    return:
+    parameter #0 :  // componentContext
+    parameter #1 :  // reason
+  method getComponentInstance()Lorg/osgi/service/component/ComponentInstance; : // 0 samples
+    return: 
+  method getComponentManagers(Ljava/util/List;)V : // 0 samples
+    return:
+    parameter #0 :  // cms
+  method getInstance()Ljava/lang/Object; : // 0 samples
+    return: 
+  method getProperties()Ljava/util/Map; : // 0 samples
+    return: 
+  method getService(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // componentContext
+  method getService(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // serviceRegistration
+  method getServiceInternal()Z : // 0 samples
+    return: 
+  method getServiceProperties()Ljava/util/Dictionary; : // 0 samples
+    return: 
+  method hasInstance()Z : // 0 samples
+    return: 
+  method invokeBindMethod(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // dependencyManager
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method invokeModifiedMethod()Lorg/apache/felix/scr/impl/helper/MethodResult; : // 0 samples
+    return: 
+  method invokeUnbindMethod(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/apache/felix/scr/impl/manager/RefPair;I)V : // 0 samples
+    return:
+    parameter #0 :  // dependencyManager
+    parameter #1 :  // oldRefPair
+    parameter #2 :  // trackingCount
+  method invokeUpdatedMethod(Lorg/apache/felix/scr/impl/manager/DependencyManager;Lorg/apache/felix/scr/impl/manager/RefPair;I)Z : // 0 samples
+    return: 
+    parameter #0 :  // dependencyManager
+    parameter #1 :  // refPair
+    parameter #2 :  // trackingCount
+  method keepInstances()Z : // 0 samples
+    return: 
+  method modify(Z)Z : // 0 samples
+    return: 
+    parameter #0 :  // configurationDeleted
+  method reconfigure(Z)V : // 0 samples
+    return:
+    parameter #0 :  // configurationDeleted
+  method reconfigure(Ljava/util/Map;Z)V : // 0 samples
+    return:
+    parameter #0 :  // configuration
+    parameter #1 :  // configurationDeleted
+  method registerComponentId()V : // 0 samples
+    return:
+  method servicePropertiesMatches(Lorg/osgi/framework/ServiceRegistration;Ljava/util/Dictionary;)Z : // 0 samples
+    return: 
+    parameter #0 :  // reg
+    parameter #1 :  // props
+  method setFactoryProperties(Ljava/util/Dictionary;)V : // 0 samples
+    return:
+    parameter #0 :  // dictionary
+  method setServiceProperties(Ljava/util/Dictionary;)V : // 0 samples
+    return:
+    parameter #0 :  // serviceProperties
+  method ungetService()V : // 0 samples
+    return:
+  method ungetService(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // serviceRegistration
+    parameter #2 :  // o
+  method unregisterComponentId()V : // 0 samples
+    return:
+  method updateServiceRegistration()V : // 0 samples
+    return:
+
+
+package org.apache.felix.scr.impl.manager:
+class SinglePrototypeRefPair : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // ref
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/osgi/framework/BundleContext;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // context
+    parameter #2 :  // logger
+  method getServiceObjects()Lorg/osgi/framework/ServiceObjects; : // 0 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.manager:
+class SingleRefPair : // 0/- obj/class samples
+  method <init>(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // ref
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+  method getServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Lorg/osgi/framework/BundleContext;Lorg/apache/felix/scr/impl/helper/SimpleLogger;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // context
+    parameter #2 :  // logger
+  method setServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // serviceObject
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method unsetServiceObject(Lorg/apache/felix/scr/impl/manager/ComponentContextImpl;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+
+
+package org.apache.felix.scr.impl.metadata:
+class ComponentMetadata : // 45/45 obj/class samples
+  method <init>(Lorg/apache/felix/scr/impl/metadata/DSVersion;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // dsVersion
+  method addDependency(Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata;)V : // 0 samples
+    return:
+    parameter #0 :  // newReference
+  method addProperty(Lorg/apache/felix/scr/impl/metadata/PropertyMetadata;)V : // 0 samples
+    return:
+    parameter #0 :  // newProperty
+  method getActivate()Ljava/lang/String; : // 1 samples
+    return: @Nullable
+  method getConfigurationPid()Ljava/util/List; : // 1 samples
+    return: @Nullable
+  method getConfigurationPolicy()Ljava/lang/String; : // 1 samples
+    return: @Nullable
+  method getDSVersion()Lorg/apache/felix/scr/impl/metadata/DSVersion; : // 1 samples
+    return: @Nullable
+  method getDeactivate()Ljava/lang/String; : // 1 samples
+    return: @Nullable
+  method getDependencies()Ljava/util/List; : // 2 samples
+    return: @Nullable
+  method getFactoryIdentifier()Ljava/lang/String; : // 1 samples
+    return: @Nullable
+  method getImplementationClassName()Ljava/lang/String; : // 2 samples
+    return: @Nullable
+  method getModified()Ljava/lang/String; : // 1 samples
+    return: @Nullable
+  method getName()Ljava/lang/String; : // 3 samples
+    return: @Nullable
+  method getPidIndex(Lorg/apache/felix/scr/impl/TargetedPID;)I : // 0 samples
+    return: 
+    parameter #0 :  // pid
+  method getProperties()Ljava/util/Map; : // 2 samples
+    return: @Nullable
+  method getPropertyMetaData()Ljava/util/List; : // 0 samples
+    return: 
+  method getServiceMetadata()Lorg/apache/felix/scr/impl/metadata/ServiceMetadata; : // 1 samples
+    return: @Nullable
+  method getServiceScope()Lorg/apache/felix/scr/impl/metadata/ServiceMetadata$Scope; : // 0 samples
+    return: 
+  method isActivateDeclared()Z : // 0 samples
+    return: 
+  method isConfigurableServiceProperties()Z : // 0 samples
+    return: 
+  method isConfigurationIgnored()Z : // 0 samples
+    return: 
+  method isConfigurationOptional()Z : // 0 samples
+    return: 
+  method isConfigurationPidDeclared()Z : // 0 samples
+    return: 
+  method isConfigurationRequired()Z : // 0 samples
+    return: 
+  method isConfigureWithInterfaces()Z : // 0 samples
+    return: 
+  method isDeactivateDeclared()Z : // 0 samples
+    return: 
+  method isDelayedKeepInstances()Z : // 0 samples
+    return: 
+  method isDeleteCallsModify()Z : // 0 samples
+    return: 
+  method isEnabled()Z : // 1 samples
+    return: 
+  method isFactory()Z : // 0 samples
+    return: 
+  method isImmediate()Z : // 1 samples
+    return: 
+  method isObsoleteFactoryComponentFactory()Z : // 0 samples
+    return: 
+  method isPersistentFactoryComponent()Z : // 0 samples
+    return: 
+  method setActivate(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // activate
+  method setConfigurableServiceProperties(Z)V : // 0 samples
+    return:
+    parameter #0 :  // configurableServiceProperties
+  method setConfigurationPid([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // configurationPid
+  method setConfigurationPolicy(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // configurationPolicy
+  method setConfigureWithInterfaces(Z)V : // 0 samples
+    return:
+    parameter #0 :  // configureWithInterfaces
+  method setDeactivate(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // deactivate
+  method setDelayedKeepInstances(Z)V : // 0 samples
+    return:
+    parameter #0 :  // delayedKeepInstances
+  method setDeleteCallsModify(Z)V : // 0 samples
+    return:
+    parameter #0 :  // deleteCallsModify
+  method setEnabled(Z)V : // 0 samples
+    return:
+    parameter #0 :  // enabled
+  method setFactoryIdentifier(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // factoryIdentifier
+  method setImmediate(Z)V : // 0 samples
+    return:
+    parameter #0 :  // immediate
+  method setImplementationClassName(Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // implementationClassName
+  method setModified(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // modified
+  method setName(Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // name
+  method setObsoleteFactoryComponentFactory(Z)V : // 0 samples
+    return:
+    parameter #0 :  // obsoleteFactoryComponentFactory
+  method setPersistentFactoryComponent(Z)V : // 0 samples
+    return:
+    parameter #0 :  // persistentFactoryComponent
+  method setService(Lorg/apache/felix/scr/impl/metadata/ServiceMetadata;)V : // 0 samples
+    return:
+    parameter #0 :  // service
+  method validate(Lorg/apache/felix/scr/impl/helper/Logger;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // logger
+  method validationFailure(Ljava/lang/String;)Lorg/osgi/service/component/ComponentException; : // 0 samples
+    return: 
+    parameter #0 :  // reason
+
+
+package org.apache.felix.scr.impl.metadata:
+class DSVersion : // 15/15 obj/class samples
+  method valueOf(Ljava/lang/String;)Lorg/apache/felix/scr/impl/metadata/DSVersion; : // 0 samples
+    return: 
+    parameter #0 :  // $hidden$0
+  method values()[Lorg/apache/felix/scr/impl/metadata/DSVersion; : // 0 samples
+    return: 
+  method <init>(Ljava/lang/String;II)V : // 7 samples
+    return:
+    parameter #0 : @Nullable // $hidden$1
+    parameter #1 :  // $hidden$2
+    parameter #2 :  // version
+  method isDS10()Z : // 0 samples
+    return: 
+  method isDS11()Z : // 1 samples
+    return: 
+  method isDS12()Z : // 0 samples
+    return: 
+  method isDS13()Z : // 3 samples
+    return: 
+
+
+package org.apache.felix.scr.impl.metadata:
+class PropertyMetadata : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getType()Ljava/lang/String; : // 0 samples
+    return: 
+  method getValue()Ljava/lang/Object; : // 0 samples
+    return: 
+  method setName(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method setType(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+  method setValue(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // value
+  method setValues(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // values
+  method toType(Ljava/lang/String;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method toTypeArray([Ljava/lang/String;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // valueList
+  method validate(Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;)V : // 0 samples
+    return:
+    parameter #0 :  // componentMetadata
+
+
+package org.apache.felix.scr.impl.metadata:
+class ReferenceMetadata$ReferenceScope : // 0/0 obj/class samples
+  method valueOf(Ljava/lang/String;)Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata$ReferenceScope; : // 0 samples
+    return: 
+    parameter #0 :  // $hidden$0
+  method values()[Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata$ReferenceScope; : // 0 samples
+    return: 
+  method ReferenceScope(Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // $hidden$1
+    parameter #1 :  // $hidden$2
+
+
+package org.apache.felix.scr.impl.metadata:
+class ReferenceMetadata : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method getBind()Ljava/lang/String; : // 0 samples
+    return: 
+  method getCardinality()Ljava/lang/String; : // 0 samples
+    return: 
+  method getDebugInfo()Ljava/lang/String; : // 0 samples
+    return: 
+  method getField()Ljava/lang/String; : // 0 samples
+    return: 
+  method getFieldCollectionType()Ljava/lang/String; : // 0 samples
+    return: 
+  method getFieldOption()Ljava/lang/String; : // 0 samples
+    return: 
+  method getInterface()Ljava/lang/String; : // 0 samples
+    return: 
+  method getMinCardinalityName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getPolicy()Ljava/lang/String; : // 0 samples
+    return: 
+  method getPolicyOption()Ljava/lang/String; : // 0 samples
+    return: 
+  method getScope()Lorg/apache/felix/scr/impl/metadata/ReferenceMetadata$ReferenceScope; : // 0 samples
+    return: 
+  method getTarget()Ljava/lang/String; : // 0 samples
+    return: 
+  method getTargetPropertyName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getUnbind()Ljava/lang/String; : // 0 samples
+    return: 
+  method getUpdated()Ljava/lang/String; : // 0 samples
+    return: 
+  method isMultiple()Z : // 0 samples
+    return: 
+  method isOptional()Z : // 0 samples
+    return: 
+  method isReluctant()Z : // 0 samples
+    return: 
+  method isReplace()Z : // 0 samples
+    return: 
+  method isStatic()Z : // 0 samples
+    return: 
+  method setBind(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // bind
+  method setCardinality(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // cardinality
+  method setField(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // field
+  method setFieldCollectionType(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // valuetype
+  method setFieldOption(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // strategy
+  method setInterface(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // interfaceName
+  method setName(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+  method setPolicy(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // policy
+  method setPolicyOption(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // policyOption
+  method setScope(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // scopeName
+  method setTarget(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // target
+  method setUnbind(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // unbind
+  method setUpdated(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // updated
+  method validate(Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;Lorg/apache/felix/scr/impl/helper/Logger;)V : // 0 samples
+    return:
+    parameter #0 :  // componentMetadata
+    parameter #1 :  // logger
+
+
+package org.apache.felix.scr.impl.metadata:
+class ServiceMetadata$Scope : // 3/3 obj/class samples
+  method valueOf(Ljava/lang/String;)Lorg/apache/felix/scr/impl/metadata/ServiceMetadata$Scope; : // 0 samples
+    return: 
+    parameter #0 :  // $hidden$0
+  method values()[Lorg/apache/felix/scr/impl/metadata/ServiceMetadata$Scope; : // 0 samples
+    return: 
+  method Scope(Ljava/lang/String;I)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // $hidden$1
+    parameter #1 :  // $hidden$2
+
+
+package org.apache.felix.scr.impl.metadata:
+class ServiceMetadata : // 1/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method addProvide(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // provide
+  method getProvides()[Ljava/lang/String; : // 0 samples
+    return: 
+  method getScope()Lorg/apache/felix/scr/impl/metadata/ServiceMetadata$Scope; : // 0 samples
+    return: 
+  method setScope(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // scopeName
+  method setServiceFactory(Z)V : // 0 samples
+    return:
+    parameter #0 :  // serviceFactory
+  method validate(Lorg/apache/felix/scr/impl/metadata/ComponentMetadata;)V : // 0 samples
+    return:
+    parameter #0 :  // componentMetadata
+
+
+package org.apache.felix.utils.extender:
+class AbstractExtender : // 0/- obj/class samples
+  method access$000(Lorg/apache/felix/utils/extender/AbstractExtender;)Ljava/util/concurrent/ConcurrentMap; : // 0 samples
+    return: 
+    parameter #0 :  // x0
+  method access$100(Lorg/apache/felix/utils/extender/AbstractExtender;)Ljava/util/concurrent/ConcurrentMap; : // 0 samples
+    return: 
+    parameter #0 :  // x0
+  method <init>()V : // 0 samples
+    return:
+  method addingBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+  method bundleChanged(Lorg/osgi/framework/BundleEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+  method chooseBundlesToDestroy(Ljava/util/Set;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // bundles
+  method createExecutor()Ljava/util/concurrent/ExecutorService; : // 0 samples
+    return: 
+  method createExtension(Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+  method destroyExtension(Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+  method doStart()V : // 0 samples
+    return:
+  method doStop()V : // 0 samples
+    return:
+  method getBundleContext()Lorg/osgi/framework/BundleContext; : // 0 samples
+    return: 
+  method getExecutors()Ljava/util/concurrent/ExecutorService; : // 0 samples
+    return: 
+  method isPreemptiveShutdown()Z : // 0 samples
+    return: 
+  method isStopping()Z : // 0 samples
+    return: 
+  method isSynchronous()Z : // 0 samples
+    return: 
+  method modifiedBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+    parameter #2 :  // object
+  method removedBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+    parameter #2 :  // object
+  method setPreemptiveShutdown(Z)V : // 0 samples
+    return:
+    parameter #0 :  // preemptiveShutdown
+  method setSynchronous(Z)V : // 0 samples
+    return:
+    parameter #0 :  // synchronous
+  method start(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+  method startTracking()V : // 0 samples
+    return:
+  method stop(Lorg/osgi/framework/BundleContext;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+  method stopTracking()V : // 0 samples
+    return:
+
+
+package org.mockito:
+class Answers : // 15/15 obj/class samples
+  method valueOf(Ljava/lang/String;)Lorg/mockito/Answers; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method values()[Lorg/mockito/Answers; : // 0 samples
+    return: 
+  method <init>(Ljava/lang/String;ILorg/mockito/stubbing/Answer;)V : // 5 samples
+    return:
+    parameter #0 : @Nullable // $hidden$1
+    parameter #1 :  // $hidden$2
+    parameter #2 : @Nullable // implementation
+  method get()Lorg/mockito/stubbing/Answer; : // 5 samples
+    return: @Nullable
+
+
+package org.mockito:
+class Matchers : // 0/0 obj/class samples
+  method any()Ljava/lang/Object; : // 0 samples
+    return: 
+  method any(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method anyBoolean()Z : // 0 samples
+    return: 
+  method anyByte()B : // 0 samples
+    return: 
+  method anyChar()C : // 0 samples
+    return: 
+  method anyCollection()Ljava/util/Collection; : // 0 samples
+    return: 
+  method anyCollectionOf(Ljava/lang/Class;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method anyDouble()D : // 0 samples
+    return: 
+  method anyFloat()F : // 0 samples
+    return: 
+  method anyInt()I : // 0 samples
+    return: 
+  method anyList()Ljava/util/List; : // 0 samples
+    return: 
+  method anyListOf(Ljava/lang/Class;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method anyLong()J : // 0 samples
+    return: 
+  method anyMap()Ljava/util/Map; : // 0 samples
+    return: 
+  method anyMapOf(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // keyClazz
+    parameter #1 :  // valueClazz
+  method anyObject()Ljava/lang/Object; : // 0 samples
+    return: 
+  method anySet()Ljava/util/Set; : // 0 samples
+    return: 
+  method anySetOf(Ljava/lang/Class;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method anyShort()S : // 0 samples
+    return: 
+  method anyString()Ljava/lang/String; : // 0 samples
+    return: 
+  method anyVararg()Ljava/lang/Object; : // 0 samples
+    return: 
+  method argThat(Lorg/hamcrest/Matcher;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method booleanThat(Lorg/hamcrest/Matcher;)Z : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method byteThat(Lorg/hamcrest/Matcher;)B : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method charThat(Lorg/hamcrest/Matcher;)C : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method contains(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // substring
+  method doubleThat(Lorg/hamcrest/Matcher;)D : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method endsWith(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // suffix
+  method eq(Z)Z : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(B)B : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(C)C : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(D)D : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(F)F : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(I)I : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(J)J : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method eq(S)S : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method floatThat(Lorg/hamcrest/Matcher;)F : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method intThat(Lorg/hamcrest/Matcher;)I : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method isA(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method isNotNull()Ljava/lang/Object; : // 0 samples
+    return: 
+  method isNotNull(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method isNull()Ljava/lang/Object; : // 0 samples
+    return: 
+  method isNull(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method longThat(Lorg/hamcrest/Matcher;)J : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method matches(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // regex
+  method notNull()Ljava/lang/Object; : // 0 samples
+    return: 
+  method notNull(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // clazz
+  method refEq(Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+    parameter #1 :  // excludeFields
+  method reportMatcher(Lorg/hamcrest/Matcher;)Lorg/mockito/internal/progress/HandyReturnValues; : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method same(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method shortThat(Lorg/hamcrest/Matcher;)S : // 0 samples
+    return: 
+    parameter #0 :  // matcher
+  method startsWith(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // prefix
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.mockito:
+class Mockito : // 0/8 obj/class samples
+  method after(I)Lorg/mockito/verification/VerificationAfterDelay; : // 0 samples
+    return: 
+    parameter #0 :  // millis
+  method atLeast(I)Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+    parameter #0 :  // minNumberOfInvocations
+  method atLeastOnce()Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+  method atMost(I)Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+    parameter #0 :  // maxNumberOfInvocations
+  method calls(I)Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+    parameter #0 :  // wantedNumberOfInvocations
+  method debug()Lorg/mockito/MockitoDebugger; : // 0 samples
+    return: 
+  method doAnswer(Lorg/mockito/stubbing/Answer;)Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+    parameter #0 :  // answer
+  method doCallRealMethod()Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+  method doNothing()Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+  method doReturn(Ljava/lang/Object;)Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+    parameter #0 :  // toBeReturned
+  method doThrow(Ljava/lang/Class;)Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+    parameter #0 :  // toBeThrown
+  method doThrow(Ljava/lang/Throwable;)Lorg/mockito/stubbing/Stubber; : // 0 samples
+    return: 
+    parameter #0 :  // toBeThrown
+  method ignoreStubs([Ljava/lang/Object;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // mocks
+  method inOrder([Ljava/lang/Object;)Lorg/mockito/InOrder; : // 0 samples
+    return: 
+    parameter #0 :  // mocks
+  method mock(Ljava/lang/Class;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // classToMock
+  method mock(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // classToMock
+    parameter #1 :  // name
+  method mock(Ljava/lang/Class;Lorg/ito/MockSettings;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // classToMock
+    parameter #1 : @Nullable // mockSettings
+  method mock(Ljava/lang/Class;Lorg/ito/ReturnValues;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // classToMock
+    parameter #1 :  // returnValues
+  method mock(Ljava/lang/Class;Lorg/ito/stubbing/Answer;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // classToMock
+    parameter #1 :  // defaultAnswer
+  method mockingDetails(Ljava/lang/Object;)Lorg/mockito/MockingDetails; : // 0 samples
+    return: 
+    parameter #0 :  // toInspect
+  method never()Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+  method only()Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+  method reset([Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // mocks
+  method spy(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // classToSpy
+  method spy(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // object
+  method stub(Ljava/lang/Object;)Lorg/mockito/stubbing/DeprecatedOngoingStubbing; : // 0 samples
+    return: 
+    parameter #0 :  // methodCall
+  method stubVoid(Ljava/lang/Object;)Lorg/mockito/stubbing/VoidMethodStubbable; : // 0 samples
+    return: 
+    parameter #0 :  // mock
+  method timeout(J)Lorg/mockito/verification/VerificationWithTimeout; : // 0 samples
+    return: 
+    parameter #0 :  // millis
+  method times(I)Lorg/mockito/verification/VerificationMode; : // 0 samples
+    return: 
+    parameter #0 :  // wantedNumberOfInvocations
+  method validateMockitoUsage()V : // 0 samples
+    return:
+  method verify(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // mock
+  method verify(Ljava/lang/Object;Lorg/mockito/verification/VerificationMode;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // mock
+    parameter #1 :  // mode
+  method verifyNoMoreInteractions([Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // mocks
+  method verifyZeroInteractions([Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // mocks
+  method when(Ljava/lang/Object;)Lorg/mockito/stubbing/OngoingStubbing; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // methodCall
+  method withSettings()Lorg/mockito/MockSettings; : // 1 samples
+    return: @Nullable
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.mockito.asm:
+class AnnotationWriter : // 0/- obj/class samples
+  method put([Lorg/mockito/asm/AnnotationWriter;ILorg/mockito/asm/ByteVector;)V : // 0 samples
+    return:
+    parameter #0 :  // panns
+    parameter #1 :  // off
+    parameter #2 :  // out
+  method <init>(Lorg/mockito/asm/ClassWriter;ZLorg/mockito/asm/ByteVector;Lorg/mockito/asm/ByteVector;I)V : // 0 samples
+    return:
+    parameter #0 :  // cw
+    parameter #1 :  // named
+    parameter #2 :  // bv
+    parameter #3 :  // parent
+    parameter #4 :  // offset
+  method getSize()I : // 0 samples
+    return: 
+  method put(Lorg/mockito/asm/ByteVector;)V : // 0 samples
+    return:
+    parameter #0 :  // out
+  method visit(Ljava/lang/String;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // value
+  method visitAnnotation(Ljava/lang/String;Ljava/lang/String;)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // name
+    parameter #1 :  // desc
+  method visitArray(Ljava/lang/String;)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method visitEnd()V : // 0 samples
+    return:
+  method visitEnum(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // desc
+    parameter #2 :  // value
+
+
+package org.mockito.asm:
+class Attribute : // 0/- obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+  method getCount()I : // 0 samples
+    return: 
+  method getLabels()[Lorg/mockito/asm/Label; : // 0 samples
+    return: 
+  method getSize(Lorg/mockito/asm/ClassWriter;[BIII)I : // 0 samples
+    return: 
+    parameter #0 :  // cw
+    parameter #1 :  // code
+    parameter #2 :  // len
+    parameter #3 :  // maxStack
+    parameter #4 :  // maxLocals
+  method isCodeAttribute()Z : // 0 samples
+    return: 
+  method isUnknown()Z : // 0 samples
+    return: 
+  method put(Lorg/mockito/asm/ClassWriter;[BIIILorg/mockito/asm/ByteVector;)V : // 0 samples
+    return:
+    parameter #0 :  // cw
+    parameter #1 :  // code
+    parameter #2 :  // len
+    parameter #3 :  // maxStack
+    parameter #4 :  // maxLocals
+    parameter #5 :  // out
+  method read(Lorg/mockito/asm/ClassReader;II[CI[Lorg/mockito/asm/Label;)Lorg/mockito/asm/Attribute; : // 0 samples
+    return: 
+    parameter #0 :  // cr
+    parameter #1 :  // off
+    parameter #2 :  // len
+    parameter #3 :  // buf
+    parameter #4 :  // codeOff
+    parameter #5 :  // labels
+  method write(Lorg/mockito/asm/ClassWriter;[BIII)Lorg/mockito/asm/ByteVector; : // 0 samples
+    return: 
+    parameter #0 :  // cw
+    parameter #1 :  // code
+    parameter #2 :  // len
+    parameter #3 :  // maxStack
+    parameter #4 :  // maxLocals
+
+
+package org.mockito.asm:
+class ByteVector : // 6154/- obj/class samples
+  method <init>()V : // 45 samples
+    return:
+  method <init>(I)V : // 3 samples
+    return:
+    parameter #0 :  // initialSize
+  method enlarge(I)V : // 34 samples
+    return:
+    parameter #0 :  // size
+  method put11(II)Lorg/mockito/asm/ByteVector; : // 147 samples
+    return: @Nullable
+    parameter #0 :  // b1
+    parameter #1 :  // b2
+  method put12(II)Lorg/mockito/asm/ByteVector; : // 555 samples
+    return: @Nullable
+    parameter #0 :  // b
+    parameter #1 :  // s
+  method putByte(I)Lorg/mockito/asm/ByteVector; : // 1038 samples
+    return: @Nullable
+    parameter #0 :  // b
+  method putByteArray([BII)Lorg/mockito/asm/ByteVector; : // 45 samples
+    return: @Nullable
+    parameter #0 : @Nullable // b
+    parameter #1 :  // off
+    parameter #2 :  // len
+  method putInt(I)Lorg/mockito/asm/ByteVector; : // 134 samples
+    return: @Nullable
+    parameter #0 :  // i
+  method putLong(J)Lorg/mockito/asm/ByteVector; : // 1 samples
+    return: @Nullable
+    parameter #0 :  // l
+  method putShort(I)Lorg/mockito/asm/ByteVector; : // 893 samples
+    return: @Nullable
+    parameter #0 :  // s
+  method putUTF8(Ljava/lang/String;)Lorg/mockito/asm/ByteVector; : // 206 samples
+    return: @Nullable
+    parameter #0 : @Nullable // s
+
+
+package org.mockito.asm:
+class ClassAdapter : // 6/- obj/class samples
+  method <init>(Lorg/mockito/asm/ClassVisitor;)V : // 6 samples
+    return:
+    parameter #0 : @Nullable // cv
+  method visit(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // version
+    parameter #1 :  // access
+    parameter #2 :  // name
+    parameter #3 :  // signature
+    parameter #4 :  // superName
+    parameter #5 :  // interfaces
+  method visitAnnotation(Ljava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // visible
+  method visitAttribute(Lorg/mockito/asm/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // attr
+  method visitEnd()V : // 0 samples
+    return:
+  method visitField(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/mockito/asm/FieldVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // access
+    parameter #1 :  // name
+    parameter #2 :  // desc
+    parameter #3 :  // signature
+    parameter #4 :  // value
+  method visitInnerClass(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // outerName
+    parameter #2 :  // innerName
+    parameter #3 :  // access
+  method visitMethod(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/mockito/asm/MethodVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // access
+    parameter #1 :  // name
+    parameter #2 :  // desc
+    parameter #3 :  // signature
+    parameter #4 :  // exceptions
+  method visitOuterClass(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // owner
+    parameter #1 :  // name
+    parameter #2 :  // desc
+  method visitSource(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // source
+    parameter #1 :  // debug
+
+
+package org.mockito.asm:
+class ClassReader : // 3/3 obj/class samples
+  method <init>([B)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // b
+  method <init>([BII)V : // 0 samples
+    return:
+    parameter #0 :  // b
+    parameter #1 :  // off
+    parameter #2 :  // len
+
+
+package org.mockito.asm:
+class ClassWriter : // 5983/5983 obj/class samples
+  method <init>(I)V : // 3 samples
+    return:
+    parameter #0 :  // flags
+  method <init>(Lorg/mockito/asm/ClassReader;I)V : // 0 samples
+    return:
+    parameter #0 :  // classReader
+    parameter #1 :  // flags
+  method addType(Ljava/lang/String;)I : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method addType(Lorg/mockito/asm/Item;)Lorg/mockito/asm/Item; : // 0 samples
+    return: 
+    parameter #0 :  // item
+  method addUninitializedType(Ljava/lang/String;I)I : // 0 samples
+    return: 
+    parameter #0 :  // type
+    parameter #1 :  // offset
+  method get(Lorg/mockito/asm/Item;)Lorg/mockito/asm/Item; : // 1065 samples
+    return: @Nullable
+    parameter #0 : @Nullable // key
+  method getCommonSuperClass(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // type1
+    parameter #1 :  // type2
+  method getMergedType(II)I : // 0 samples
+    return: 
+    parameter #0 :  // type1
+    parameter #1 :  // type2
+  method newClass(Ljava/lang/String;)I : // 92 samples
+    return: 
+    parameter #0 : @Nullable // value
+  method newClassItem(Ljava/lang/String;)Lorg/mockito/asm/Item; : // 133 samples
+    return: @Nullable
+    parameter #0 : @Nullable // value
+  method newConst(Ljava/lang/Object;)I : // 0 samples
+    return: 
+    parameter #0 :  // cst
+  method newConstItem(Ljava/lang/Object;)Lorg/mockito/asm/Item; : // 96 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cst
+  method newDouble(D)Lorg/mockito/asm/Item; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method newField(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I : // 0 samples
+    return: 
+    parameter #0 :  // owner
+    parameter #1 :  // name
+    parameter #2 :  // desc
+  method newFieldItem(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/mockito/asm/Item; : // 130 samples
+    return: @Nullable
+    parameter #0 : @Nullable // owner
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // desc
+  method newFloat(F)Lorg/mockito/asm/Item; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method newInteger(I)Lorg/mockito/asm/Item; : // 12 samples
+    return: @Nullable
+    parameter #0 :  // value
+  method newLong(J)Lorg/mockito/asm/Item; : // 1 samples
+    return: @Nullable
+    parameter #0 :  // value
+  method newMethod(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)I : // 0 samples
+    return: 
+    parameter #0 :  // owner
+    parameter #1 :  // name
+    parameter #2 :  // desc
+    parameter #3 :  // itf
+  method newMethodItem(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lorg/mockito/asm/Item; : // 157 samples
+    return: @Nullable
+    parameter #0 : @Nullable // owner
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // desc
+    parameter #3 :  // itf
+  method newNameType(Ljava/lang/String;Ljava/lang/String;)I : // 78 samples
+    return: 
+    parameter #0 : @Nullable // name
+    parameter #1 : @Nullable // desc
+  method newString(Ljava/lang/String;)Lorg/mockito/asm/Item; : // 83 samples
+    return: @Nullable
+    parameter #0 : @Nullable // value
+  method newUTF8(Ljava/lang/String;)I : // 471 samples
+    return: 
+    parameter #0 : @Nullable // value
+  method put(Lorg/mockito/asm/Item;)V : // 436 samples
+    return:
+    parameter #0 : @Nullable // i
+  method put122(III)V : // 149 samples
+    return:
+    parameter #0 :  // b
+    parameter #1 :  // s1
+    parameter #2 :  // s2
+  method toByteArray()[B : // 3 samples
+    return: @Nullable
+  method visit(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V : // 3 samples
+    return:
+    parameter #0 :  // version
+    parameter #1 :  // access
+    parameter #2 : @Nullable // name
+    parameter #3 : @Nullable // signature
+    parameter #4 : @Nullable // superName
+    parameter #5 : @Nullable // interfaces
+  method visitAnnotation(Ljava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // visible
+  method visitAttribute(Lorg/mockito/asm/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // attr
+  method visitEnd()V : // 3 samples
+    return:
+  method visitField(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/mockito/asm/FieldVisitor; : // 33 samples
+    return: @Nullable
+    parameter #0 :  // access
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // desc
+    parameter #3 : @Nullable // signature
+    parameter #4 : @Nullable // value
+  method visitInnerClass(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // outerName
+    parameter #2 :  // innerName
+    parameter #3 :  // access
+  method visitMethod(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/mockito/asm/MethodVisitor; : // 42 samples
+    return: @Nullable
+    parameter #0 :  // access
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // desc
+    parameter #3 : @Nullable // signature
+    parameter #4 : @Nullable // exceptions
+  method visitOuterClass(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // owner
+    parameter #1 :  // name
+    parameter #2 :  // desc
+  method visitSource(Ljava/lang/String;Ljava/lang/String;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // file
+    parameter #1 : @Nullable // debug
+
+
+package org.mockito.asm:
+class Edge : // 263/263 obj/class samples
+  method <init>()V : // 263 samples
+    return:
+
+
+package org.mockito.asm:
+class FieldWriter : // 165/- obj/class samples
+  method <init>(Lorg/mockito/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V : // 33 samples
+    return:
+    parameter #0 : @Nullable // cw
+    parameter #1 :  // access
+    parameter #2 : @Nullable // name
+    parameter #3 : @Nullable // desc
+    parameter #4 : @Nullable // signature
+    parameter #5 : @Nullable // value
+  method getSize()I : // 33 samples
+    return: 
+  method put(Lorg/mockito/asm/ByteVector;)V : // 33 samples
+    return:
+    parameter #0 : @Nullable // out
+  method visitAnnotation(Ljava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // visible
+  method visitAttribute(Lorg/mockito/asm/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // attr
+  method visitEnd()V : // 0 samples
+    return:
+
+
+package org.mockito.asm:
+class Frame : // 0/0 obj/class samples
+  method type(Lorg/mockito/asm/ClassWriter;Ljava/lang/String;)I : // 0 samples
+    return: 
+    parameter #0 :  // cw
+    parameter #1 :  // desc
+  method <init>()V : // 0 samples
+    return:
+  method get(I)I : // 0 samples
+    return: 
+    parameter #0 :  // local
+  method push(I)V : // 0 samples
+    return:
+    parameter #0 :  // type
+  method push(Lorg/mockito/asm/ClassWriter;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // cw
+    parameter #1 :  // desc
+  method set(II)V : // 0 samples
+    return:
+    parameter #0 :  // local
+    parameter #1 :  // type
+
+
+package org.mockito.asm:
+class Handler : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.mockito.asm:
+class Item : // 471/- obj/class samples
+  method <init>()V : // 9 samples
+    return:
+  method <init>(I)V : // 0 samples
+    return:
+    parameter #0 :  // index
+  method <init>(ILorg/mockito/asm/;)V : // 436 samples
+    return:
+    parameter #0 :  // index
+    parameter #1 : @Nullable // i
+  method set(D)V : // 0 samples
+    return:
+    parameter #0 :  // doubleVal
+  method set(F)V : // 0 samples
+    return:
+    parameter #0 :  // floatVal
+  method set(I)V : // 12 samples
+    return:
+    parameter #0 :  // intVal
+  method set(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // strVal1
+    parameter #2 :  // strVal2
+    parameter #3 :  // strVal3
+  method set(J)V : // 1 samples
+    return:
+    parameter #0 :  // longVal
+
+
+package org.mockito.asm:
+class Label : // 1406/1406 obj/class samples
+  method <init>()V : // 204 samples
+    return:
+  method addReference(II)V : // 194 samples
+    return:
+    parameter #0 :  // sourcePosition
+    parameter #1 :  // referencePosition
+  method addToSubroutine(JI)V : // 0 samples
+    return:
+    parameter #0 :  // id
+    parameter #1 :  // nbSubroutines
+  method getFirst()Lorg/mockito/asm/Label; : // 0 samples
+    return: 
+  method getOffset()I : // 0 samples
+    return: 
+  method inSameSubroutine(Lorg/mockito/asm/Label;)Z : // 0 samples
+    return: 
+    parameter #0 :  // block
+  method inSubroutine(J)Z : // 0 samples
+    return: 
+    parameter #0 :  // id
+  method put(Lorg/mockito/asm/MethodWriter;Lorg/mockito/asm/ByteVector;IZ)V : // 203 samples
+    return:
+    parameter #0 : @Nullable // owner
+    parameter #1 : @Nullable // out
+    parameter #2 :  // source
+    parameter #3 :  // wideOffset
+  method resolve(Lorg/mockito/asm/MethodWriter;I[B)Z : // 204 samples
+    return: 
+    parameter #0 : @Nullable // owner
+    parameter #1 :  // position
+    parameter #2 : @Nullable // data
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method visitSubroutine(Lorg/mockito/asm/Label;JI)V : // 0 samples
+    return:
+    parameter #0 :  // JSR
+    parameter #1 :  // id
+    parameter #2 :  // nbSubroutines
+
+
+package org.mockito.asm:
+class MethodAdapter : // 45/- obj/class samples
+  method <init>(Lorg/mockito/asm/MethodVisitor;)V : // 43 samples
+    return:
+    parameter #0 : @Nullable // mv
+  method visitAnnotation(Ljava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // visible
+  method visitAnnotationDefault()Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+  method visitAttribute(Lorg/mockito/asm/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // attr
+  method visitCode()V : // 0 samples
+    return:
+  method visitEnd()V : // 0 samples
+    return:
+  method visitFieldInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // owner
+    parameter #2 :  // name
+    parameter #3 :  // desc
+  method visitFrame(II[Ljava/lang/Object;I[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // nLocal
+    parameter #2 :  // local
+    parameter #3 :  // nStack
+    parameter #4 :  // stack
+  method visitIincInsn(II)V : // 0 samples
+    return:
+    parameter #0 :  // var
+    parameter #1 :  // increment
+  method visitInsn(I)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+  method visitIntInsn(II)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // operand
+  method visitJumpInsn(ILorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // label
+  method visitLabel(Lorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // label
+  method visitLdcInsn(Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // cst
+  method visitLineNumber(ILorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // line
+    parameter #1 :  // start
+  method visitLocalVariable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/mockito/asm/Label;Lorg/mockito/asm/Label;I)V : // 0 samples
+    return:
+    parameter #0 :  // name
+    parameter #1 :  // desc
+    parameter #2 :  // signature
+    parameter #3 :  // start
+    parameter #4 :  // end
+    parameter #5 :  // index
+  method visitLookupSwitchInsn(Lorg/mockito/asm/Label;[I[Lorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // dflt
+    parameter #1 :  // keys
+    parameter #2 :  // labels
+  method visitMaxs(II)V : // 0 samples
+    return:
+    parameter #0 :  // maxStack
+    parameter #1 :  // maxLocals
+  method visitMethodInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 : @Nullable // owner
+    parameter #2 : @Nullable // name
+    parameter #3 : @Nullable // desc
+  method visitMultiANewArrayInsn(Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // desc
+    parameter #1 :  // dims
+  method visitParameterAnnotation(ILjava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // parameter
+    parameter #1 :  // desc
+    parameter #2 :  // visible
+  method visitTableSwitchInsn(IILorg/mockito/asm/Label;[Lorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // min
+    parameter #1 :  // max
+    parameter #2 :  // dflt
+    parameter #3 :  // labels
+  method visitTryCatchBlock(Lorg/mockito/asm/Label;Lorg/mockito/asm/Label;Lorg/mockito/asm/Label;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // start
+    parameter #1 :  // end
+    parameter #2 :  // handler
+    parameter #3 :  // type
+  method visitTypeInsn(ILjava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // type
+  method visitVarInsn(II)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // var
+
+
+package org.mockito.asm:
+class MethodWriter : // 42/42 obj/class samples
+  method <init>(Lorg/mockito/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;ZZ)V : // 42 samples
+    return:
+    parameter #0 : @Nullable // cw
+    parameter #1 :  // access
+    parameter #2 : @Nullable // name
+    parameter #3 : @Nullable // desc
+    parameter #4 : @Nullable // signature
+    parameter #5 : @Nullable // exceptions
+    parameter #6 :  // computeMaxs
+    parameter #7 :  // computeFrames
+  method visitAnnotation(Ljava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // visible
+  method visitAnnotationDefault()Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+  method visitAttribute(Lorg/mockito/asm/Attribute;)V : // 0 samples
+    return:
+    parameter #0 :  // attr
+  method visitCode()V : // 0 samples
+    return:
+  method visitFrame(II[Ljava/lang/Object;I[Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // nLocal
+    parameter #2 :  // local
+    parameter #3 :  // nStack
+    parameter #4 :  // stack
+  method visitParameterAnnotation(ILjava/lang/String;Z)Lorg/mockito/asm/AnnotationVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // parameter
+    parameter #1 :  // desc
+    parameter #2 :  // visible
+
+
+package org.mockito.asm:
+class Type : // 217/797 obj/class samples
+  method getArgumentTypes(Ljava/lang/String;)[Lorg/mockito/asm/Type; : // 96 samples
+    return: @Nullable
+    parameter #0 : @Nullable // methodDescriptor
+  method getArgumentTypes(Ljava/lang/reflect/Method;)[Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+    parameter #0 :  // method
+  method getObjectType(Ljava/lang/String;)Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+    parameter #0 :  // internalName
+  method getReturnType(Ljava/lang/String;)Lorg/mockito/asm/Type; : // 68 samples
+    return: @Nullable
+    parameter #0 : @Nullable // methodDescriptor
+  method getReturnType(Ljava/lang/reflect/Method;)Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+    parameter #0 :  // method
+  method getType([CI)Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+    parameter #0 :  // buf
+    parameter #1 :  // off
+  method getType(Ljava/lang/Class;)Lorg/mockito/asm/Type; : // 37 samples
+    return: @Nullable
+    parameter #0 : @Nullable // c
+  method getType(Ljava/lang/String;)Lorg/mockito/asm/Type; : // 89 samples
+    return: @Nullable
+    parameter #0 : @Nullable // typeDescriptor
+  method <init>(I)V : // 9 samples
+    return:
+    parameter #0 :  // sort
+  method <init>(I[CII)V : // 208 samples
+    return:
+    parameter #0 :  // sort
+    parameter #1 : @Nullable // buf
+    parameter #2 :  // off
+    parameter #3 :  // len
+
+
+
+
+
+package org.mockito.cglib.core:
+class AbstractClassGenerator$Source : // 2/- obj/class samples
+  method Source(Ljava/lang/String;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // name
+
+
+package org.mockito.cglib.core:
+class AbstractClassGenerator : // 59/75 obj/class samples
+  method getCurrent()Lorg/mockito/cglib/core/AbstractClassGenerator; : // 8 samples
+    return: @Nullable
+  method <init>(Lorg/mockito/cglib/core/$Source;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // source
+  method create(Ljava/lang/Object;)Ljava/lang/Object; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // key
+  method getAttemptLoad()Z : // 0 samples
+    return: 
+  method getClassLoader()Ljava/lang/ClassLoader; : // 6 samples
+    return: @Nullable
+  method getClassName()Ljava/lang/String; : // 3 samples
+    return: @Nullable
+  method getClassName(Ljava/lang/ClassLoader;)Ljava/lang/String; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // loader
+  method getClassNameCache(Ljava/lang/ClassLoader;)Ljava/util/Set; : // 6 samples
+    return: @Nullable
+    parameter #0 : @Nullable // loader
+  method getNamingPolicy()Lorg/mockito/cglib/core/NamingPolicy; : // 0 samples
+    return: 
+  method getStrategy()Lorg/mockito/cglib/core/GeneratorStrategy; : // 0 samples
+    return: 
+  method getUseCache()Z : // 0 samples
+    return: 
+  method setAttemptLoad(Z)V : // 0 samples
+    return:
+    parameter #0 :  // attemptLoad
+  method setClassLoader(Ljava/lang/ClassLoader;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // classLoader
+  method setNamePrefix(Ljava/lang/String;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // namePrefix
+  method setNamingPolicy(Lorg/mockito/cglib/core/NamingPolicy;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // namingPolicy
+  method setStrategy(Lorg/mockito/cglib/core/GeneratorStrategy;)V : // 0 samples
+    return:
+    parameter #0 :  // strategy
+  method setUseCache(Z)V : // 0 samples
+    return:
+    parameter #0 :  // useCache
+
+
+package org.mockito.cglib.core:
+class Block : // 0/- obj/class samples
+  method <init>(Lorg/mockito/cglib/core/CodeEmitter;)V : // 0 samples
+    return:
+    parameter #0 :  // e
+  method end()V : // 0 samples
+    return:
+  method getCodeEmitter()Lorg/mockito/cglib/core/CodeEmitter; : // 0 samples
+    return: 
+  method getEnd()Lorg/mockito/asm/Label; : // 0 samples
+    return: 
+  method getStart()Lorg/mockito/asm/Label; : // 0 samples
+    return: 
+
+
+    parameter #1 :  // maxLocals
+
+
+
+package org.mockito.cglib.core:
+class ClassEmitter$FieldInfo : // 54/- obj/class samples
+  method FieldInfo(ILjava/lang/String;Lorg/mockito/asm/Type;Ljava/lang/Object;)V : // 40 samples
+    return:
+    parameter #0 :  // access
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // type
+    parameter #3 : @Nullable // value
+  method equals(Ljava/lang/Object;)Z : // 7 samples
+    return: 
+    parameter #0 : @Nullable // o
+  method hashCode()I : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class ClassEmitter : // 927/929 obj/class samples
+  method getNextHook()I : // 1 samples
+    return: 
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Lorg/mockito/asm/ClassVisitor;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // cv
+  method begin_class(IILjava/lang/String;Lorg/mockito/asm/Type;[Lorg/mockito/asm/Type;Ljava/lang/String;)V : // 3 samples
+    return:
+    parameter #0 :  // version
+    parameter #1 :  // access
+    parameter #2 : @Nullable // className
+    parameter #3 : @Nullable // superType
+    parameter #4 : @Nullable // interfaces
+    parameter #5 : @Nullable // source
+  method begin_method(ILorg/mockito/cglib/core/Signature;[Lorg/mockito/asm/Type;)Lorg/mockito/cglib/core/CodeEmitter; : // 42 samples
+    return: @Nullable
+    parameter #0 :  // access
+    parameter #1 : @Nullable // sig
+    parameter #2 : @Nullable // exceptions
+  method begin_static()Lorg/mockito/cglib/core/CodeEmitter; : // 1 samples
+    return: @Nullable
+  method declare_field(ILjava/lang/String;Lorg/mockito/asm/Type;Ljava/lang/Object;)V : // 40 samples
+    return:
+    parameter #0 :  // access
+    parameter #1 : @Nullable // name
+    parameter #2 : @Nullable // type
+    parameter #3 : @Nullable // value
+  method end_class()V : // 3 samples
+    return:
+  method getAccess()I : // 2 samples
+    return: 
+  method getClassInfo()Lorg/mockito/cglib/core/ClassInfo; : // 42 samples
+    return: @Nullable
+  method getClassType()Lorg/mockito/asm/Type; : // 171 samples
+    return: @Nullable
+  method getFieldInfo(Ljava/lang/String;)Lorg/mockito/cglib/core/ClassEmitter$FieldInfo; : // 130 samples
+    return: @Nullable
+    parameter #0 : @Nullable // name
+  method getStaticHook()Lorg/mockito/cglib/core/CodeEmitter; : // 1 samples
+    return: @Nullable
+  method getSuperType()Lorg/mockito/asm/Type; : // 21 samples
+    return: @Nullable
+  method init()V : // 3 samples
+    return:
+  method isFieldDeclared(Ljava/lang/String;)Z : // 0 samples
+    return: 
+    parameter #0 :  // name
+  method setTarget(Lorg/mockito/asm/ClassVisitor;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // cv
+  method visit(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // version
+    parameter #1 :  // access
+    parameter #2 :  // name
+    parameter #3 :  // signature
+    parameter #4 :  // superName
+    parameter #5 :  // interfaces
+  method visitEnd()V : // 0 samples
+    return:
+  method visitField(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/mockito/asm/FieldVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // access
+    parameter #1 :  // name
+    parameter #2 :  // desc
+    parameter #3 :  // signature
+    parameter #4 :  // value
+  method visitMethod(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/mockito/asm/MethodVisitor; : // 0 samples
+    return: 
+    parameter #0 :  // access
+    parameter #1 :  // name
+    parameter #2 :  // desc
+    parameter #3 :  // signature
+    parameter #4 :  // exceptions
+
+
+package org.mockito.cglib.core:
+class ClassInfo : // 47/- obj/class samples
+  method <init>()V : // 11 samples
+    return:
+  method equals(Ljava/lang/Object;)Z : // 6 samples
+    return: 
+    parameter #0 : @Nullable // o
+  method hashCode()I : // 12 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+
+package org.mockito.cglib.core:
+class ClassNameReader$EarlyExitException : // 1/- obj/class samples
+  method EarlyExitException()V : // 1 samples
+    return:
+
+
+package org.mockito.cglib.core:
+class ClassNameReader : // 0/12 obj/class samples
+  method getClassInfo(Lorg/mockito/asm/ClassReader;)[Ljava/lang/String; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // r
+  method getClassName(Lorg/mockito/asm/ClassReader;)Ljava/lang/String; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // r
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.mockito.cglib.core:
+class CodeEmitter$State : // 42/- obj/class samples
+  method State(Lorg/mockito/cglib/core/ClassInfo;ILorg/mockito/cglib/core/Signature;[Lorg/mockito/asm/Type;)V : // 42 samples
+    return:
+    parameter #0 : @Nullable // classInfo
+    parameter #1 :  // access
+    parameter #2 : @Nullable // sig
+    parameter #3 : @Nullable // exceptionTypes
+  method getAttribute()Lorg/mockito/asm/Attribute; : // 0 samples
+    return: 
+  method getClassInfo()Lorg/mockito/cglib/core/ClassInfo; : // 0 samples
+    return: 
+  method getExceptionTypes()[Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+  method getModifiers()I : // 0 samples
+    return: 
+  method getSignature()Lorg/mockito/cglib/core/Signature; : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class CodeEmitter : // 496/496 obj/class samples
+  method <init>(Lorg/mockito/cglib/core/ClassEmitter;Lorg/mockito/asm/MethodVisitor;ILorg/mockito/cglib/core/Signature;[Lorg/mockito/asm/Type;)V : // 42 samples
+    return:
+    parameter #0 : @Nullable // ce
+    parameter #1 : @Nullable // mv
+    parameter #2 :  // access
+    parameter #3 : @Nullable // sig
+    parameter #4 : @Nullable // exceptionTypes
+  method <init>(Lorg/mockito/cglib/core/;)V : // 0 samples
+    return:
+    parameter #0 :  // wrap
+  method begin_block()Lorg/mockito/cglib/core/Block; : // 0 samples
+    return: 
+  method catch_exception(Lorg/mockito/cglib/core/Block;Lorg/mockito/asm/Type;)V : // 0 samples
+    return:
+    parameter #0 :  // block
+    parameter #1 :  // exception
+  method end_method()V : // 42 samples
+    return:
+  method getClassEmitter()Lorg/mockito/cglib/core/ClassEmitter; : // 1 samples
+    return: @Nullable
+  method getMethodInfo()Lorg/mockito/cglib/core/MethodInfo; : // 0 samples
+    return: 
+  method getReturnType()Lorg/mockito/asm/Type; : // 0 samples
+    return: 
+  method getSignature()Lorg/mockito/cglib/core/Signature; : // 0 samples
+    return: 
+  method goTo(Lorg/mockito/asm/Label;)V : // 78 samples
+    return:
+    parameter #0 : @Nullable // label
+  method if_cmp(Lorg/mockito/asm/Type;ILorg/mockito/asm/Label;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // mode
+    parameter #2 :  // label
+  method if_icmp(ILorg/mockito/asm/Label;)V : // 12 samples
+    return:
+    parameter #0 :  // mode
+    parameter #1 : @Nullable // label
+  method if_jump(ILorg/mockito/asm/Label;)V : // 19 samples
+    return:
+    parameter #0 :  // mode
+    parameter #1 : @Nullable // label
+  method ifnonnull(Lorg/mockito/asm/Label;)V : // 34 samples
+    return:
+    parameter #0 : @Nullable // label
+  method ifnull(Lorg/mockito/asm/Label;)V : // 41 samples
+    return:
+    parameter #0 : @Nullable // label
+  method isStaticHook()Z : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class CodeGenerationException : // 0/- obj/class samples
+  method <init>(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class CollectionUtils : // 0/- obj/class samples
+  method bucket(Ljava/util/Collection;Lorg/mockito/cglib/core/Transformer;)Ljava/util/Map; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // c
+    parameter #1 : @Nullable // t
+  method filter(Ljava/util/Collection;Lorg/mockito/cglib/core/Predicate;)Ljava/util/Collection; : // 4 samples
+    return: @Nullable
+    parameter #0 : @Nullable // c
+    parameter #1 : @Nullable // p
+  method getIndexMap(Ljava/util/List;)Ljava/util/Map; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // list
+  method reverse(Ljava/util/Map;Ljava/util/Map;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // source
+    parameter #1 : @Nullable // target
+  method transform(Ljava/util/Collection;Lorg/mockito/cglib/core/Transformer;)Ljava/util/List; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // c
+    parameter #1 : @Nullable // t
+  method <init>()V : // 0 samples
+    return:
+
+
+
+
+package org.mockito.cglib.core:
+class DebuggingClassWriter : // 15/15 obj/class samples
+  method <init>(I)V : // 3 samples
+    return:
+    parameter #0 :  // flags
+  method getClassName()Ljava/lang/String; : // 0 samples
+    return: 
+  method getSuperName()Ljava/lang/String; : // 0 samples
+    return: 
+  method toByteArray()[B : // 3 samples
+    return: @Nullable
+  method visit(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V : // 3 samples
+    return:
+    parameter #0 :  // version
+    parameter #1 :  // access
+    parameter #2 : @Nullable // name
+    parameter #3 : @Nullable // signature
+    parameter #4 : @Nullable // superName
+    parameter #5 : @Nullable // interfaces
+
+
+package org.mockito.cglib.core:
+class DefaultGeneratorStrategy : // 25/25 obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method generate(Lorg/mockito/cglib/core/ClassGenerator;)[B : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cg
+  method getClassWriter()Lorg/mockito/asm/ClassWriter; : // 3 samples
+    return: @Nullable
+  method transform([B)[B : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // b
+  method transform(Lorg/mockito/cglib/core/ClassGenerator;)Lorg/mockito/cglib/core/ClassGenerator; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cg
+
+
+package org.mockito.cglib.core:
+class DefaultNamingPolicy : // 13/13 obj/class samples
+  method <init>()V : // 3 samples
+    return:
+  method getClassName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Lorg/mockito/cglib/core/Predicate;)Ljava/lang/String; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // prefix
+    parameter #1 : @Nullable // source
+    parameter #2 : @Nullable // key
+    parameter #3 : @Nullable // names
+  method getTag()Ljava/lang/String; : // 2 samples
+    return: @Nullable
+
+
+package org.mockito.cglib.core:
+class DuplicatesPredicate : // 29/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method evaluate(Ljava/lang/Object;)Z : // 14 samples
+    return: 
+    parameter #0 : @Nullable // arg
+
+
+
+
+package org.mockito.cglib.core:
+class EmitUtils$ArrayDelimiters : // 1/- obj/class samples
+  method ArrayDelimiters(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // before
+    parameter #1 : @Nullable // inside
+    parameter #2 : @Nullable // after
+
+
+package org.mockito.cglib.core:
+class EmitUtils : // 0/26 obj/class samples
+  method factory_method(Lorg/mockito/cglib/core/ClassEmitter;Lorg/mockito/cglib/core/Signature;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // ce
+    parameter #1 : @Nullable // sig
+  method null_constructor(Lorg/mockito/cglib/core/ClassEmitter;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // ce
+  method process_array(Lorg/mockito/cglib/core/CodeEmitter;Lorg/mockito/asm/Type;Lorg/mockito/cglib/core/ProcessArrayCallback;)V : // 6 samples
+    return:
+    parameter #0 : @Nullable // e
+    parameter #1 : @Nullable // type
+    parameter #2 : @Nullable // callback
+  method process_arrays(Lorg/mockito/cglib/core/CodeEmitter;Lorg/mockito/asm/Type;Lorg/mockito/cglib/core/ProcessArrayCallback;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // e
+    parameter #1 : @Nullable // type
+    parameter #2 : @Nullable // callback
+  method string_switch(Lorg/mockito/cglib/core/CodeEmitter;[Ljava/lang/String;ILorg/mockito/cglib/core/ObjectSwitchCallback;)V : // 0 samples
+    return:
+    parameter #0 :  // e
+    parameter #1 :  // strings
+    parameter #2 :  // switchStyle
+    parameter #3 :  // callback
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.mockito.cglib.core:
+class KeyFactory$Generator : // 142/142 obj/class samples
+  method Generator()V : // 2 samples
+    return:
+  method create()Lorg/mockito/cglib/core/KeyFactory; : // 2 samples
+    return: @Nullable
+  method firstInstance(Ljava/lang/Class;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+  method generateClass(Lorg/mockito/asm/ClassVisitor;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // v
+  method getDefaultClassLoader()Ljava/lang/ClassLoader; : // 0 samples
+    return: 
+  method getFieldName(I)Ljava/lang/String; : // 60 samples
+    return: @Nullable
+    parameter #0 :  // arg
+  method nextInstance(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // instance
+  method setCustomizer(Lorg/mockito/cglib/core/Customizer;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // customizer
+  method setHashConstant(I)V : // 0 samples
+    return:
+    parameter #0 :  // constant
+  method setHashMultiplier(I)V : // 0 samples
+    return:
+    parameter #0 :  // multiplier
+  method setInterface(Ljava/lang/Class;)V : // 2 samples
+    return:
+    parameter #0 : @Nullable // keyInterface
+
+
+package org.mockito.cglib.core:
+class KeyFactory : // 28/40 obj/class samples
+  method create(Ljava/lang/Class;)Lorg/mockito/cglib/core/KeyFactory; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // keyInterface
+  method create(Ljava/lang/Class;Lorg/mockito/cglib/core/Customizer;)Lorg/mockito/cglib/core/KeyFactory; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // keyInterface
+    parameter #1 : @Nullable // customizer
+  method create(Ljava/lang/ClassLoader;Ljava/lang/Class;Lorg/mockito/cglib/core/Customizer;)Lorg/mockito/cglib/core/KeyFactory; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // loader
+    parameter #1 : @Nullable // keyInterface
+    parameter #2 : @Nullable // customizer
+  method <init>()V : // 28 samples
+    return:
+
+
+package org.mockito.cglib.core:
+class Local : // 386/- obj/class samples
+  method <init>(ILorg/mockito/asm/Type;)V : // 24 samples
+    return:
+    parameter #0 :  // index
+    parameter #1 : @Nullable // type
+  method getIndex()I : // 95 samples
+    return: 
+  method getType()Lorg/mockito/asm/Type; : // 86 samples
+    return: @Nullable
+
+
+package org.mockito.cglib.core:
+class LocalVariablesSorter$State : // 42/- obj/class samples
+  method State()V : // 42 samples
+    return:
+
+
+package org.mockito.cglib.core:
+class LocalVariablesSorter : // 42/- obj/class samples
+  method <init>(ILjava/lang/String;Lorg/mockito/asm/MethodVisitor;)V : // 42 samples
+    return:
+    parameter #0 :  // access
+    parameter #1 : @Nullable // desc
+    parameter #2 : @Nullable // mv
+  method <init>(Lorg/mockito/cglib/core/;)V : // 0 samples
+    return:
+    parameter #0 :  // lvs
+  method visitVarInsn(II)V : // 0 samples
+    return:
+    parameter #0 :  // opcode
+    parameter #1 :  // var
+
+
+package org.mockito.cglib.core:
+class MethodInfo : // 153/- obj/class samples
+  method <init>()V : // 51 samples
+    return:
+  method equals(Ljava/lang/Object;)Z : // 0 samples
+    return: 
+    parameter #0 :  // o
+  method hashCode()I : // 51 samples
+    return: 
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class MethodInfoTransformer : // 3/5 obj/class samples
+  method getInstance()Lorg/mockito/cglib/core/MethodInfoTransformer; : // 1 samples
+    return: @Nullable
+  method <init>()V : // 1 samples
+    return:
+  method transform(Ljava/lang/Object;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // value
+
+
+package org.mockito.cglib.core:
+class MethodWrapper$MethodWrapperKey$$KeyFactoryByCGLIB$$2139e083 : // 138/138 obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method <init>(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V : // 25 samples
+    return:
+    parameter #0 : @Nullable // arg0
+    parameter #1 : @Nullable // arg1
+    parameter #2 : @Nullable // arg2
+  method equals(Ljava/lang/Object;)Z : // 3 samples
+    return: 
+    parameter #0 : @Nullable // arg0
+  method hashCode()I : // 28 samples
+    return: 
+  method newInstance(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object; : // 25 samples
+    return: @Nullable
+    parameter #0 : @Nullable // arg0
+    parameter #1 : @Nullable // arg1
+    parameter #2 : @Nullable // arg2
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.mockito.cglib.core:
+class MethodWrapper : // 0/52 obj/class samples
+  method create(Ljava/lang/reflect/Method;)Ljava/lang/Object; : // 25 samples
+    return: @Nullable
+    parameter #0 : @Nullable // method
+  method createSet(Ljava/util/Collection;)Ljava/util/Set; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // methods
+  method <init>()V : // 0 samples
+    return:
+
+
+
+
+package org.mockito.cglib.core:
+class ReflectUtils : // 0/184 obj/class samples
+  method addAllInterfaces(Ljava/lang/Class;Ljava/util/List;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // type
+    parameter #1 :  // list
+  method addAllMethods(Ljava/lang/Class;Ljava/util/List;)Ljava/util/List; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // list
+  method defineClass(Ljava/lang/String;[BLjava/lang/ClassLoader;)Ljava/lang/Class; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // className
+    parameter #1 : @Nullable // b
+    parameter #2 : @Nullable // loader
+  method findConstructor(Ljava/lang/String;)Ljava/lang/reflect/Constructor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+  method findConstructor(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/reflect/Constructor; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // loader
+  method findDeclaredMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // type
+    parameter #1 :  // methodName
+    parameter #2 :  // parameterTypes
+  method findInterfaceMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // iface
+  method findMethod(Ljava/lang/String;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+  method findMethod(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // loader
+  method findMethods([Ljava/lang/String;[Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // namesAndDescriptors
+    parameter #1 : @Nullable // methods
+  method findNewInstance(Ljava/lang/Class;)Ljava/lang/reflect/Method; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // iface
+  method findPackageProtected([Ljava/lang/Class;)I : // 1 samples
+    return: 
+    parameter #0 : @Nullable // classes
+  method getBeanGetters(Ljava/lang/Class;)[Ljava/beans/PropertyDescriptor; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method getBeanProperties(Ljava/lang/Class;)[Ljava/beans/PropertyDescriptor; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method getBeanSetters(Ljava/lang/Class;)[Ljava/beans/PropertyDescriptor; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method getClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // className
+    parameter #1 :  // loader
+  method getClass(Ljava/lang/String;Ljava/lang/ClassLoader;[Ljava/lang/String;)Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // className
+    parameter #1 :  // loader
+    parameter #2 :  // packages
+  method getClassInfo(Ljava/lang/Class;)Lorg/mockito/cglib/core/ClassInfo; : // 8 samples
+    return: @Nullable
+    parameter #0 : @Nullable // clazz
+  method getClasses([Ljava/lang/Object;)[Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // objects
+  method getConstructor(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // parameterTypes
+  method getExceptionTypes(Ljava/lang/reflect/Member;)[Lorg/mockito/asm/Type; : // 17 samples
+    return: @Nullable
+    parameter #0 : @Nullable // member
+  method getMethodInfo(Ljava/lang/reflect/Member;)Lorg/mockito/cglib/core/MethodInfo; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // member
+  method getMethodInfo(Ljava/lang/reflect/Member;I)Lorg/mockito/cglib/core/MethodInfo; : // 9 samples
+    return: @Nullable
+    parameter #0 : @Nullable // member
+    parameter #1 :  // modifiers
+  method getNames([Ljava/lang/Class;)[Ljava/lang/String; : // 26 samples
+    return: @Nullable
+    parameter #0 : @Nullable // classes
+  method getPropertiesHelper(Ljava/lang/Class;ZZ)[Ljava/beans/PropertyDescriptor; : // 0 samples
+    return: 
+    parameter #0 :  // type
+    parameter #1 :  // read
+    parameter #2 :  // write
+  method getPropertyMethods([Ljava/beans/PropertyDescriptor;ZZ)[Ljava/lang/reflect/Method; : // 0 samples
+    return: 
+    parameter #0 :  // properties
+    parameter #1 :  // read
+    parameter #2 :  // write
+  method getSignature(Ljava/lang/reflect/Member;)Lorg/mockito/cglib/core/Signature; : // 11 samples
+    return: @Nullable
+    parameter #0 : @Nullable // member
+  method newInstance(Ljava/lang/Class;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+  method newInstance(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // parameterTypes
+    parameter #2 : @Nullable // args
+  method newInstance(Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cstruct
+    parameter #1 : @Nullable // args
+  method parseTypes(Ljava/lang/String;Ljava/lang/ClassLoader;)[Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // desc
+    parameter #1 :  // loader
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.objenesis:
+class ObjenesisBase : // 5/- obj/class samples
+  method <init>(Lorg/objenesis/strategy/InstantiatorStrategy;)V : // 0 samples
+    return:
+    parameter #0 :  // strategy
+  method <init>(Lorg/objenesis/strategy/InstantiatorStrategy;Z)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // strategy
+    parameter #1 :  // useCache
+  method getInstantiatorOf(Ljava/lang/Class;)Lorg/objenesis/instantiator/ObjectInstantiator; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // clazz
+  method newInstance(Ljava/lang/Class;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // clazz
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.objenesis:
+class ObjenesisException : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // cause
+  method <init>(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+
+
+package org.objenesis:
+class ObjenesisStd : // 1/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method <init>(Z)V : // 1 samples
+    return:
+    parameter #0 :  // useCache
+
+
+package org.objenesis.instantiator.sun:
+class SunReflectionFactoryHelper : // 0/- obj/class samples
+  method createReflectionFactory(Ljava/lang/Class;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // reflectionFactoryClass
+  method getNewConstructorForSerializationMethod(Ljava/lang/Class;)Ljava/lang/reflect/Method; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // reflectionFactoryClass
+  method getReflectionFactoryClass()Ljava/lang/Class; : // 1 samples
+    return: @Nullable
+  method newConstructorForSerialization(Ljava/lang/Class;Ljava/lang/reflect/Constructor;)Ljava/lang/reflect/Constructor; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // constructor
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.objenesis.instantiator.sun:
+class SunReflectionFactoryInstantiator : // 3/- obj/class samples
+  method getJavaLangObjectConstructor()Ljava/lang/reflect/Constructor; : // 1 samples
+    return: @Nullable
+  method <init>(Ljava/lang/Class;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // type
+  method newInstance()Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+
+
+package org.objenesis.strategy:
+class BaseInstantiatorStrategy : // 1/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+
+
+package org.objenesis.strategy:
+class PlatformDescription : // 0/8 obj/class samples
+  method getAndroidVersion()I : // 1 samples
+    return: 
+  method getAndroidVersion0()I : // 0 samples
+    return: 
+  method getOldAndroidVersion(Ljava/lang/Class;)I : // 0 samples
+    return: 
+    parameter #0 :  // versionClass
+  method isThisJVM(Ljava/lang/String;)Z : // 3 samples
+    return: 
+    parameter #0 : @Nullable // name
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.objenesis.strategy:
+class StdInstantiatorStrategy : // 3/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method newInstantiatorOf(Ljava/lang/Class;)Lorg/objenesis/instantiator/ObjectInstantiator; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+
+
+package org.osgi.dto:
+class DTO : // 0/- obj/class samples
+  method appendArray(Ljava/lang/StringBuilder;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // objectRefs
+    parameter #2 :  // refpath
+    parameter #3 :  // array
+  method appendDTO(Ljava/lang/StringBuilder;Ljava/util/Map;Ljava/lang/String;Lorg/osgi/dto/DTO;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // objectRefs
+    parameter #2 :  // refpath
+    parameter #3 :  // dto
+  method appendIterable(Ljava/lang/StringBuilder;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Iterable;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // objectRefs
+    parameter #2 :  // refpath
+    parameter #3 :  // iterable
+  method appendMap(Ljava/lang/StringBuilder;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // objectRefs
+    parameter #2 :  // refpath
+    parameter #3 :  // map
+  method appendString(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // string
+  method appendValue(Ljava/lang/StringBuilder;Ljava/util/Map;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/StringBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // result
+    parameter #1 :  // objectRefs
+    parameter #2 :  // refpath
+    parameter #3 :  // value
+  method compress(Ljava/lang/CharSequence;)Ljava/lang/CharSequence; : // 0 samples
+    return: 
+    parameter #0 :  // in
+  method <init>()V : // 0 samples
+    return:
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+
+
+package org.osgi.framework:
+class BundleEvent : // 0/0 obj/class samples
+  method <init>(ILorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // bundle
+  method <init>(ILorg/osgi/framework/Bundle;Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // bundle
+    parameter #2 :  // origin
+  method getBundle()Lorg/osgi/framework/Bundle; : // 0 samples
+    return: 
+  method getOrigin()Lorg/osgi/framework/Bundle; : // 0 samples
+    return: 
+  method getType()I : // 0 samples
+    return: 
+
+
+package org.osgi.framework:
+class InvalidSyntaxException : // 0/0 obj/class samples
+  method message(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // msg
+    parameter #1 :  // filter
+  method <init>(Ljava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // filter
+  method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // filter
+    parameter #2 :  // cause
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+  method getFilter()Ljava/lang/String; : // 0 samples
+    return: 
+  method initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable; : // 0 samples
+    return: 
+    parameter #0 :  // cause
+
+
+package org.osgi.framework:
+class ServiceEvent : // 0/0 obj/class samples
+  method <init>(ILorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // type
+    parameter #1 :  // reference
+  method getServiceReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getType()I : // 0 samples
+    return: 
+
+
+package org.osgi.framework:
+class ServiceException : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+  method <init>(Ljava/lang/String;I)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // type
+  method <init>(Ljava/lang/String;ILjava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // type
+    parameter #2 :  // cause
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // msg
+    parameter #1 :  // cause
+  method getType()I : // 0 samples
+    return: 
+
+
+package org.osgi.framework.dto:
+class BundleDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.framework.dto:
+class ServiceReferenceDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.service.cm:
+class ConfigurationEvent : // 0/0 obj/class samples
+  method <init>(Lorg/osgi/framework/ServiceReference;ILjava/lang/String;Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+    parameter #1 :  // type
+    parameter #2 :  // factoryPid
+    parameter #3 :  // pid
+  method getFactoryPid()Ljava/lang/String; : // 0 samples
+    return: 
+  method getPid()Ljava/lang/String; : // 0 samples
+    return: 
+  method getReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getType()I : // 0 samples
+    return: 
+
+
+package org.osgi.service.component:
+class ComponentException : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // message
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // message
+    parameter #1 :  // cause
+  method <init>(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // cause
+  method getCause()Ljava/lang/Throwable; : // 0 samples
+    return: 
+  method initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable; : // 0 samples
+    return: 
+    parameter #0 :  // cause
+
+
+package org.osgi.service.component.runtime.dto:
+class ComponentConfigurationDTO : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.service.component.runtime.dto:
+class ComponentDescriptionDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.service.component.runtime.dto:
+class ReferenceDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.service.component.runtime.dto:
+class SatisfiedReferenceDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.service.component.runtime.dto:
+class UnsatisfiedReferenceDTO : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.util.promise:
+class Deferred : // 3/- obj/class samples
+  method <init>()V : // 1 samples
+    return:
+  method fail(Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // failure
+  method getPromise()Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+  method resolve(Ljava/lang/Object;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // value
+  method resolveWith(Lorg/osgi/util/promise/Promise;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // with
+
+
+package org.osgi.util.promise:
+class PromiseImpl : // 5/- obj/class samples
+  method requireNonNull(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+  method <init>()V : // 1 samples
+    return:
+  method <init>(Ljava/lang/Object;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // v
+    parameter #1 :  // f
+  method fallbackTo(Lorg/osgi/util/promise/Promise;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // fallback
+  method filter(Lorg/osgi/util/function/Predicate;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // predicate
+  method flatMap(Lorg/osgi/util/function/Function;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // mapper
+  method getFailure()Ljava/lang/Throwable; : // 0 samples
+    return: 
+  method getValue()Ljava/lang/Object; : // 0 samples
+    return: 
+  method isDone()Z : // 0 samples
+    return: 
+  method map(Lorg/osgi/util/function/Function;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // mapper
+  method notifyCallbacks()V : // 1 samples
+    return:
+  method onResolve(Ljava/lang/Runnable;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // callback
+  method recover(Lorg/osgi/util/function/Function;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // recovery
+  method recoverWith(Lorg/osgi/util/function/Function;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // recovery
+  method resolve(Ljava/lang/Object;Ljava/lang/Throwable;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // v
+    parameter #1 : @Nullable // f
+  method resolveWith(Lorg/osgi/util/promise/Promise;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // with
+  method then(Lorg/osgi/util/promise/Success;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // success
+  method then(Lorg/osgi/util/promise/Success;Lorg/osgi/util/promise/Failure;)Lorg/osgi/util/promise/Promise; : // 0 samples
+    return: 
+    parameter #0 :  // success
+    parameter #1 :  // failure
+
+
+package org.osgi.util.tracker:
+class AbstractTracked : // 0/0 obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method close()V : // 0 samples
+    return:
+  method copyEntries(Ljava/util/Map;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // map
+  method copyKeys([Ljava/lang/Object;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // list
+  method getCustomizedObject(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // item
+  method getTrackingCount()I : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method modified()V : // 0 samples
+    return:
+  method setInitial([Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // list
+  method size()I : // 0 samples
+    return: 
+  method track(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+  method trackAdding(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+  method trackInitial()V : // 0 samples
+    return:
+  method untrack(Ljava/lang/Object;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+
+
+package org.osgi.util.tracker:
+class BundleTracker$Tracked : // 0/0 obj/class samples
+  method Tracked(Lorg/osgi/util/tracker/BundleTracker;)V : // 0 samples
+    return:
+  method bundleChanged(Lorg/osgi/framework/BundleEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+  method customizerAdding(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // item
+    parameter #1 :  // related
+  method customizerModified(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+    parameter #2 :  // object
+  method customizerRemoved(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // item
+    parameter #1 :  // related
+    parameter #2 :  // object
+
+
+package org.osgi.util.tracker:
+class BundleTracker : // 0/0 obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;ILorg/osgi/util/tracker/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // stateMask
+    parameter #2 :  // customizer
+  method addingBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+  method close()V : // 0 samples
+    return:
+  method getBundles()[Lorg/osgi/framework/Bundle; : // 0 samples
+    return: 
+  method getObject(Lorg/osgi/framework/Bundle;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // bundle
+  method getTracked()Ljava/util/Map; : // 0 samples
+    return: 
+  method getTrackingCount()I : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method modifiedBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+    parameter #2 :  // object
+  method open()V : // 0 samples
+    return:
+  method remove(Lorg/osgi/framework/Bundle;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+  method removedBundle(Lorg/osgi/framework/Bundle;Lorg/osgi/framework/BundleEvent;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // bundle
+    parameter #1 :  // event
+    parameter #2 :  // object
+  method size()I : // 0 samples
+    return: 
+  method tracked()Lorg/osgi/util/tracker/BundleTracker$Tracked; : // 0 samples
+    return: 
+
+
+package org.osgi.util.tracker:
+class ServiceTracker$AllTracked : // 0/0 obj/class samples
+  method AllTracked(Lorg/osgi/util/tracker/ServiceTracker;)V : // 0 samples
+    return:
+
+
+package org.osgi.util.tracker:
+class ServiceTracker$Tracked : // 0/0 obj/class samples
+  method Tracked(Lorg/osgi/util/tracker/ServiceTracker;)V : // 0 samples
+    return:
+  method serviceChanged(Lorg/osgi/framework/ServiceEvent;)V : // 0 samples
+    return:
+    parameter #0 :  // event
+
+
+package org.osgi.util.tracker:
+class ServiceTracker : // 0/0 obj/class samples
+  method <init>(Lorg/osgi/framework/BundleContext;Ljava/lang/Class;Lorg/osgi/util/tracker/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // clazz
+    parameter #2 :  // customizer
+  method <init>(Lorg/osgi/framework/BundleContext;Ljava/lang/String;Lorg/osgi/util/tracker/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // clazz
+    parameter #2 :  // customizer
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/Filter;Lorg/osgi/util/tracker/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // filter
+    parameter #2 :  // customizer
+  method <init>(Lorg/osgi/framework/BundleContext;Lorg/osgi/framework/ServiceReference;Lorg/osgi/util/tracker/Customizer;)V : // 0 samples
+    return:
+    parameter #0 :  // context
+    parameter #1 :  // reference
+    parameter #2 :  // customizer
+  method addingService(Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // reference
+  method close()V : // 0 samples
+    return:
+  method getInitialReferences(ZLjava/lang/String;Ljava/lang/String;)[Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+    parameter #0 :  // trackAllServices
+    parameter #1 :  // className
+    parameter #2 :  // filterString
+  method getService()Ljava/lang/Object; : // 0 samples
+    return: 
+  method getService(Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // reference
+  method getServiceReference()Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServiceReferences()[Lorg/osgi/framework/ServiceReference; : // 0 samples
+    return: 
+  method getServices()[Ljava/lang/Object; : // 0 samples
+    return: 
+  method getServices([Ljava/lang/Object;)[Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // array
+  method getTracked()Ljava/util/SortedMap; : // 0 samples
+    return: 
+  method getTrackingCount()I : // 0 samples
+    return: 
+  method isEmpty()Z : // 0 samples
+    return: 
+  method modified()V : // 0 samples
+    return:
+  method modifiedService(Lorg/osgi/framework/ServiceReference;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+    parameter #1 :  // service
+  method open()V : // 0 samples
+    return:
+  method open(Z)V : // 0 samples
+    return:
+    parameter #0 :  // trackAllServices
+  method remove(Lorg/osgi/framework/ServiceReference;)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+  method removedService(Lorg/osgi/framework/ServiceReference;Ljava/lang/Object;)V : // 0 samples
+    return:
+    parameter #0 :  // reference
+    parameter #1 :  // service
+  method size()I : // 0 samples
+    return: 
+  method tracked()Lorg/osgi/util/tracker/ServiceTracker$Tracked; : // 0 samples
+    return: 
+  method waitForService(J)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // timeout
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+

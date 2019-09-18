@@ -1,0 +1,581 @@
+package org.checkerframework.checker.nullness.qual:
+annotation @Nullable:
+annotation @NonNull:
+
+package :
+class Main : // 7/- obj/class samples
+  field converter :  // org.osgi.util.converter.Converter
+  method main([Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // args
+  method <init>()V : // 1 samples
+    return:
+  method getMapEntry(Ljava/util/Map;)Ljava/util/Map$Entry; : // 2 samples
+    return: 
+    parameter #0 :  // map
+  method testMapEntry6()V : // 1 samples
+    return:
+  method testMapEntry9()V : // 0 samples
+    return:
+
+
+package org.osgi.util.converter:
+class AbstractSpecifying : // 3/- obj/class samples
+  method <init>()V : // 3 samples
+    return:
+  method castThis()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method defaultValue(Ljava/lang/Object;)Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+    parameter #0 :  // defVal
+  method keysIgnoreCase()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method sourceAs(Ljava/lang/Class;)Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method sourceAsBean()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method sourceAsDTO()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method targetAs(Ljava/lang/Class;)Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method targetAsBean()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method targetAsDTO()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+  method view()Lorg/osgi/util/converter/Specifying; : // 0 samples
+    return: 
+
+
+package org.osgi.util.converter:
+class ConversionException : // 0/0 obj/class samples
+  method <init>(Ljava/lang/String;)V : // 0 samples
+    return:
+    parameter #0 :  // message
+  method <init>(Ljava/lang/String;Ljava/lang/Throwable;)V : // 0 samples
+    return:
+    parameter #0 :  // message
+    parameter #1 :  // cause
+
+
+package org.osgi.util.converter:
+class ConverterBuilderImpl : // 181/- obj/class samples
+  field converter :  // org.osgi.util.converter.InternalConverter
+  field rules :  // java.util.Map
+  field catchAllRules :  // java.util.List
+  field errorHandlers :  // java.util.List
+  method <init>(Lorg/osgi/util/converter/InternalConverter;)V : // 1 samples
+    return:
+    parameter #0 :  // c
+  method build()Lorg/osgi/util/converter/InternalConverter; : // 1 samples
+    return: 
+  method errorHandler(Lorg/osgi/util/converter/ConverterFunction;)Lorg/osgi/util/converter/ConverterBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // func
+  method getRulesList(Ljava/lang/reflect/Type;)Ljava/util/List; : // 45 samples
+    return: 
+    parameter #0 :  // type
+  method rule(Ljava/lang/reflect/Type;Lorg/osgi/util/converter/ConverterFunction;)Lorg/osgi/util/converter/ConverterBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // t
+    parameter #1 :  // func
+  method rule(Lorg/osgi/util/converter/ConverterFunction;)Lorg/osgi/util/converter/ConverterBuilder; : // 0 samples
+    return: 
+    parameter #0 :  // func
+  method rule(Lorg/osgi/util/converter/TargetRule;)Lorg/osgi/util/converter/ConverterBuilder; : // 44 samples
+    return: 
+    parameter #0 :  // rule
+
+
+
+
+package org.osgi.util.converter:
+class ConverterImpl : // 33/33 obj/class samples
+  field ISO8601_DATE_FORMAT :  // java.text.SimpleDateFormat
+  method <init>()V : // 1 samples
+    return:
+  method addStandardRules(Lorg/osgi/util/converter/ConverterBuilder;)V : // 1 samples
+    return:
+    parameter #0 :  // cb
+  method charArrayToString([C)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // ca
+  method characterArrayToString([Ljava/lang/Character;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // ca
+  method convert(Ljava/lang/Object;)Lorg/osgi/util/converter/InternalConverting; : // 3 samples
+    return: 
+    parameter #0 :  // obj
+  method function()Lorg/osgi/util/converter/Functioning; : // 0 samples
+    return: 
+  method loadClassUnchecked(Ljava/lang/String;)Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // className
+  method newConverterBuilder()Lorg/osgi/util/converter/ConverterBuilderImpl; : // 1 samples
+    return: 
+  method reflectiveAddJavaTimeRule(Lorg/osgi/util/converter/ConverterBuilder;Ljava/lang/String;)V : // 11 samples
+    return:
+    parameter #0 :  // cb
+    parameter #1 :  // timeClsName
+  method stringToCharArray(Ljava/lang/String;)[C : // 0 samples
+    return: 
+    parameter #0 :  // s
+  method stringToCharacterArray(Ljava/lang/String;)[Ljava/lang/Character; : // 0 samples
+    return: 
+    parameter #0 :  // s
+
+
+package org.osgi.util.converter:
+class Converters : // 0/2 obj/class samples
+  field CONVERTER :  // org.osgi.util.converter.Converter
+  method newConverterBuilder()Lorg/osgi/util/converter/ConverterBuilder; : // 0 samples
+    return: 
+  method standardConverter()Lorg/osgi/util/converter/Converter; : // 1 samples
+    return: 
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.util.converter:
+class ConvertingImpl : // 13/123 obj/class samples
+  method asBoxedArray(Ljava/lang/Object;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+  method createMapFromBeanAccessors(Ljava/lang/Object;Ljava/lang/Class;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // sourceCls
+  method createMapFromInterface(Ljava/lang/Object;Ljava/lang/Class;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // srcCls
+  method createMapOrCollection(Ljava/lang/Class;I)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // initialSize
+  method getConstructableType(Ljava/lang/Class;)Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // targetCls
+  method getInterfaces(Ljava/lang/Class;)Ljava/util/Set; : // 26 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cls
+  method getInterfaces0(Ljava/lang/Class;)Ljava/util/Set; : // 22 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cls
+  method getSetters(Ljava/lang/Class;)Ljava/util/Set; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method handleBeanMethod(Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/Set;Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // obj
+    parameter #1 :  // md
+    parameter #2 :  // invokedMethods
+    parameter #3 :  // res
+  method handleInterfaceMethod(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/reflect/Method;Ljava/util/Set;Ljava/util/Map;)V : // 0 samples
+    return:
+    parameter #0 :  // obj
+    parameter #1 :  // intf
+    parameter #2 :  // md
+    parameter #3 :  // invokedMethods
+    parameter #4 :  // res
+  method isCopyRequiredType(Ljava/lang/Class;)Z : // 3 samples
+    return: 
+    parameter #0 : @Nullable // cls
+  method isMapType(Ljava/lang/Class;ZZ)Z : // 4 samples
+    return: 
+    parameter #0 : @Nullable // cls
+    parameter #1 :  // asJavaBean
+    parameter #2 :  // asDTO
+  method isMarkerAnnotation(Ljava/lang/Class;)Z : // 0 samples
+    return: 
+    parameter #0 :  // annClass
+  method isWriteableJavaBean(Ljava/lang/Class;)Z : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method reifyType(Ljava/lang/reflect/Type;Ljava/lang/Class;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type; : // 0 samples
+    return: 
+    parameter #0 :  // typeToReify
+    parameter #1 :  // ownerClass
+    parameter #2 :  // typeArgs
+  method <init>(Lorg/osgi/util/converter/InternalConverter;Ljava/lang/Object;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // c
+    parameter #1 : @Nullable // obj
+  method asCollection(Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method collectionView(Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // conv
+  method convertArrayToSingleValue(Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // c
+  method convertCollectionToSingleValue(Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // c
+  method convertCollectionValue(Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // element
+    parameter #1 :  // c
+  method convertMapElement(Ljava/lang/Object;ILorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // element
+    parameter #1 :  // typeIdx
+    parameter #2 :  // c
+  method convertMapEntryToSingleValue(Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 1 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cls
+    parameter #1 : @Nullable // c
+  method convertMapKey(Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // key
+    parameter #1 :  // c
+  method convertMapToSingleValue(Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // c
+  method convertMapValue(Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // value
+    parameter #1 :  // c
+  method convertToArray(Ljava/lang/Class;Ljava/lang/reflect/Type;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // componentClz
+    parameter #1 :  // componentType
+    parameter #2 :  // c
+  method convertToCollection(Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToCollectionDelegate(Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Collection; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToCollectionType(Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToDTO(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // sourceCls
+    parameter #1 :  // targetAsCls
+    parameter #2 :  // c
+  method convertToDictionary(Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToInterface(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // sourceCls
+    parameter #1 :  // targetCls
+    parameter #2 :  // c
+  method convertToJavaBean(Ljava/lang/Class;Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // sourceCls
+    parameter #1 :  // targetCls
+    parameter #2 :  // c
+  method convertToMap(Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToMapDelegate(Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method convertToMapType(Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // c
+  method createMapFromDTO(Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // ic
+  method createProxy(Ljava/lang/Class;Ljava/util/Map;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // data
+    parameter #2 :  // c
+  method getNames(Ljava/lang/Class;)Ljava/util/List; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method getPropertiesDelegate(Ljava/lang/Object;Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // cls
+    parameter #2 :  // c
+  method handleDTOField(Ljava/lang/Object;Ljava/lang/reflect/Field;Ljava/util/Set;Ljava/util/Map;Lorg/osgi/util/converter/InternalConverter;)V : // 0 samples
+    return:
+    parameter #0 :  // obj
+    parameter #1 :  // field
+    parameter #2 :  // handledFields
+    parameter #3 :  // result
+    parameter #4 :  // ic
+  method handleNull(Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+    parameter #1 :  // c
+  method hasGetProperties(Ljava/lang/Class;)Z : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method mapView(Ljava/lang/Object;Ljava/lang/Class;Lorg/osgi/util/converter/InternalConverter;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // sourceCls
+    parameter #2 :  // ic
+  method to(Ljava/lang/Class;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method to(Ljava/lang/reflect/Type;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method to(Ljava/lang/reflect/Type;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // c
+  method to(Lorg/osgi/util/converter/TypeReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // ref
+  method trySpecialCases(Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // c
+  method tryStandardMethods()Ljava/lang/Object; : // 0 samples
+    return: 
+
+
+package org.osgi.util.converter:
+class CustomConverterImpl$ConvertingWrapper : // 19/- obj/class samples
+  method ConvertingWrapper(Lorg/osgi/util/converter/CustomConverterImpl;Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverting;Lorg/osgi/util/converter/InternalConverter;)V : // 3 samples
+    return:
+    parameter #0 : @Nullable // obj
+    parameter #1 : @Nullable // c
+    parameter #2 : @Nullable // conv
+  method defaultValue(Ljava/lang/Object;)Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+    parameter #0 :  // defVal
+  method getErrorHandlers(Lorg/osgi/util/converter/Converter;)Ljava/util/List; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // converter
+  method keysIgnoreCase()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method sourceAs(Ljava/lang/Class;)Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method sourceAsBean()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method sourceAsDTO()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method targetAs(Ljava/lang/Class;)Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method targetAsBean()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method targetAsDTO()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method to(Ljava/lang/Class;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cls
+  method to(Ljava/lang/reflect/Type;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+  method to(Ljava/lang/reflect/Type;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 2 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+    parameter #1 : @Nullable // c
+  method to(Lorg/osgi/util/converter/TypeReference;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // ref
+  method toString()Ljava/lang/String; : // 0 samples
+    return: 
+  method view()Lorg/osgi/util/converter/Converting; : // 0 samples
+    return: 
+  method wrapErrorHandling(Ljava/lang/Object;Lorg/osgi/util/converter/InternalConverter;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // wrapped
+    parameter #1 :  // c
+
+
+package org.osgi.util.converter:
+class CustomConverterImpl : // 7/- obj/class samples
+  method <init>(Lorg/osgi/util/converter/InternalConverter;Ljava/util/Map;Ljava/util/List;Ljava/util/List;)V : // 1 samples
+    return:
+    parameter #0 : @Nullable // converter
+    parameter #1 : @Nullable // rules
+    parameter #2 : @Nullable // catchAllRules
+    parameter #3 : @Nullable // errHandlers
+  method convert(Ljava/lang/Object;)Lorg/osgi/util/converter/InternalConverting; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // obj
+  method function()Lorg/osgi/util/converter/Functioning; : // 0 samples
+    return: 
+  method newConverterBuilder()Lorg/osgi/util/converter/ConverterBuilder; : // 0 samples
+    return: 
+
+
+package org.osgi.util.converter:
+class DTOUtil : // 0/- obj/class samples
+  method isDTOType(Ljava/lang/Class;Z)Z : // 7 samples
+    return: 
+    parameter #0 : @Nullable // cls
+    parameter #1 :  // ignorePublicNoArgsCtor
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.osgi.util.converter:
+class Rule : // 156/- obj/class samples
+  method <init>(Lorg/osgi/util/function/Function;)V : // 22 samples
+    return:
+    parameter #0 : @Nullable // func
+  method getFunction()Lorg/osgi/util/converter/ConverterFunction; : // 23 samples
+    return: @Nullable
+  method getGenericFunction(Lorg/osgi/util/function/Function;)Lorg/osgi/util/converter/ConverterFunction; : // 22 samples
+    return: @Nullable
+    parameter #0 : @Nullable // func
+  method getTargetType()Ljava/lang/reflect/Type; : // 22 samples
+    return: @Nullable
+
+
+package org.osgi.util.converter:
+class TypeReference : // 0/- obj/class samples
+  method <init>()V : // 0 samples
+    return:
+  method getType()Ljava/lang/reflect/Type; : // 0 samples
+    return: 
+
+
+package org.osgi.util.converter:
+class TypeRule$1 : // 22/- obj/class samples
+  method (Ljava/lang/reflect/Type;Lorg/osgi/util/function/Function;)V : // 22 samples
+    return:
+    parameter #0 : @Nullable // $hidden$1
+    parameter #1 : @Nullable // $hidden$2
+  method apply(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // targetType
+
+
+package org.osgi.util.converter:
+class TypeRule : // 110/- obj/class samples
+  method getFunction(Ljava/lang/reflect/Type;Lorg/osgi/util/function/Function;)Lorg/osgi/util/converter/ConverterFunction; : // 22 samples
+    return: @Nullable
+    parameter #0 : @Nullable // from
+    parameter #1 : @Nullable // func
+  method <init>(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Lorg/osgi/util/function/Function;)V : // 22 samples
+    return:
+    parameter #0 : @Nullable // from
+    parameter #1 : @Nullable // to
+    parameter #2 : @Nullable // func
+  method getFunction()Lorg/osgi/util/converter/ConverterFunction; : // 22 samples
+    return: @Nullable
+  method getTargetType()Ljava/lang/reflect/Type; : // 22 samples
+    return: @Nullable
+
+
+package org.osgi.util.converter:
+class Util : // 0/18 obj/class samples
+  method baseType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type; : // 3 samples
+    return: @Nullable
+    parameter #0 : @Nullable // type
+  method getAnnotationType(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Class; : // 0 samples
+    return: 
+    parameter #0 :  // intf
+    parameter #1 :  // obj
+  method getBeanAccessorPropertyName(Ljava/lang/reflect/Method;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // md
+  method getBeanKey(Ljava/lang/reflect/Method;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // md
+  method getBeanKeys(Ljava/lang/Class;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // beanClass
+  method getDTOKey(Ljava/lang/reflect/Field;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // f
+  method getDTOKeys(Ljava/lang/Class;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // dto
+  method getInterfaceKeys(Ljava/lang/Class;Ljava/lang/Object;)Ljava/util/Map; : // 0 samples
+    return: 
+    parameter #0 :  // intf
+    parameter #1 :  // object
+  method getInterfaceProperty(Ljava/lang/Object;Ljava/lang/reflect/Method;)Ljava/lang/Object; : // 0 samples
+    return: 
+    parameter #0 :  // obj
+    parameter #1 :  // md
+  method getInterfacePropertyName(Ljava/lang/reflect/Method;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // md
+    parameter #1 :  // singleElementAnnotationKey
+    parameter #2 :  // object
+  method getMarkerAnnotationKey(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // intf
+    parameter #1 :  // obj
+  method getPrefix(Ljava/lang/Class;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // cls
+  method getSingleElementAnnotationKey(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // intf
+    parameter #1 :  // obj
+  method isInheritedMethodInProxy(Ljava/lang/reflect/Method;Ljava/lang/Class;)Z : // 0 samples
+    return: 
+    parameter #0 :  // md
+    parameter #1 :  // cls
+  method mangleName(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // prefix
+    parameter #1 :  // key
+    parameter #2 :  // names
+  method match(Ljava/lang/String;[CI)Z : // 0 samples
+    return: 
+    parameter #0 :  // pattern
+    parameter #1 :  // array
+    parameter #2 :  // i
+  method primitiveToBoxed(Ljava/lang/Class;)Ljava/lang/Class; : // 6 samples
+    return: @Nullable
+    parameter #0 : @Nullable // cls
+  method primitiveToBoxed(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type; : // 0 samples
+    return: 
+    parameter #0 :  // type
+  method toSingleElementAnnotationKey(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // simpleName
+  method unMangleName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // id
+  method unMangleName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // prefix
+    parameter #1 :  // key
+  method <init>()V : // 0 samples
+    return:
+
+
+package org.plumelib.signature:
+class Signatures : // 0/0 obj/class samples
+  field primitiveToFieldDescriptor :  // java.util.HashMap
+  field fieldDescriptorToPrimitive :  // java.util.HashMap
+  method arglistFromJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method arglistToJvm(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // arglist
+  method binaryNameToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // bn
+  method binaryNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToBinaryName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // classname
+  method fieldDescriptorToClassGetName(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // fd
+  method primitiveTypeNameToFieldDescriptor(Ljava/lang/String;)Ljava/lang/String; : // 0 samples
+    return: 
+    parameter #0 :  // primitiveName
+  method <init>()V : // 0 samples
+    return:
+
+
